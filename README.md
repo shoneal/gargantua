@@ -1,1 +1,1 @@
-https://jeromesolomonmalone.github.io/gargantua/
+https://shoneal.github.io/gargantua/
