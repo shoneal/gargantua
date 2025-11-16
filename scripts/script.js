@@ -28187,7 +28187,7 @@ films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
 
 // Главная ссылка
 const location_of_the_images =
-  "https://jeromesolomonmalone.github.io/gargantua/images/";
+  "https://shoneal.github.io/gargantua/images/";
 
 // Функция, которая приводит название в соотвествующий вид
 function name_for_link(element) {
