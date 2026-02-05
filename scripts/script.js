@@ -530,6 +530,17 @@ const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/462553/",
   }, // железная хватка
   {
+    title: "Стальная хватка",
+    original: ["The Iron Claw"],
+    release: "2023-12-22",
+    publish: "2025-05-03T18:53:41",
+    directors: ["Шон Дуркин"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 63,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5005446/",
+  }, // стальная хватка
+  {
     title: "Формула 1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2025-03-07",
@@ -542,16 +553,175 @@ const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 7
   {
-    title: "Стальная хватка",
-    original: ["The Iron Claw"],
-    release: "2023-12-22",
-    publish: "2025-05-03T18:53:41",
-    directors: ["Шон Дуркин"],
+    title: "Тот самый день",
+    original: ["One of Them Days", "Один из этих дней"],
+    release: "2025-01-17",
+    publish: "2025-04-29T09:02:30",
+    directors: ["Лоуренс Ламонт"],
+    format: "фильм",
+    isGood: false,
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/7002807/",
+  }, // тот самый день
+  {
+    title: "Жажда славы",
+    original: ["Magazine Dreams"],
+    release: "2023-01-20",
+    publish: "2025-04-28T20:31:55",
+    directors: ["Элайджа Байнум"],
+    format: "фильм",
+    isGood: false,
+    screenshots: 60,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4704816/",
+  }, // жажда славы
+  {
+    title: "Чёрный чемодан – двойная игра",
+    original: ["Black Bag"],
+    release: "2025-03-14",
+    publish: "2025-04-18T20:42:38",
+    directors: ["Стивен Содерберг"],
     format: "фильм",
     isGood: true,
-    screenshots: 63,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/5005446/",
-  }, // стальная хватка
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5449060/",
+  }, // чёрный чемодан – двойная игра
+  {
+    title: "Фримонт. Американская мечта",
+    original: ["Fremont"],
+    release: "2023-10-10",
+    publish: "2025-04-13T10:55:46",
+    directors: ["Бабак Джалали"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 60,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5108082/",
+  }, // фримонт
+  {
+    title: "Подземелья и драконы: Честь среди воров",
+    original: ["Dungeons & Dragons: Honor Among Thieves"],
+    release: "2023-03-31",
+    publish: "2025-04-06T10:30:32",
+    directors: ["Джон Фрэнсис Дейли", "Джонатан М. Голдштейн"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/762646/",
+  }, // подземелья и драконы: честь среди воров
+  {
+    title: "Микки 17",
+    original: ["Mickey 17"],
+    release: "2025-03-07",
+    publish: "2025-04-06T23:17:48",
+    directors: ["Пон Джун-хо"],
+    operator: "Дариус Хонджи",
+    format: "фильм",
+    isGood: false,
+    screenshots: 66,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1320476/",
+  }, // микки 17
+  {
+    title: "Любой ценой",
+    original: ["Hell or High Water"],
+    release: "2016-08-26",
+    publish: "2025-04-06T19:22:27",
+    directors: ["Дэвид Маккензи"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/726794/",
+  }, // любой ценой
+  {
+    title: "Варвар",
+    original: ["Barbarian"],
+    release: "2022-09-09",
+    publish: "2025-04-06T11:47:45",
+    directors: ["Зак Креггер"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 50,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4749790/",
+  }, // варвар
+  {
+    title: "Частые побочные явления",
+    original: ["Common Side Effects", "Обычные побочки"],
+    release: "2025-02-02",
+    publish: "2025-04-05T16:52:19",
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    isGood: true,
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/6990425/",
+  }, // частые побочные явления 1
+  {
+    title: "Голый пистолет",
+    original: ["The Naked Gun: From the Files of Police Squad!"],
+    release: "1988-12-02",
+    publish: "2025-04-05T09:24:15",
+    directors: ["Дэвид Цукер"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 23,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4067/",
+  }, // голый пистолет (1988)
+  {
+    title: "Разделение",
+    original: ["Severance"],
+    release: "2025-01-17",
+    publish: "2025-04-04T23:10:03",
+    creators: ["Бен Стиллер", "Дэн Эриксон"],
+    format: "сериал",
+    season: "2",
+    isMiniSeries: false,
+    isGood: true,
+    screenshots: 237,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
+  }, // разделение 2
+  {
+    title: "Суперсемейка 2",
+    original: ["Incredibles 2"],
+    release: "2018-06-15",
+    publish: "2025-03-30T20:46:55",
+    directors: ["Брэд Бёрд"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 87,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/839650/",
+  }, // суперсемейка 2
+  {
+    title: "Суперсемейка",
+    original: ["The Incredibles"],
+    release: "2004-11-05",
+    publish: "2025-03-30T17:28:07",
+    directors: ["Брэд Бёрд"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/38903/",
+  }, // суперсемейка
+  {
+    title: "Мегамозг",
+    original: ["Megamind"],
+    release: "2010-11-05",
+    publish: "2025-03-29T18:21:19",
+    directors: ["Том МакГрат"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 30,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/405608/",
+  }, // мегамозг
+  {
+    title: "Кровью и потом: Анаболики",
+    original: ["Pain & Gain", "Кровью и потом: Анатолики"],
+    release: "2013-04-26",
+    publish: "2025-03-29T16:06:51",
+    directors: ["Майкл Бэй"],
+    format: "фильм",
+    isGood: true,
+    screenshots: 69,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/596227/",
+  }, // кровью и потом: анаболики
+
   {
     title: "Формула 1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
@@ -589,6 +759,19 @@ const movies = [
     screenshots: 22,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1112514/",
   }, // харли квинн 1-4
+  {
+    title: "Разделение",
+    original: ["Severance"],
+    release: "2022-02-18",
+    publish: "2022-04-27T21:06:25",
+    creators: ["Бен Стиллер", "Дэн Эриксон"],
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    isGood: true,
+    screenshots: 74,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
+  }, // разделение 1
 ]; // ГЛАВНЫЙ МАССИВ
 
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
@@ -939,7 +1122,7 @@ const renderMovies = (moviesToRender, startIndex, endIndex) => {
       season: movie.season,
       size: "thumb",
     });
-    img.alt = `Постер ${movie.title}`;
+    img.alt = `Постер "${movie.title}"`;
     setupImageWithContainer(img);
 
     div.appendChild(img);
@@ -1085,37 +1268,45 @@ searchButton.addEventListener("click", (e) => {
   updateMoviesDisplay();
   updateButtonState();
 });
-searchInput.addEventListener("focus", () =>
-  searchButton.classList.add("is-active"),
-);
-searchInput.addEventListener("blur", () =>
-  searchButton.classList.remove("is-active"),
-); // Поиск
-const updateResetButton = () => {
+const toggleSearchButtonActive = () =>
+  searchButton.classList.toggle(
+    "is-active",
+    searchInput.value.trim().length > 0,
+  );
+const updateResetButton = (onClearAction) => {
   const resetBtn = searchLabel.querySelector(".search-reset");
 
   if (searchInput.value) {
     if (!resetBtn) {
-      const btn = Object.assign(document.createElement("input"), {
-        type: "reset",
-        className: "search-reset",
-        value: "Очистить",
-      });
-
-      btn.onclick = () => {
-        searchInput.value = "";
-        btn.remove();
-        searchInput.focus();
-      };
-
+      const btn = document.createElement("input");
+      btn.type = "reset";
+      btn.className = "search-reset";
+      btn.value = "Очистить";
+      btn.onclick = () => onClearAction(btn);
       searchLabel.appendChild(btn);
     }
   } else if (resetBtn) {
     resetBtn.remove();
   }
 };
-searchInput.addEventListener("input", updateResetButton); // "Очистить" поиск
-
+const clearAndUpdate = (btn) => {
+  searchInput.value = "";
+  setTimeout(() => searchInput.blur(), 0);
+  btn.remove();
+  updateMoviesDisplay();
+  updateButtonState();
+};
+const clearAndRefocus = (btn) => {
+  searchInput.value = "";
+  btn.remove();
+  searchInput.focus();
+};
+searchInput.addEventListener("focus", toggleSearchButtonActive);
+searchInput.addEventListener("blur", toggleSearchButtonActive);
+searchInput.addEventListener("input", () => {
+  toggleSearchButtonActive();
+  updateResetButton(clearAndRefocus);
+}); // "Очистить" поиск
 filters.forEach((filter) => {
   filter.addEventListener("change", () => {
     const dropdownList = filter.closest(".dropdown-list");
@@ -1231,6 +1422,15 @@ const updatePopupHeader = () => {
   popupHeader.classList.toggle("sticky-header", moviePopup.scrollTop > 0);
 }; // Border у шапки попапа
 
+const getScreenshotUrl = (movie, index) =>
+  buildImageUrl({
+    type: movie.format === "фильм" ? "movie" : "series",
+    title: movie.original[0],
+    season: movie.season,
+    screenshot: index,
+    release: movie.release,
+  });
+window.currentSlideshow = null;
 const openMoviePopup = (movie) => {
   popupElements.opinion.innerHTML = "";
   const svg = movie.isGood ? "like-template" : "dislike-template";
@@ -1272,7 +1472,7 @@ const openMoviePopup = (movie) => {
         e.preventDefault();
         closePopup(moviePopup);
         resetFiltersAndSearch(person);
-        updateResetButton();
+        updateResetButton(clearAndUpdate); // Вызываем с нужной стратегией
       });
       span.appendChild(a);
     });
@@ -1301,7 +1501,7 @@ const openMoviePopup = (movie) => {
     season: movie.season,
     size: "full",
   });
-  popupElements.poster.alt = `Постер ${movie.title}`;
+  popupElements.poster.alt = `Постер "${movie.title}"`;
   setupImageWithContainer(popupElements.poster);
 
   const count = movie.screenshots;
@@ -1315,35 +1515,31 @@ const openMoviePopup = (movie) => {
           : "скриншотов";
   popupElements.figcaption.textContent = `${count} ${text}`;
 
-  popupElements.body.innerHTML = "";
-  const screenshots = [];
-  for (let i = 1; i <= movie.screenshots; i++) {
-    screenshots.push(
-      buildImageUrl({
-        type: movie.format === "фильм" ? "movie" : "series",
-        title: movie.original[0],
-        season: movie.season,
-        screenshot: i,
-        release: movie.release,
-      }),
-    );
-  }
-
+  popupElements.body.replaceChildren();
   const fragment = document.createDocumentFragment();
-  screenshots.forEach((src) => {
+  for (let i = 1; i <= movie.screenshots; i++) {
     const div = document.createElement("div");
     const img = document.createElement("img");
+
     img.style.opacity = "0";
-    img.src = src;
+    img.src = getScreenshotUrl(movie, i);
     img.loading = "lazy";
     setupImageWithContainer(img);
 
     div.appendChild(img);
     fragment.appendChild(div);
-  });
+  }
+
   popupElements.body.appendChild(fragment);
 
-  const slideshow = initSlideshow(slideshowPopup, screenshots);
+  if (window.currentSlideshow) {
+    window.currentSlideshow.close(); // Закрываем старый слайдер
+  }
+  window.currentSlideshow = initSlideshow(
+    slideshowPopup,
+    movie.screenshots,
+    (index) => getScreenshotUrl(movie, index + 1),
+  );
   popupElements.body.addEventListener(
     "click",
     (e) => {
@@ -1351,10 +1547,13 @@ const openMoviePopup = (movie) => {
       if (!thumb) return;
 
       const index = Array.from(popupElements.body.children).indexOf(thumb);
-      slideshow.open(index);
+      window.currentSlideshow.open(index);
     },
     { passive: true },
   );
+  const reverse = popupElements.body.classList.contains("odd");
+  popupElements.body.classList.remove("odd", "even");
+  popupElements.body.classList.add(reverse ? "even" : "odd");
 
   openPopup(moviePopup);
 }; // Открытие попапа с фильмом
@@ -1365,24 +1564,26 @@ const openMoviePopup = (movie) => {
 //
 //
 const slideshowPopup = document.querySelector(".slideshow-popup");
-const slideshowContent = slideshowPopup.querySelector(".popup-content");
 const slideshowElements = {
-  close: slideshowContent.querySelector(".close-popup"),
-  prev: slideshowContent.querySelector(".previous-slide"),
-  next: slideshowContent.querySelector(".next-slide"),
-  container: slideshowContent.querySelector("div"),
-  span: slideshowContent.querySelector("span"),
+  close: slideshowPopup.querySelector(".close-popup"),
+  prev: slideshowPopup.querySelector(".previous-slide"),
+  next: slideshowPopup.querySelector(".next-slide"),
+  container: slideshowPopup.querySelector("div"),
+  counter: slideshowPopup.querySelector("p"),
+  span: slideshowPopup.querySelector("span"),
 }; // Все элементы попапа с фильмом
-function initSlideshow(popupSelector, images) {
+function initSlideshow(popupSelector, totalCount, urlGetter) {
   const img = slideshowElements.container.querySelector("img");
   let currentIndex = 0;
   let controller = null;
 
   const updateSlide = () => {
-    img.src = images[currentIndex];
-    slideshowElements.span.textContent = `${currentIndex + 1}/${images.length}`;
+    img.src = urlGetter(currentIndex); // Получаем URL по текущему индексу
+    slideshowElements.span.textContent = `${currentIndex + 1}`;
+    slideshowElements.counter.innerHTML =
+      slideshowElements.span.outerHTML + ` / ${totalCount}`;
     slideshowElements.prev.disabled = currentIndex === 0;
-    slideshowElements.next.disabled = currentIndex === images.length - 1;
+    slideshowElements.next.disabled = currentIndex === totalCount - 1;
   };
 
   const closeSlideshow = () => {
@@ -1398,7 +1599,7 @@ function initSlideshow(popupSelector, images) {
   };
 
   const goNext = () => {
-    if (currentIndex < images.length - 1) (currentIndex++, updateSlide());
+    if (currentIndex < totalCount - 1) (currentIndex++, updateSlide());
   };
 
   const onTouchStart = (e) => {
@@ -1422,11 +1623,13 @@ function initSlideshow(popupSelector, images) {
     });
     slideshowElements.prev.addEventListener("click", goPrev, { signal });
     slideshowElements.next.addEventListener("click", goNext, { signal });
-    slideshowPopup.addEventListener("touchstart", onTouchStart, {
+    slideshowElements.container.addEventListener("touchstart", onTouchStart, {
       signal,
       passive: true,
     });
-    slideshowPopup.addEventListener("touchend", onTouchEnd, { signal });
+    slideshowElements.container.addEventListener("touchend", onTouchEnd, {
+      signal,
+    });
     slideshowPopup.addEventListener(
       "click",
       (e) => {
