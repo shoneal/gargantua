@@ -123,7 +123,7 @@ header {
   grid-template-rows: repeat(31, 1fr);
   min-width: 187vw;
   opacity: 0;
-  animation: runningLine 20s linear infinite;
+  animation: runningLine 60s linear infinite;
   will-change: transform;
 }
 
