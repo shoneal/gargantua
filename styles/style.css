@@ -20,7 +20,7 @@
   --counter-span-color: black;
   --arrow-stroke: #999;
   --font-Franklin: "Onest", sans-serif;
-  --font-Cheltenham: "Literata", georgia, serif;
+  --font-Karnak: "Montserrat", sans-serif;
 }
 
 *,
@@ -122,7 +122,8 @@ header {
   grid-template-columns: repeat(209, 1fr);
   grid-template-rows: repeat(31, 1fr);
   min-width: 187vw;
-  animation: runningLine 60s linear infinite;
+  opacity: 0;
+  animation: runningLine 20s linear infinite;
   will-change: transform;
 }
 
@@ -410,8 +411,11 @@ form {
 .form {
   position: relative;
   min-width: 100px;
-  margin-right: 60px;
   white-space: nowrap;
+}
+
+.form:not(:last-child) {
+  margin-right: 60px;
 }
 
 .search-multiselect-button {
@@ -419,7 +423,7 @@ form {
   display: flex;
   align-items: center;
   gap: 7px;
-  width: 100px;
+  min-width: 100px;
   margin: 0;
   border: 1px solid transparent;
   padding: 11px;
@@ -483,15 +487,10 @@ form {
   top: 1px;
 }
 
-.dropdown-list-svg {
-  width: 20px;
-  min-width: 20px;
-  height: 20px;
-  min-height: 20px;
-  fill: var(--black-white);
-}
-
 .section-hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 10px;
   background-color: var(--background-color);
 }
@@ -499,10 +498,11 @@ form {
 .query-facets {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   max-width: 840px;
-  margin: 0 auto;
+  margin: 18px 25px 0;
   border-bottom: 1px solid var(--border);
-  padding: 18px 25px 15px;
+  padding-bottom: 15px;
 }
 
 .query-facet {
@@ -530,12 +530,6 @@ form {
   text-transform: capitalize;
   background: transparent;
   cursor: pointer;
-}
-
-.query-facet button svg {
-  min-width: 20px;
-  min-height: 20px;
-  fill: var(--black-white);
 }
 
 .movies {
@@ -619,29 +613,36 @@ form {
 }
 
 .opinion {
-  width: 24px;
   margin-bottom: 13px;
-}
-
-.opinion svg {
-  fill: var(--opinion-color);
+  color: var(--opinion-color);
+  font-family: var(--font-Franklin);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .heading {
   margin-bottom: 0.5rem;
-  font-family: var(--font-Cheltenham);
-  font-weight: 700;
-  font-size: 2.9375rem;
-  font-style: italic;
-  line-height: 3.4375rem;
+  font-family: var(--font-Karnak);
+  font-size: 48px;
+  line-height: 56px;
+  word-spacing: -0.02em;
+}
+
+.heading.smaller {
+  font-size: 44px;
+  line-height: 44px;
 }
 
 .timestamp {
   margin-bottom: 1.875rem;
-  font-family: var(--font-Cheltenham);
-  font-weight: 400;
-  font-size: 1.4375rem;
-  line-height: 1.875rem;
+  font-family: var(--font-Franklin);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.05em;
 }
 
 .byline-wrapper {
@@ -854,10 +855,6 @@ figcaption {
     text-decoration: line-through;
   }
 
-  .query-facet button:hover svg {
-    fill: var(--query-facet);
-  }
-
   .movie-popup .homepage:hover {
     background: var(--homepage-hover);
   }
@@ -899,11 +896,6 @@ figcaption {
 }
 
 @media screen and (max-width: 1150px) {
-  .heading {
-    font-size: 2.75rem;
-    line-height: 3.125rem;
-  }
-
   figcaption {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -944,6 +936,11 @@ figcaption {
     min-width: 675vw;
   }
 
+  .heading.smaller {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
   .slideshow-popup p {
     height: 54px;
     line-height: 54px;
@@ -962,14 +959,18 @@ figcaption {
   }
 
   .heading {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .heading.smaller {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .timestamp {
     margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.5625rem;
+    font-size: 0.8125rem;
   }
 
   .byline-wrapper {
@@ -1054,15 +1055,18 @@ figcaption {
 
   .form {
     min-width: fit-content;
+  }
+
+  .form:not(:last-child) {
     margin-right: 20px;
   }
 
   .search-multiselect-button {
-    width: fit-content;
+    min-width: fit-content;
   }
 
   .dropdown-list {
-    width: 180px;
+    width: 150px;
   }
 
   .query-facet {
@@ -1074,7 +1078,8 @@ figcaption {
   }
 
   .opinion {
-    width: 20px;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
   }
 
   .imageblock-wrapper {

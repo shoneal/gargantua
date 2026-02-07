@@ -7,7 +7,7 @@ const movies = [
     format: "сериал",
     season: "4",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 78,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
   }, // медведь 4
@@ -18,7 +18,7 @@ const movies = [
     publish: "2025-09-06T16:11:52",
     directors: ["Акива Шаффер"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/817971/",
   }, // голый пистолет (2025)
@@ -29,7 +29,7 @@ const movies = [
     publish: "2025-08-30T14:54:55",
     directors: ["Эдриан Молина", "Мадлен Шарафьян", "Доми Ши"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4893253/",
   }, // элио
@@ -42,7 +42,7 @@ const movies = [
     format: "сериал",
     season: "8",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
   }, // рик и морти 8
@@ -53,7 +53,7 @@ const movies = [
     publish: "2025-08-26T07:46:23",
     directors: ["Джеймс Ганн"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 50,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/997647/",
   }, // супермен
@@ -64,7 +64,7 @@ const movies = [
     publish: "2025-08-24T07:35:20",
     directors: ["Генндий Тартаковский"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 20,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4695962/",
   }, // стерилизован
@@ -75,7 +75,7 @@ const movies = [
     publish: "2025-08-21T20:42:26",
     directors: ["Кристофер Маккуорри"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1229683/",
   }, // миссия невыполнима: финальная расплата
@@ -86,7 +86,7 @@ const movies = [
     publish: "2025-08-19T07:11:31",
     directors: ["Эмма Селигман"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1324912/",
   }, // шалом, папик!
@@ -97,7 +97,7 @@ const movies = [
     publish: "2025-08-17T13:43:40",
     directors: ["Ева Виктор"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 57,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7092649/",
   }, // прости, детка
@@ -108,7 +108,7 @@ const movies = [
     publish: "2025-08-16T16:28:55",
     directors: ["Майк Флэнаган"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5406956/",
   }, // жизнь чака
@@ -119,7 +119,7 @@ const movies = [
     publish: "2025-08-16T13:07:36",
     directors: ["Илья Найшуллер"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5278126/",
   }, // главы государств
@@ -130,7 +130,7 @@ const movies = [
     publish: "2025-08-06T07:41:41",
     directors: ["Стивен Спилберг"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 44,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/406186/",
   }, // приключения тинтина
@@ -141,7 +141,7 @@ const movies = [
     publish: "2025-08-03T09:52:57",
     directors: ["Шон Ван"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 48,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5448457/",
   }, // младший брат
@@ -152,7 +152,7 @@ const movies = [
     publish: "2025-07-29T07:27:31",
     directors: ["Ник Кассаветис"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/720/",
   }, // джон кью
@@ -163,7 +163,7 @@ const movies = [
     publish: "2025-07-28T07:05:34",
     directors: ["Джастин Чон"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 75,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1313196/",
   }, // голубой байу
@@ -174,7 +174,7 @@ const movies = [
     publish: "2025-07-24T14:58:18",
     directors: ["Мэттью Вон"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/47250/",
   }, // слоеный торт
@@ -185,7 +185,7 @@ const movies = [
     publish: "2025-07-24T11:03:09",
     directors: ["Эдвард Цвик"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 90,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6764/",
   }, // последний самурай
@@ -196,7 +196,7 @@ const movies = [
     publish: "2025-07-24T17:53:33",
     directors: ["Кейр О’Доннелл"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5071324/",
   }, // мармелад
@@ -207,7 +207,7 @@ const movies = [
     publish: "2025-07-23T19:11:54",
     directors: ["Майкл Манн"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61325/",
   }, // соучастник
@@ -218,7 +218,7 @@ const movies = [
     publish: "2025-07-23T12:03:25",
     directors: ["Джон Мэйбери"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 32,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/47382/",
   }, // пиджак
@@ -229,7 +229,7 @@ const movies = [
     publish: "2025-07-20T11:42:43",
     directors: ["Уэс Андерсон"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/278185/",
   }, // поезд на дарджилинг
@@ -240,7 +240,7 @@ const movies = [
     publish: "2025-07-20T18:05:35",
     directors: ["Аарон Хорват", "Михаэль Еленик", "Пьер Ледюк"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1111005/",
   }, // братья супер марио в кино
@@ -251,7 +251,7 @@ const movies = [
     publish: "2025-07-19T23:45:24",
     directors: ["Кристофер Моррис"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/448665/",
   }, // четыре льва
@@ -262,7 +262,7 @@ const movies = [
     publish: "2025-07-14T23:00:34",
     directors: ["Тим Стори"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/23263/",
   }, // фантастическая четверка (2005)
@@ -273,7 +273,7 @@ const movies = [
     publish: "2025-07-13T13:51:14",
     directors: ["Дэн Трахтенберг", "Джошуа Вассунг"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7596122/",
   }, // хищник: убийца убийц
@@ -285,7 +285,7 @@ const movies = [
     directors: ["Рейнальдо Маркус Грин"],
     operator: "Роберт Элсвит",
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 26,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1272469/",
   }, // король ричард
@@ -296,7 +296,7 @@ const movies = [
     publish: "2025-07-23T16:20:14",
     directors: ["Джейк Шрейер"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 66,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5001443/",
   }, // громовержцы*
@@ -307,7 +307,7 @@ const movies = [
     publish: "2025-07-08T07:17:58",
     directors: ["Райан Куглер"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5499518/",
   }, // грешники
@@ -318,7 +318,7 @@ const movies = [
     publish: "2025-06-29T18:02:03",
     directors: ["Уилл Глак"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 32,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5305423/",
   }, // кто угодно, кроме тебя
@@ -329,7 +329,7 @@ const movies = [
     publish: "2025-06-21T13:03:14",
     directors: ["Джесси Армстронг"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7770979/",
   }, // на вершине горы
@@ -342,7 +342,7 @@ const movies = [
     format: "сериал",
     season: "1",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/6579800/",
   }, // киностудия 1
@@ -353,7 +353,7 @@ const movies = [
     publish: "2025-06-14T15:36:43",
     directors: ["Ричард Лонкрэйн"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 17,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/19174/",
   }, // уимблдон
@@ -364,7 +364,7 @@ const movies = [
     publish: "2025-06-08T11:08:27",
     directors: ["Дин ДеБлуа", "Крис Сандерс"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/740/",
   }, // лило и стич (2002)
@@ -375,7 +375,7 @@ const movies = [
     publish: "2025-06-01T11:34:14",
     directors: ["Марк Энтони Грин"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6718282/",
   }, // опус
@@ -388,7 +388,7 @@ const movies = [
     format: "сериал",
     season: "4",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 20,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1228254/",
   }, // любовь, смерть и роботы 4
@@ -399,7 +399,7 @@ const movies = [
     publish: "2025-05-31T11:37:25",
     directors: ["Алекс Шарфман"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5445197/",
   }, // смерть единорога
@@ -410,7 +410,7 @@ const movies = [
     publish: "2025-05-31T13:57:00",
     directors: ["Флёр Форчун"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6042919/",
   }, // оценка
@@ -422,7 +422,7 @@ const movies = [
     directors: ["Пак Чхан-ук"],
     format: "сериал",
     isMiniSeries: true,
-    isGood: false,
+    liked: "dislike",
     screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1100408/",
   }, // маленькая барабанщица
@@ -433,7 +433,7 @@ const movies = [
     publish: "2025-05-25T13:52:44",
     directors: ["Скотт Купер"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/963016/",
   }, // недруги
@@ -445,7 +445,7 @@ const movies = [
     directors: ["Эндрю Доминик"],
     operator: "Роджер Дикинс",
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/102127/",
   }, // как трусливый роберт форд убил джесси джеймса
@@ -456,7 +456,7 @@ const movies = [
     publish: "2025-05-23T21:02:13",
     directors: ["Сэм Рэйми"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/2273/",
   }, // быстрый и мертвый
@@ -468,7 +468,7 @@ const movies = [
     directors: ["Квентин Тарантино"],
     operator: "Роберт Ричардсон",
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 77,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/819101/",
   }, // омерзительная восьмерка
@@ -479,7 +479,7 @@ const movies = [
     publish: "2025-05-11T12:04:39",
     directors: ["Джеймс Мэнголд"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/78240/",
   }, // поезд на юму
@@ -490,7 +490,7 @@ const movies = [
     publish: "2025-05-09T12:30:23",
     directors: ["Алекс Гарленд"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4968810/",
   }, // падение империи
@@ -501,7 +501,7 @@ const movies = [
     publish: "2025-05-06T17:14:38",
     directors: ["Габриэла Каупертуэйт"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 48,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1231105/",
   }, // друзья навсегда
@@ -513,7 +513,7 @@ const movies = [
     format: "сериал",
     season: "1",
     isMiniSeries: false,
-    isGood: false,
+    liked: "dislike",
     screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5138508/",
   }, // нарковоры 1
@@ -525,7 +525,7 @@ const movies = [
     directors: ["Джоэл Коэн", "Итан Коэн"],
     operator: "Роджер Дикинс",
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 41,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/462553/",
   }, // железная хватка
@@ -536,7 +536,7 @@ const movies = [
     publish: "2025-05-03T18:53:41",
     directors: ["Шон Дуркин"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5005446/",
   }, // стальная хватка
@@ -548,7 +548,7 @@ const movies = [
     format: "сериал",
     season: "7",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 47,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 7
@@ -559,7 +559,7 @@ const movies = [
     publish: "2025-04-29T09:02:30",
     directors: ["Лоуренс Ламонт"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7002807/",
   }, // тот самый день
@@ -570,7 +570,7 @@ const movies = [
     publish: "2025-04-28T20:31:55",
     directors: ["Элайджа Байнум"],
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4704816/",
   }, // жажда славы
@@ -581,7 +581,7 @@ const movies = [
     publish: "2025-04-18T20:42:38",
     directors: ["Стивен Содерберг"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 48,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5449060/",
   }, // чёрный чемодан – двойная игра
@@ -592,7 +592,7 @@ const movies = [
     publish: "2025-04-13T10:55:46",
     directors: ["Бабак Джалали"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5108082/",
   }, // фримонт
@@ -603,7 +603,7 @@ const movies = [
     publish: "2025-04-06T10:30:32",
     directors: ["Джон Фрэнсис Дейли", "Джонатан М. Голдштейн"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/762646/",
   }, // подземелья и драконы: честь среди воров
@@ -615,7 +615,7 @@ const movies = [
     directors: ["Пон Джун-хо"],
     operator: "Дариус Хонджи",
     format: "фильм",
-    isGood: false,
+    liked: "dislike",
     screenshots: 66,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1320476/",
   }, // микки 17
@@ -626,7 +626,7 @@ const movies = [
     publish: "2025-04-06T19:22:27",
     directors: ["Дэвид Маккензи"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/726794/",
   }, // любой ценой
@@ -637,7 +637,7 @@ const movies = [
     publish: "2025-04-06T11:47:45",
     directors: ["Зак Креггер"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 50,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4749790/",
   }, // варвар
@@ -649,7 +649,7 @@ const movies = [
     format: "сериал",
     season: "1",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/6990425/",
   }, // частые побочные явления 1
@@ -660,7 +660,7 @@ const movies = [
     publish: "2025-04-05T09:24:15",
     directors: ["Дэвид Цукер"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4067/",
   }, // голый пистолет (1988)
@@ -673,7 +673,7 @@ const movies = [
     format: "сериал",
     season: "2",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 237,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 2
@@ -684,7 +684,7 @@ const movies = [
     publish: "2025-03-30T20:46:55",
     directors: ["Брэд Бёрд"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 87,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/839650/",
   }, // суперсемейка 2
@@ -695,7 +695,7 @@ const movies = [
     publish: "2025-03-30T17:28:07",
     directors: ["Брэд Бёрд"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/38903/",
   }, // суперсемейка
@@ -706,21 +706,131 @@ const movies = [
     publish: "2025-03-29T18:21:19",
     directors: ["Том МакГрат"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/405608/",
   }, // мегамозг
   {
     title: "Кровью и потом: Анаболики",
-    original: ["Pain & Gain", "Кровью и потом: Анатолики"],
+    original: ["Pain & Gain", "Анатолики"],
     release: "2013-04-26",
     publish: "2025-03-29T16:06:51",
     directors: ["Майкл Бэй"],
     format: "фильм",
-    isGood: true,
+    liked: "like",
     screenshots: 69,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/596227/",
   }, // кровью и потом: анаболики
+  {
+    title: "Жаркие летние ночи",
+    original: ["Hot Summer Nights"],
+    release: "2018-07-27",
+    publish: "2025-03-29T22:05:00",
+    directors: ["Элайджа Байнум"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 42,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/928993/",
+  }, // жаркие летние ночи
+  {
+    title: "Проект Флорида",
+    original: ["The Florida Project"],
+    release: "2017-11-10",
+    publish: "2025-03-28T15:50:29",
+    directors: ["Шон Бэйкер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/998317/",
+  }, // проект флорида
+  {
+    title: "Маяк",
+    original: ["The Lighthouse"],
+    release: "2019-11-01",
+    publish: "2025-03-26T17:22:10",
+    directors: ["Роберт Эггерс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 81,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1114927/",
+  }, // маяк
+  {
+    title: "Лига справедливости Зака Снайдера: Черно-белая версия",
+    original: ["Zack Snyder's Justice League: Justice Is Gray"],
+    release: "2021-03-18",
+    publish: "2025-03-26T11:03:58",
+    directors: ["Зак Снайдер"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 126,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4404112/",
+  }, // лига справедливости зака снайдера
+  {
+    title: "Безумный Макс: Дорога ярости. Чёрно-белое издание",
+    original: ["Mad Max: Fury Road Black And Chrome Edition"],
+    release: "2016-12-01",
+    publish: "2025-03-25T11:43:01",
+    directors: ["Джордж Миллер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 54,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/453406/",
+  }, // безумный макс. чёрно-белое издание
+  {
+    title: "Синг-Синг",
+    original: ["Sing Sing"],
+    release: "2024-08-02",
+    publish: "2025-03-21T20:44:06",
+    directors: ["Грег Куидар"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 54,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5378058/",
+  }, // синг-синг
+  {
+    title: "Отряд самоубийц: Миссия навылет",
+    original: ["The Suicide Squad"],
+    release: "2021-08-05",
+    publish: "2025-03-21T18:13:46",
+    directors: ["Джеймс Ганн"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 57,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1008477/",
+  }, // отряд самоубийц: миссия навылет
+  {
+    title: "Книга джунглей",
+    original: ["The Jungle Book"],
+    release: "2016-04-15",
+    publish: "2025-03-21T12:53:18",
+    directors: ["Джон Фавро"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/779024/",
+  }, // книга джунглей
+  {
+    title: "Присутствие",
+    original: ["Presence"],
+    release: "2024-01-19",
+    publish: "2025-03-20T21:35:43",
+    directors: ["Стивен Содерберг"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5445463/",
+  }, // присутствие
+  {
+    title: "Логан: Нуар",
+    original: ["Logan: Noir"],
+    release: "2017-05-16",
+    publish: "2025-03-20T15:44:28",
+    directors: ["Джеймс Мэнголд"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 90,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/807682/",
+  }, // логан: нуар
 
   {
     title: "Формула 1. Драйв выживания",
@@ -730,7 +840,7 @@ const movies = [
     format: "сериал",
     season: "6",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 6
@@ -742,7 +852,7 @@ const movies = [
     format: "сериал",
     season: "5",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 5
@@ -755,7 +865,7 @@ const movies = [
     season: "1-4",
     releaseDates: ["2019-11-29", "2020-04-03", "2022-07-28", "2023-07-27"],
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 22,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1112514/",
   }, // харли квинн 1-4
@@ -768,7 +878,7 @@ const movies = [
     format: "сериал",
     season: "1",
     isMiniSeries: false,
-    isGood: true,
+    liked: "like",
     screenshots: 74,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 1
@@ -861,10 +971,6 @@ const setupImageWithContainer = (img) => {
     img.addEventListener("error", onLoadOrError, { once: true });
   }
 }; // Функция для настройки прозрачности изображения
-const renderIcon = (templateId) => {
-  const template = document.getElementById(templateId);
-  return template.content.cloneNode(true);
-}; // Клонирование шаблона template svg like и dislike
 const getResultPhrase = (count) => {
   const n = Math.abs(count) % 100;
   const lastDigit = n % 10;
@@ -895,15 +1001,26 @@ function getRandomItems(arr, count) {
 const randomMovies = getRandomItems(movies, 25); // 25 случайных элементов
 function createImageBlock(image) {
   const block = document.createElement("div");
-
   const img = document.createElement("img");
-  img.style.opacity = "0";
   img.src = image;
-  setupImageWithContainer(img);
-
   block.appendChild(img);
   return block;
 }
+const handleFigureLoad = (figure) => {
+  const images = figure.querySelectorAll("img");
+  let loaded = 0;
+  const onDone = () => {
+    if (++loaded === images.length) figure.style.opacity = "1";
+  };
+
+  images.forEach((img) => {
+    img.complete
+      ? onDone()
+      : ["load", "error"].forEach((event) =>
+          img.addEventListener(event, onDone, { once: true }),
+        );
+  });
+};
 randomMovies.forEach((movie) => {
   const image = buildImageUrl({
     type: movie.format === "фильм" ? "movie" : "series",
@@ -913,10 +1030,9 @@ randomMovies.forEach((movie) => {
     release: movie.release,
   });
 
-  figures.forEach((figure) => {
-    figure.appendChild(createImageBlock(image));
-  });
-}); // Создание анимационного блока с изображениями в верхнюю часть сайта
+  figures.forEach((figure) => figure.appendChild(createImageBlock(image)));
+});
+figures.forEach(handleFigureLoad); // Создание анимационного блока с изображениями в верхнюю часть сайта
 
 //
 //
@@ -929,28 +1045,14 @@ const createFilterItem = (text, value, type) => {
   const li = document.createElement("li");
   const label = document.createElement("label");
   const input = document.createElement("input");
+  const span = document.createElement("span");
 
   input.type = "radio";
   input.name = type;
   input.value = value;
   label.appendChild(input);
-
-  if (text) {
-    const span = document.createElement("span");
-    span.textContent = text;
-    label.appendChild(span);
-  }
-
-  if (type === "rating" && ["true", "false"].includes(value)) {
-    const templateId = value === "true" ? "like-template" : "dislike-template";
-    const svg = renderIcon(templateId);
-    svg.querySelector("svg").classList.add("dropdown-list-svg");
-
-    label.innerHTML = "";
-    label.appendChild(input);
-    label.appendChild(svg);
-  }
-
+  span.textContent = text;
+  label.appendChild(span);
   li.appendChild(label);
   return li;
 };
@@ -965,7 +1067,7 @@ buttons.forEach((button) => {
   list.classList.add("dropdown-list");
   list.style.display = "none";
 
-  const filterType = button.closest(".form").classList[1].split("-")[0];
+  const filterType = button.closest(".form").classList[1].replace(/-.*$/, "");
 
   const base = createFilterItem("все", "все", filterType);
   base.querySelector("input").checked = true;
@@ -979,25 +1081,21 @@ buttons.forEach((button) => {
       break;
 
     case "year":
-      const years = new Set();
-      movies.forEach((movie) => {
-        years.add(new Date(movie.release).getFullYear());
-        if (movie.releaseDates) {
-          movie.releaseDates.forEach((date) => {
-            years.add(new Date(date).getFullYear());
-          });
-        }
-      });
-      Array.from(years)
-        .sort((a, b) => b - a)
-        .forEach((year) => {
-          list.appendChild(createFilterItem(year, year, filterType));
-        });
+      const years = new Set(
+        movies.flatMap((movie) => [
+          new Date(movie.release).getFullYear(),
+          ...(movie.releaseDates?.map((d) => new Date(d).getFullYear()) || []),
+        ]),
+      );
+      const sortedYears = [...years].sort((a, b) => b - a);
+      sortedYears.forEach((year) =>
+        list.appendChild(createFilterItem(year, year, filterType)),
+      );
       break;
 
-    case "rating":
-      ["true", "false"].forEach((rating) => {
-        list.appendChild(createFilterItem("", rating, filterType));
+    case "liked":
+      ["like", "dislike"].forEach((liked) => {
+        list.appendChild(createFilterItem(liked, liked, filterType));
       });
       break;
   }
@@ -1069,9 +1167,8 @@ const applyFiltersAndSort = (movies, query, sortType) => {
     });
   }
 
-  if (filterValues.rating !== "все") {
-    const ratingValue = filterValues.rating === "true";
-    filtered = filtered.filter((movie) => movie.isGood === ratingValue);
+  if (filterValues.liked !== "все") {
+    filtered = filtered.filter((movie) => movie.liked === filterValues.liked);
   }
 
   if (query.trim() !== "") {
@@ -1180,15 +1277,7 @@ const updateHiddenFiltersUI = () => {
 
     const button = document.createElement("button");
     button.dataset.type = type;
-
-    if (type === "rating") {
-      const templateId =
-        value === "true" ? "like-template" : "dislike-template";
-      const svgFragment = renderIcon(templateId);
-      button.appendChild(svgFragment);
-    } else {
-      button.textContent = value;
-    }
+    button.textContent = value;
 
     queryFacet.appendChild(button);
     queryFacets.appendChild(queryFacet);
@@ -1432,11 +1521,11 @@ const getScreenshotUrl = (movie, index) =>
   });
 window.currentSlideshow = null;
 const openMoviePopup = (movie) => {
-  popupElements.opinion.innerHTML = "";
-  const svg = movie.isGood ? "like-template" : "dislike-template";
-  popupElements.opinion.appendChild(renderIcon(svg));
-
+  popupElements.opinion.textContent = movie.liked;
   popupElements.title.textContent = movie.title;
+  popupElements.title.classList[movie.title.length > 20 ? "add" : "remove"](
+    "smaller",
+  );
 
   const year = new Date(movie.release).getFullYear();
   let yearText = year;
