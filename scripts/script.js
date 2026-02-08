@@ -1434,7 +1434,9 @@ const resetFiltersAndSearch = (searchValue) => {
   filters.forEach((f) => f.value === "все" && (f.checked = true));
   updateMoviesDisplay();
   updateButtonState();
-  document.querySelector(".search-form").scrollTo(0, 0);
+  requestAnimationFrame(() =>
+    document.querySelector(".search-form").scrollTo(0, 0),
+  );
 }; // Сброс фильтров и поиска
 homepageButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -1459,9 +1461,9 @@ function openPopup(popup) {
     body.dataset.scrollPosition = scrollPosition;
     body.style.top = `-${scrollPosition}px`;
     body.classList.add("scroll-lock");
-    moviePopup.scrollTo(0, 0);
     updatePopupHeader();
     moviePopup.addEventListener("scroll", updatePopupHeader);
+    requestAnimationFrame(() => (moviePopup.scrollTop = 0));
   }
 } // Открыть попап
 function closePopup(popup) {
@@ -1503,10 +1505,14 @@ const popupElements = {
 const popupHeader = document.createElement("header");
 popupHeader.appendChild(homepageButton.cloneNode(true));
 popupContent.insertBefore(popupHeader, popupElements.header);
-moviePopup.querySelector(".homepage").addEventListener("click", (e) => {
-  e.preventDefault();
-  closePopup(moviePopup);
-}); // Добавление обработчика закрытия попапа на скопированный header
+popupHeader.addEventListener("click", (e) => {
+  if (e.target.closest(".homepage")) {
+    e.preventDefault();
+    closePopup(moviePopup);
+    return;
+  }
+  if (moviePopup.scrollTop) moviePopup.scrollTop = 0;
+}); // Добавление обработчика закрытия попапа и скролла наверх попапа на скопированный header
 const updatePopupHeader = () => {
   popupHeader.classList.toggle("sticky-header", moviePopup.scrollTop > 0);
 }; // Border у шапки попапа

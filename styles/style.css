@@ -552,7 +552,6 @@ form {
 
 .movie-poster {
   width: 100%;
-
   height: 100%;
   object-fit: cover;
 }
@@ -573,6 +572,7 @@ form {
 }
 
 .movie-popup {
+  overflow-y: auto;
   background: var(--background-color);
 }
 
@@ -664,10 +664,6 @@ form {
   cursor: pointer;
 }
 
-.byline a:hover {
-  text-decoration: none;
-}
-
 .byline-wrapper time {
   display: inline-block;
   font: 500 0.8125rem/1.125rem var(--font-Franklin);
@@ -685,10 +681,6 @@ form {
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 0.9375rem;
-}
-
-.article-link:hover {
-  background: var(--link-hover);
 }
 
 .article-link svg {
@@ -739,7 +731,7 @@ figcaption {
 
 .slideshow-popup {
   overflow-y: hidden;
-  background: rgb(0, 0, 0, 0.7);
+  background: rgb(0, 0, 0, 0.75);
 }
 
 .slideshow-popup .popup-content {
@@ -857,6 +849,14 @@ figcaption {
 
   .movie-popup .homepage:hover {
     background: var(--homepage-hover);
+  }
+
+  .byline a:hover {
+    text-decoration: none;
+  }
+
+  .article-link:hover {
+    background: var(--link-hover);
   }
 }
 
