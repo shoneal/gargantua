@@ -231,7 +231,7 @@ header {
   grid-row: 23 / 30;
 }
 .figure > div:nth-child(25) {
-  grid-column: 199 / 210;
+  grid-column: 198 / 209;
   grid-row: 1 / 6;
 }
 
@@ -475,6 +475,14 @@ form {
     background-color 0.25s,
     border-color 0.25s;
   cursor: pointer;
+}
+
+.dropdown-list label.disabled {
+  pointer-events: none;
+}
+
+.dropdown-list label.disabled span {
+  color: var(--query-facet);
 }
 
 .dropdown-list input {

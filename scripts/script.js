@@ -891,8 +891,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark-theme"); // Смена темы
 
   updateHeader(); // Border у шапки
-  updateButtonState(); // Обновление состояния главной кнопки
-  updateMoviesDisplay(); // Первоначальная фильтрация и рендер
+  handleFilterUpdate(); // Первоначальная фильтрация и рендер
 });
 document.addEventListener("click", (e) => {
   const target = e.target;
@@ -1147,9 +1146,9 @@ function getFiltersValues() {
   });
   return values;
 } // Получение значений фильтров
-const applyFiltersAndSort = (movies, query, sortType) => {
+const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
   let filtered = [...movies];
-  const filterValues = getFiltersValues();
+  const filterValues = overrideFilters || getFiltersValues();
 
   if (filterValues.format !== "все") {
     filtered = filtered.filter((movie) => movie.format === filterValues.format);
@@ -1239,6 +1238,30 @@ moviesContainer.addEventListener(
   { passive: true },
 ); // Клик по постерам
 
+function handleFilterUpdate() {
+  const currentFilters = getFiltersValues();
+  const searchQuery = searchInput.value.trim();
+
+  filters.forEach((input) => {
+    const label = input.closest("label");
+    const { name: filterName, value: filterValue } = input;
+
+    if (input.checked || filterValue === "все") {
+      label.classList.remove("disabled");
+      return;
+    }
+
+    const result = applyFiltersAndSort(movies, searchQuery, currentSortType, {
+      ...currentFilters,
+      [filterName]: filterValue,
+    });
+
+    label.classList.toggle("disabled", result.length === 0);
+  });
+
+  updateMoviesDisplay();
+  updateButtonState();
+} // Функция активных/неактивных фильтров
 const updateHiddenFiltersUI = () => {
   const searchForm = document.querySelector(".search-form");
   const filterValues = getFiltersValues();
@@ -1354,14 +1377,14 @@ const handleScroll = () => {
 //
 searchButton.addEventListener("click", (e) => {
   e.preventDefault();
-  updateMoviesDisplay();
-  updateButtonState();
+  handleFilterUpdate();
 });
-const toggleSearchButtonActive = () =>
-  searchButton.classList.toggle(
-    "is-active",
-    searchInput.value.trim().length > 0,
-  );
+searchInput.addEventListener("focus", () =>
+  searchButton.classList.add("is-active"),
+);
+searchInput.addEventListener("blur", () =>
+  searchButton.classList.remove("is-active"),
+);
 const updateResetButton = (onClearAction) => {
   const resetBtn = searchLabel.querySelector(".search-reset");
 
@@ -1382,32 +1405,24 @@ const clearAndUpdate = (btn) => {
   searchInput.value = "";
   setTimeout(() => searchInput.blur(), 0);
   btn.remove();
-  updateMoviesDisplay();
-  updateButtonState();
+  handleFilterUpdate();
 };
 const clearAndRefocus = (btn) => {
   searchInput.value = "";
   btn.remove();
   searchInput.focus();
 };
-searchInput.addEventListener("focus", toggleSearchButtonActive);
-searchInput.addEventListener("blur", toggleSearchButtonActive);
-searchInput.addEventListener("input", () => {
-  toggleSearchButtonActive();
-  updateResetButton(clearAndRefocus);
-}); // "Очистить" поиск
+searchInput.addEventListener("input", () => updateResetButton(clearAndRefocus)); // "Очистить" поиск
 filters.forEach((filter) => {
   filter.addEventListener("change", () => {
     const dropdownList = filter.closest(".dropdown-list");
     if (dropdownList) dropdownList.style.display = "none";
-    updateMoviesDisplay();
-    updateButtonState();
+    handleFilterUpdate();
   });
 }); // Фильтры
 sortSelect.addEventListener("change", (e) => {
   currentSortType = e.target.value;
-  updateMoviesDisplay();
-  updateButtonState();
+  handleFilterUpdate();
 }); // Сортировка
 
 //
@@ -1432,15 +1447,12 @@ const resetFiltersAndSearch = (searchValue) => {
   sortSelect.value = defaultSortType;
   currentSortType = defaultSortType;
   filters.forEach((f) => f.value === "все" && (f.checked = true));
-  updateMoviesDisplay();
-  updateButtonState();
-  requestAnimationFrame(() =>
-    document.querySelector(".search-form").scrollTo(0, 0),
-  );
+  handleFilterUpdate();
 }; // Сброс фильтров и поиска
 homepageButton.addEventListener("click", (e) => {
   e.preventDefault();
   resetFiltersAndSearch("");
+  requestAnimationFrame(() => window.scrollTo(0, 0));
 }); // Обработчик сброса по главной кнопке
 
 //
