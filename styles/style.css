@@ -287,7 +287,7 @@ form {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid transparent;
-  padding: 0 30px 0 0;
+  padding: 0 100px 0 0;
   color: var(--color);
   font-family: inherit;
   font-weight: 700;
@@ -310,24 +310,6 @@ form {
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1.75rem;
-}
-
-.input-wrapper input[type="reset"] {
-  position: absolute;
-  top: 0;
-  right: 34px;
-  height: 100%;
-  margin: 0;
-  border: none;
-  padding-right: 10px;
-  color: #b3b3b3;
-  font-family: var(--font-Franklin);
-  font-size: 9px;
-  line-height: normal;
-  text-transform: uppercase;
-  background: transparent;
-  cursor: pointer;
-  appearance: button;
 }
 
 .input-wrapper button {
@@ -353,6 +335,26 @@ form {
 .input-wrapper button.is-active svg {
   fill: var(--input-button);
   pointer-events: auto;
+}
+
+.input-wrapper input[type="reset"] {
+  position: relative;
+  top: 0;
+  box-sizing: content-box;
+  min-width: 50px;
+  height: 100%;
+  margin-left: -94px;
+  border: none;
+  padding: 0 10px;
+  color: #b3b3b3;
+  font-family: var(--font-Franklin);
+  font-size: 9px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  appearance: button;
 }
 
 .select-wrapper {
@@ -481,7 +483,7 @@ form {
   pointer-events: none;
 }
 
-.dropdown-list label.disabled span {
+.dropdown-list label.disabled .input-value {
   color: var(--query-facet);
 }
 
@@ -493,6 +495,11 @@ form {
 .dropdown-list span {
   position: relative;
   top: 1px;
+}
+
+.dropdown-list .input-counter {
+  margin-left: 5px;
+  color: var(--query-facet);
 }
 
 .section-hidden {

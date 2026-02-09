@@ -831,6 +831,98 @@ const movies = [
     screenshots: 90,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/807682/",
   }, // логан: нуар
+  {
+    title: "Город воров",
+    original: ["The Town"],
+    release: "2010-09-17",
+    publish: "2025-03-20T10:08:57",
+    directors: ["Бен Аффлек"],
+    operator: "Роберт Элсвит",
+    format: "фильм",
+    liked: "like",
+    screenshots: 47,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/462732/",
+  }, // город воров
+  {
+    title: "Непобедимый",
+    original: ["Invincible"],
+    release: "2025-02-06",
+    publish: "2025-03-18T14:56:33",
+    creators: ["Роберт Киркман"],
+    format: "сериал",
+    season: "3",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 57,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
+  }, // непобедимый 3
+  {
+    title: "Бегущий по лезвию 2049",
+    original: ["Blade Runner 2049"],
+    release: "2017-10-06",
+    publish: "2025-03-17T13:03:52",
+    directors: ["Дени Вильнёв"],
+    operator: "Роджер Дикинс",
+    format: "фильм",
+    liked: "like",
+    screenshots: 81,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/589290/",
+  }, // бегущий по лезвию 2049
+  {
+    title: "Враг",
+    original: ["Enemy"],
+    release: "2013-09-08",
+    publish: "2025-03-13T19:01:45",
+    directors: ["Дени Вильнёв"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/673910/",
+  }, // враг
+  {
+    title: "Мстители: Эра Альтрона",
+    original: ["Avengers: Age of Ultron"],
+    release: "2015-05-01",
+    publish: "2025-03-08T00:37:12",
+    directors: ["Джосс Уидон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/679830/",
+  }, // мстители: эра альтрона
+  {
+    title: "Топ Ган: Мэверик",
+    original: ["Top Gun: Maverick"],
+    release: "2022-05-27",
+    publish: "2025-03-02T17:10:20",
+    directors: ["Джозеф Косински"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 96,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/572032/",
+  }, // топ ган: мэверик
+  {
+    title: "Вавилон",
+    original: ["Babel"],
+    release: "2006-11-10",
+    publish: "2025-03-02T11:52:15",
+    directors: ["Алехандро Гонсалес Иньярриту"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/102125/",
+  }, // вавилон (2006)
+  {
+    title: "Белфаст",
+    original: ["Belfast"],
+    release: "2021-11-12",
+    publish: "2025-03-01T19:08:31",
+    directors: ["Кеннет Брана"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 69,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1397888/",
+  }, // белфаст
 
   {
     title: "Формула 1. Драйв выживания",
@@ -857,6 +949,19 @@ const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 5
   {
+    title: "Непобедимый",
+    original: ["Invincible"],
+    release: "2023-11-03",
+    publish: "2024-04-16T20:44:08",
+    creators: ["Роберт Киркман"],
+    format: "сериал",
+    season: "2",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 29,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
+  }, // непобедимый 2
+  {
     title: "Харли Квинн",
     original: ["Harley Quinn"],
     release: "2023-07-27",
@@ -882,6 +987,19 @@ const movies = [
     screenshots: 74,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 1
+  {
+    title: "Непобедимый",
+    original: ["Invincible"],
+    release: "2021-03-26",
+    publish: "2021-05-09T22:03:03",
+    creators: ["Роберт Киркман"],
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
+  }, // непобедимый 1
 ]; // ГЛАВНЫЙ МАССИВ
 
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
@@ -1040,18 +1158,23 @@ figures.forEach(handleFigureLoad); // Создание анимационног�
 //
 const forms = document.querySelector(".forms");
 const buttons = forms.querySelectorAll(".search-multiselect-button");
-const createFilterItem = (text, value, type) => {
+const createFilterItem = (text, value, type, isBase) => {
   const li = document.createElement("li");
   const label = document.createElement("label");
   const input = document.createElement("input");
-  const span = document.createElement("span");
-
+  const valueSpan = document.createElement("span");
   input.type = "radio";
   input.name = type;
   input.value = value;
   label.appendChild(input);
-  span.textContent = text;
-  label.appendChild(span);
+  valueSpan.className = "input-value";
+  valueSpan.textContent = text;
+  label.appendChild(valueSpan);
+  if (!isBase) {
+    const counterSpan = document.createElement("span");
+    counterSpan.className = "input-counter";
+    label.appendChild(counterSpan);
+  }
   li.appendChild(label);
   return li;
 };
@@ -1068,7 +1191,7 @@ buttons.forEach((button) => {
 
   const filterType = button.closest(".form").classList[1].replace(/-.*$/, "");
 
-  const base = createFilterItem("все", "все", filterType);
+  const base = createFilterItem("все", "все", filterType, true);
   base.querySelector("input").checked = true;
   list.prepend(base);
 
@@ -1120,7 +1243,8 @@ buttons.forEach((button) => {
 //
 const homepageButton = document.querySelector(".homepage");
 const statusMessage = document.querySelector(".search-form-status");
-const searchLabel = document.querySelector(".input-wrapper label");
+const searchWrapper = document.querySelector(".input-wrapper");
+const searchLabel = searchWrapper.querySelector(".input-wrapper label");
 const searchInput = document.getElementById("searchTextField");
 const searchButton = searchInput.parentElement.nextElementSibling;
 const sortSelect = document.querySelector(".search-form-sort-by");
@@ -1245,9 +1369,19 @@ function handleFilterUpdate() {
   filters.forEach((input) => {
     const label = input.closest("label");
     const { name: filterName, value: filterValue } = input;
+    const counter = label.querySelector(".input-counter");
 
     if (input.checked || filterValue === "все") {
       label.classList.remove("disabled");
+      if (counter) {
+        const result = applyFiltersAndSort(
+          movies,
+          searchQuery,
+          currentSortType,
+          currentFilters,
+        );
+        counter.textContent = result.length;
+      }
       return;
     }
 
@@ -1256,12 +1390,13 @@ function handleFilterUpdate() {
       [filterName]: filterValue,
     });
 
-    label.classList.toggle("disabled", result.length === 0);
+    label.classList.toggle("disabled", !result.length);
+    if (counter) counter.textContent = result.length || "";
   });
 
   updateMoviesDisplay();
   updateButtonState();
-} // Функция активных/неактивных фильтров
+} // Функция активных/неактивных фильтров и обновления счётчиков
 const updateHiddenFiltersUI = () => {
   const searchForm = document.querySelector(".search-form");
   const filterValues = getFiltersValues();
@@ -1386,7 +1521,7 @@ searchInput.addEventListener("blur", () =>
   searchButton.classList.remove("is-active"),
 );
 const updateResetButton = (onClearAction) => {
-  const resetBtn = searchLabel.querySelector(".search-reset");
+  const resetBtn = searchWrapper.querySelector(".search-reset");
 
   if (searchInput.value) {
     if (!resetBtn) {
@@ -1395,7 +1530,7 @@ const updateResetButton = (onClearAction) => {
       btn.className = "search-reset";
       btn.value = "Очистить";
       btn.onclick = () => onClearAction(btn);
-      searchLabel.appendChild(btn);
+      searchWrapper.appendChild(btn);
     }
   } else if (resetBtn) {
     resetBtn.remove();
