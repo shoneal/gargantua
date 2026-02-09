@@ -280,6 +280,7 @@ form {
 
 .input-wrapper label {
   position: relative;
+  width: 100%;
 }
 
 .input-wrapper input[type="text"] {
@@ -1073,7 +1074,7 @@ figcaption {
   }
 
   .form:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .search-multiselect-button {
