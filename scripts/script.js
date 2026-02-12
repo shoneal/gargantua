@@ -923,6 +923,94 @@ const movies = [
     screenshots: 69,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1397888/",
   }, // белфаст
+  {
+    title: "Пожары",
+    original: ["Incendies"],
+    release: "2010-09-03",
+    publish: "2025-03-01T23:24:09",
+    directors: ["Дени Вильнёв"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 53,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/425400/",
+  }, // пожары
+  {
+    title: "Мстители: Финал",
+    original: ["Avengers: Endgame"],
+    release: "2019-04-26",
+    publish: "2025-03-01T02:36:12",
+    directors: ["Джо Руссо", "Энтони Руссо"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 69,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/843650/",
+  }, // мстители: финал
+  {
+    title: "Мстители: Война бесконечности",
+    original: ["Avengers: Infinity War"],
+    release: "2018-04-27",
+    publish: "2025-02-28T22:25:17",
+    directors: ["Джо Руссо", "Энтони Руссо"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 89,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/843649/",
+  }, // мстители: война бесконечности
+  {
+    title: "Вершина богов",
+    original: ["The Summit of the Gods", "Le sommet des dieux"],
+    release: "2021-11-30",
+    publish: "2025-02-28T18:40:01",
+    directors: ["Патрик Имбер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 57,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1090932/",
+  }, // вершина богов
+  {
+    title: "Ущелье",
+    original: ["The Gorge"],
+    release: "2025-02-14",
+    publish: "2025-02-22T17:06:54",
+    directors: ["Скотт Дерриксон"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5098653/",
+  }, // ущелье
+  {
+    title: "Трансформеры: Начало",
+    original: ["Transformers One"],
+    release: "2024-09-20",
+    publish: "2025-02-22T13:07:42",
+    directors: ["Джош Кули"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1229682/",
+  }, // трансформеры: начало
+  {
+    title: "Бруталист",
+    original: ["The Brutalist"],
+    release: "2024-09-01",
+    publish: "2025-02-21T21:52:44",
+    directors: ["Брэйди Корбе"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 72,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1405331/",
+  }, // бруталист
+  {
+    title: "Рома",
+    original: ["Roma"],
+    release: "2018-12-14",
+    publish: "2025-02-17T07:35:43",
+    directors: ["Альфонсо Куарон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1008486/",
+  }, // рома
 
   {
     title: "Формула 1. Драйв выживания",
