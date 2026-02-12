@@ -122,12 +122,12 @@ header {
   grid-template-columns: repeat(209, 1fr);
   grid-template-rows: repeat(31, 1fr);
   min-width: 187vw;
-  opacity: 0;
   animation: runningLine 60s linear infinite;
   will-change: transform;
 }
 
 .figure > div {
+  background-color: var(--link-hover);
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
