@@ -1,3 +1,5 @@
+import { movies } from './movies-data.js';
+
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
 
 document.addEventListener("DOMContentLoaded", () => {
