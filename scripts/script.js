@@ -1,4 +1,4 @@
-import { movies } from './movies-data.js';
+import { movies } from './movies.js';
 
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
 
