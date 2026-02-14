@@ -1011,6 +1011,63 @@ export const movies = [
     screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1008486/",
   }, // рома
+  {
+    title: "Неудержимый",
+    original: ["Unstoppable", "Неукротимый"],
+    release: "2024-09-06",
+    publish: "2025-02-13T19:55:01",
+    directors: ["Уильям Голденберг"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 42,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5455286/",
+  }, // неудержимый
+  {
+    title: "Сорвиголова",
+    original: ["Daredevil"],
+    release: "2016-03-18",
+    publish: "2025-02-02T20:47:46",
+    creators: ["Дрю Годдард"],
+    format: "сериал",
+    season: "2",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 46,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/817509/",
+  }, // сорвиголова 2
+  {
+    title: "Тренировочный день",
+    original: ["Training Day"],
+    release: "2001-10-05",
+    publish: "2025-01-25T17:51:45",
+    directors: ["Антуан Фукуа"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 44,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/863/",
+  }, // тренировочный день
+  {
+    title: "Сокровище нации: Книга Тайн",
+    original: ["National Treasure: Book of Secrets"],
+    release: "2007-12-21",
+    publish: "2025-01-26T11:21:58",
+    directors: ["Джон Тёртлтауб"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/195408/",
+  }, // сокровище нации: книга тайн
+  {
+    title: "Сокровище нации",
+    original: ["National Treasure"],
+    release: "2004-11-19",
+    publish: "2025-01-25T14:11:06",
+    directors: ["Джон Тёртлтауб"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/61333/",
+  }, // сокровище нации
 
   {
     title: "Формула 1. Драйв выживания",
@@ -1049,6 +1106,19 @@ export const movies = [
     screenshots: 29,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 2
+  {
+    title: "Сорвиголова",
+    original: ["Daredevil"],
+    release: "2015-04-10",
+    publish: "2024-03-02T09:55:37",
+    creators: ["Дрю Годдард"],
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 29,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/817509/",
+  }, // сорвиголова 1
   {
     title: "Харли Квинн",
     original: ["Harley Quinn"],
