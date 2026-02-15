@@ -1387,6 +1387,31 @@ export const movies = [
     screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/972587/",
   }, // барри 1
+  {
+    title: "Начальная школа «Эбботт»",
+    original: ["Abbott Elementary"],
+    release: "2024-02-27",
+    publish: "2024-09-01T17:59:24",
+    creators: ["Кинта Брансон"],
+    format: "сериал",
+    season: "3",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 26,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4478603/",
+  }, // начальная школа эбботт 3
+  {
+    title: "Медведь",
+    original: ["The Bear"],
+    release: "2024-06-26",
+    publish: "2024-08-08T23:11:23",
+    format: "сериал",
+    season: "3",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 30,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
+  }, // медведь 3
 
   {
     title: "Формула 1. Драйв выживания",
