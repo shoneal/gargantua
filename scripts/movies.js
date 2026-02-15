@@ -1068,6 +1068,120 @@ export const movies = [
     screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61333/",
   }, // сокровище нации
+  {
+    title: "Идеальный шторм",
+    original: ["The Perfect Storm"],
+    release: "2000-06-30",
+    publish: "2025-01-24T19:42:57",
+    directors: ["Вольфганг Петерсен"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/783/",
+  }, // идеальный шторм
+  {
+    title: "Не пойман – не вор",
+    original: ["Inside Man"],
+    release: "2006-03-24",
+    publish: "2025-01-19T13:04:41",
+    directors: ["Спайк Ли"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 16,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/103785/",
+  }, // не пойман не вор
+  {
+    title: "Лэндмен",
+    original: ["Landman", "Землевладелец"],
+    release: "2024-11-17",
+    publish: "2025-01-19T18:02:12",
+    creators: ["Тейлор Шеридан"],
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4909559/",
+  }, // лэндмен 1
+  {
+    title: "Монстры-коммандос",
+    original: ["Creature Commandos"],
+    release: "2024-12-05",
+    publish: "2025-01-12T10:10:47",
+    creators: ["Джеймс Ганн"],
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/5253831/",
+  }, // монстры-коммандос 1
+  {
+    title: "Настоящая боль",
+    original: ["A Real Pain"],
+    release: "2024-11-15",
+    publish: "2025-01-04T16:07:41",
+    directors: ["Джесси Айзенберг"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5105866/",
+  }, // настоящая боль
+  {
+    title: "Хоббит: Битва пяти воинств",
+    original: ["The Hobbit: The Battle of the Five Armies"],
+    release: "2014-12-17",
+    publish: "2024-12-27T21:15:55",
+    directors: ["Питер Джексон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/694633/",
+  }, // хоббит: битва пяти воинств (3)
+  {
+    title: "Хоббит: Пустошь Смауга",
+    original: ["The Hobbit: The Desolation of Smaug"],
+    release: "2013-12-13",
+    publish: "2024-12-26T20:14:49",
+    directors: ["Питер Джексон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 22,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/408876/",
+  }, // хоббит: пустошь смауга (2)
+  {
+    title: "Хоббит: Нежданное путешествие",
+    original: ["The Hobbit: An Unexpected Journey"],
+    release: "2012-12-14",
+    publish: "2024-12-23T23:53:54",
+    directors: ["Питер Джексон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 40,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/278522/",
+  }, // хоббит: нежданное путешествие (1)
+  {
+    title: "Идеальные дни",
+    original: ["Perfect Days"],
+    release: "2023-05-25",
+    publish: "2024-12-15T12:37:54",
+    directors: ["Вим Вендерс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 59,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5283168/",
+  }, // идеальные дни
+  {
+    title: "Его три дочери",
+    original: ["His Three Daughters"],
+    release: "2024-09-20",
+    publish: "2024-12-15T19:10:39",
+    directors: ["Азазель Джейкобс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5368757/",
+  }, // его три дочери
 
   {
     title: "Формула 1. Драйв выживания",
