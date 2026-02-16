@@ -1811,30 +1811,8 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4475348/",
   }, // третий лишний 1
 
-  {
-    title: "Формула 1. Драйв выживания",
-    original: ["Formula 1: Drive to Survive"],
-    release: "2024-02-23",
-    publish: "2024-07-21T23:42:09",
-    format: "сериал",
-    season: "6",
-    isMiniSeries: false,
-    liked: "like",
-    screenshots: 24,
-    kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
-  }, // формула 1. драйв выживания 6
-  {
-    title: "Формула 1. Драйв выживания",
-    original: ["Formula 1: Drive to Survive"],
-    release: "2023-02-24",
-    publish: "2024-07-14T11:36:49",
-    format: "сериал",
-    season: "5",
-    isMiniSeries: false,
-    liked: "like",
-    screenshots: 23,
-    kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
-  }, // формула 1. драйв выживания 5
+  
+  
   {
     title: "Непобедимый",
     original: ["Invincible"],
