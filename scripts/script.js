@@ -1,4 +1,4 @@
-import { movies } from './movies.js';
+import { movies } from "./movies.js";
 
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
 
@@ -539,14 +539,12 @@ const clearAndRefocus = (btn) => {
   searchInput.focus();
 };
 searchInput.addEventListener("input", () => updateResetButton(clearAndRefocus)); // "Очистить" поиск
-searchButton.addEventListener("click", (e) => {
+searchButton.addEventListener("click", handleSearchButtonClick);
+searchButton.addEventListener("touchstart", handleSearchButtonClick);
+function handleSearchButtonClick(e) {
   e.preventDefault();
   handleFilterUpdate();
-});
-searchButton.addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  handleFilterUpdate();
-});
+}
 searchInput.addEventListener("focus", () =>
   searchButton.classList.add("is-active"),
 );

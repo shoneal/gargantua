@@ -1047,28 +1047,6 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/863/",
   }, // тренировочный день
   {
-    title: "Сокровище нации: Книга Тайн",
-    original: ["National Treasure: Book of Secrets"],
-    release: "2007-12-21",
-    publish: "2025-01-26T11:21:58",
-    directors: ["Джон Тёртлтауб"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 17,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/195408/",
-  }, // сокровище нации: книга тайн
-  {
-    title: "Сокровище нации",
-    original: ["National Treasure"],
-    release: "2004-11-19",
-    publish: "2025-01-25T14:11:06",
-    directors: ["Джон Тёртлтауб"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 14,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/61333/",
-  }, // сокровище нации
-  {
     title: "Идеальный шторм",
     original: ["The Perfect Storm"],
     release: "2000-06-30",
@@ -1470,17 +1448,6 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5388362/",
   }, // смерч 2
   {
-    title: "Покажи мне Луну",
-    original: ["Fly Me to the Moon"],
-    release: "2024-07-12",
-    publish: "2024-08-18T15:28:42",
-    directors: ["Грег Берланти"],
-    format: "фильм",
-    liked: "dislike",
-    screenshots: 18,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/591469/",
-  }, // покажи мне луну
-  {
     title: "Мы",
     original: ["Us"],
     release: "2019-03-22",
@@ -1654,17 +1621,6 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1044220/",
   }, // гарфилд
   {
-    title: "Воображаемые друзья",
-    original: ["IF"],
-    release: "2024-05-17",
-    publish: "2024-07-13T16:37:34",
-    directors: ["Джон Красински"],
-    format: "фильм",
-    liked: "dislike",
-    screenshots: 15,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/4847638/",
-  }, // воображаемые друзья
-  {
     title: "Претенденты",
     original: ["Challengers"],
     release: "2024-04-26",
@@ -1805,7 +1761,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 12,
+    screenshots: 25,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4475348/",
   }, // третий лишний 1
   {
@@ -1819,6 +1775,77 @@ export const movies = [
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5405539/",
   }, // кэрол и конец света
+  {
+    title: "Мечты робота",
+    original: ["Robot Dreams"],
+    release: "2023-05-20",
+    publish: "2024-03-23T12:16:38",
+    directors: ["Пабло Берхер"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 29,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5321227/",
+  }, // мечты робота
+  {
+    title: "Эрнест и Селестина: Приключения мышки и медведя",
+    original: ["Ernest & Celestine", "Ernest et Célestine"],
+    release: "2012-05-23",
+    publish: "2024-03-20T20:51:18",
+    directors: ["Стефани Обье", "Венсан Патар", "Бенжамин Реннер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/592260/",
+  }, // эрнест и селестина
+  {
+    title: "Тысяча и один",
+    original: ["A Thousand and One"],
+    release: "2023-03-31",
+    publish: "2024-03-18T21:09:25",
+    directors: ["А.В. Рокуэлл"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 50,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1431429/",
+  }, // тысяча и один
+  {
+    title: "Рами",
+    original: ["Ramy"],
+    release: "2022-09-30",
+    publish: "2024-03-13T19:07:29",
+    creators: ["Рами Юссеф"],
+    format: "сериал",
+    season: "3",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 23,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1108755/",
+  }, // рами 3
+  {
+    title: "Дело Коллини",
+    original: ["The Collini Case", "Der Fall Collini"],
+    release: "2019-04-18",
+    publish: "2024-03-04T21:24:43",
+    directors: ["Марко Кройцпайнтнер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1179501/",
+  }, // дело коллини
+  {
+    title: "Большой злой лис и другие сказки",
+    original: [
+      "The Big Bad Fox and Other Tales...",
+      "Le grand méchant renard et autres contes...",
+    ],
+    release: "2017-06-21",
+    publish: "2024-03-04T07:53:50",
+    directors: ["Патрик Имбер", "Бенжамин Реннер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 43,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1047719/",
+  }, // большой злой лис и другие сказки
 
   {
     title: "Непобедимый",
