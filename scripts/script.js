@@ -543,6 +543,10 @@ searchButton.addEventListener("click", (e) => {
   e.preventDefault();
   handleFilterUpdate();
 });
+searchButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  handleFilterUpdate();
+});
 searchInput.addEventListener("focus", () =>
   searchButton.classList.add("is-active"),
 );

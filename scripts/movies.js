@@ -1776,7 +1776,6 @@ export const movies = [
     release: "2020-03-05",
     publish: "2024-04-30T12:54:11",
     creators: ["Алекс Гарленд"],
-    directors: ["Алекс Гарленд"],
     format: "сериал",
     isMiniSeries: true,
     liked: "dislike",
@@ -1802,7 +1801,6 @@ export const movies = [
     release: "2024-01-11",
     publish: "2024-03-28T20:04:19",
     creators: ["Сет Макфарлейн"],
-    directors: ["Сет Макфарлейн"],
     format: "сериал",
     season: "1",
     isMiniSeries: false,
@@ -1810,9 +1808,18 @@ export const movies = [
     screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4475348/",
   }, // третий лишний 1
+  {
+    title: "Кэрол и конец света",
+    original: ["Carol & The End of the World"],
+    release: "2023-12-15",
+    publish: "2024-03-24T13:20:18",
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "dislike",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/5405539/",
+  }, // кэрол и конец света
 
-  
-  
   {
     title: "Непобедимый",
     original: ["Invincible"],
