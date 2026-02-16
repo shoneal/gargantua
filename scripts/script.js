@@ -511,16 +511,6 @@ const handleScroll = () => {
 // ОБРАБОТЧИКИ СОБЫТИЙ НА ФИЛЬТРЫ И ПОИСК
 //
 //
-searchButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  handleFilterUpdate();
-});
-searchInput.addEventListener("focus", () =>
-  searchButton.classList.add("is-active"),
-);
-searchInput.addEventListener("blur", () =>
-  searchButton.classList.remove("is-active"),
-);
 const updateResetButton = (onClearAction) => {
   const resetBtn = searchWrapper.querySelector(".search-reset");
 
@@ -549,6 +539,16 @@ const clearAndRefocus = (btn) => {
   searchInput.focus();
 };
 searchInput.addEventListener("input", () => updateResetButton(clearAndRefocus)); // "Очистить" поиск
+searchButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  handleFilterUpdate();
+});
+searchInput.addEventListener("focus", () =>
+  searchButton.classList.add("is-active"),
+);
+searchInput.addEventListener("blur", () =>
+  searchButton.classList.remove("is-active"),
+);
 filters.forEach((filter) => {
   filter.addEventListener("change", () => {
     const dropdownList = filter.closest(".dropdown-list");
