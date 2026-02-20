@@ -2129,7 +2129,7 @@ export const movies = [
     directors: ["Селин Сон"],
     format: "фильм",
     liked: "like",
-    screenshots: 37,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1346482/",
   }, // прошлые жизни
   {
@@ -2140,7 +2140,7 @@ export const movies = [
     directors: ["Александр Пэйн"],
     format: "фильм",
     liked: "like",
-    screenshots: 25,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4499386/",
   }, // оставленные
   {
@@ -2151,7 +2151,7 @@ export const movies = [
     directors: ["Сэм Эсмейл"],
     format: "фильм",
     liked: "like",
-    screenshots: 40,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4511543/",
   }, // оставь мир позади
   {
@@ -2162,7 +2162,7 @@ export const movies = [
     directors: ["Тодд Хейнс"],
     format: "фильм",
     liked: "like",
-    screenshots: 30,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4477074/",
   }, // май декабрь
   {
@@ -2174,7 +2174,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 40,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4992678/",
   }, // голубоглазый самурай 1
   {
@@ -2188,7 +2188,7 @@ export const movies = [
     season: "6",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 14,
+    screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
   }, // сообщетсво 6
   {
@@ -2200,7 +2200,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "like",
-    screenshots: 19,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4367624/",
   }, // уроки химии
   {
@@ -2211,7 +2211,7 @@ export const movies = [
     directors: ["Роберт Марианетти", "Роберт Шмигель", "Дэвид Уочтенхейм"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 13,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1346564/",
   }, // лео
   {
@@ -2223,7 +2223,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 21,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5106451/",
   }, // быть присяжным
   {
@@ -2236,7 +2236,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 26,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1431133/",
   }, // поколение «ви» 1
   {
@@ -2248,7 +2248,7 @@ export const movies = [
     operator: "Хойте Ван Хойтема",
     format: "фильм",
     liked: "dislike",
-    screenshots: 36,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4664634/",
   }, // оппенгеймер
   {
@@ -2260,7 +2260,7 @@ export const movies = [
     operator: "Грег Фрейзер",
     format: "фильм",
     liked: "dislike",
-    screenshots: 21,
+    screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4499408/",
   }, // создатель
   {
@@ -2314,7 +2314,7 @@ export const movies = [
   {
     title: "Американский неудачник",
     original: ["American Underdog"],
-    release: "2001-12-25",
+    release: "2021-12-25",
     publish: "2023-10-28T13:20:53",
     directors: ["Эндрю Эрвин", "Джон Эрвин"],
     format: "фильм",
