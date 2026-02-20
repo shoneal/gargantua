@@ -2273,7 +2273,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 35,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1203039/",
   }, // локи 2
   {
@@ -2297,7 +2297,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "dislike",
-    screenshots: 18,
+    screenshots: 17,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4397762/",
   }, // скрежет металла 1
   {
@@ -2308,7 +2308,7 @@ export const movies = [
     directors: ["Гари Труздейл", "Кирк Уайз"],
     format: "фильм",
     liked: "like",
-    screenshots: 18,
+    screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/597/",
   }, // атлантида: затерянный мир
   {
@@ -2319,7 +2319,7 @@ export const movies = [
     directors: ["Эндрю Эрвин", "Джон Эрвин"],
     format: "фильм",
     liked: "like",
-    screenshots: 13,
+    screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1347733/",
   }, // американский неудачник
   {
@@ -2330,7 +2330,7 @@ export const movies = [
     directors: ["Эмма Селигман"],
     format: "фильм",
     liked: "like",
-    screenshots: 13,
+    screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4994465/",
   }, // неудачницы
   {
@@ -2343,7 +2343,7 @@ export const movies = [
     season: "11",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 20,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/79920/",
   }, // футурама 11
   {
@@ -2356,7 +2356,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 41,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4296469/",
   }, // псы резервации 3
   {
@@ -2367,7 +2367,7 @@ export const movies = [
     directors: ["Кристофер Маккуорри"],
     format: "фильм",
     liked: "like",
-    screenshots: 26,
+    screenshots: 17,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1229684/",
   }, // миссия невыполнима: смертельная расплата (7)
   {
@@ -2380,7 +2380,7 @@ export const movies = [
     releaseDates: ["2019-11-29", "2020-04-03", "2022-07-28", "2023-07-27"],
     isMiniSeries: false,
     liked: "like",
-    screenshots: 22,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1112514/",
   }, // харли квинн 1-4
   {
@@ -2392,9 +2392,86 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 19,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1147693/",
   }, // сексуальное просвещение 4
+  {
+    title: "Пароль «Рыба-меч»",
+    original: ["Swordfish"],
+    release: "2001-06-08",
+    publish: "2023-09-30T15:43:56",
+    directors: ["Доминик Сена"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/849/",
+  }, // пароль «рыба-меч»
+  {
+    title: "Гран туризмо",
+    original: ["Gran Turismo"],
+    release: "2023-08-25",
+    publish: "2023-09-30T12:25:38",
+    directors: ["Нил Бломкамп"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1044002/",
+  }, // гран туризмо
+  {
+    title: "Чудесная история Генри Шугара",
+    original: ["The Wonderful Story of Henry Sugar"],
+    release: "2023-09-27",
+    publish: "2023-09-29T21:49:37",
+    directors: ["Уэс Андерсон"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 22,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4830353/",
+  }, // чудесная история генри шугара
+  {
+    title: "Синий Жук",
+    original: ["Blue Beetle"],
+    release: "2023-08-18",
+    publish: "2023-09-29T20:21:45",
+    directors: ["Анхель Мануэль Сото"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1219153/",
+  }, // синий жук
+  {
+    title: "Фестиваль Рифкина",
+    original: ["Rifkin's Festival"],
+    release: "2020-10-02",
+    publish: "2023-09-19T11:10:56",
+    directors: ["Вуди Аллен"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 28,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1169702/",
+  }, // фестиваль рифкина
+  {
+    title: "Взрослые",
+    original: ["The Adults"],
+    release: "2023-09-05",
+    publish: "2023-09-18T09:10:43",
+    directors: ["Дастин Гай Дефа"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 22,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5256888/",
+  }, // взрослые
+  {
+    title: "Люди Икс: Последняя битва",
+    original: ["X-Men: The Last Stand"],
+    release: "2006-05-26",
+    publish: "2023-09-15T21:04:16",
+    directors: ["Бретт Рэтнер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 34,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/61361/",
+  }, // люди икс 3
 
   {
     title: "Разделение",
