@@ -2107,7 +2107,7 @@ export const movies = [
     directors: ["Дженнифер Ю Нельсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 23,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/427878/",
   }, // кунг-фу панда 2
   {
@@ -2118,7 +2118,7 @@ export const movies = [
     directors: ["Марк Осборн", "Джон Стивенсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 36,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/103734/",
   }, // кунг-фу панда
   {
