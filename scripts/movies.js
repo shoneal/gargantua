@@ -1239,7 +1239,7 @@ export const movies = [
     season: "5",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 47,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 5
   {
@@ -1252,7 +1252,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 65,
+    screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 4
   {
@@ -1375,7 +1375,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 26,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4478603/",
   }, // начальная школа эбботт 3
   {
@@ -1940,7 +1940,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 59,
+    screenshots: 75,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 3
   {
@@ -1951,7 +1951,7 @@ export const movies = [
     directors: ["Шон Чэрмэтц"],
     format: "фильм",
     liked: "like",
-    screenshots: 30,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5326241/",
   }, // орион и тьма
   {
@@ -1964,7 +1964,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 60,
+    screenshots: 75,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 2
   {
@@ -1977,7 +1977,7 @@ export const movies = [
     season: "5",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 24,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/767379/",
   }, // фарго 5
   {
@@ -1988,7 +1988,7 @@ export const movies = [
     directors: ["Тайка Вайтити"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 20,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1318952/",
   }, // следующий гол победный
   {
@@ -2001,7 +2001,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 90,
+    screenshots: 108,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 1
   {
@@ -2013,7 +2013,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 38,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1272097/",
   }, // расцвет династии лейкерс 2
   {
@@ -2024,7 +2024,7 @@ export const movies = [
     directors: ["Нил Лабут"],
     format: "фильм",
     liked: "like",
-    screenshots: 23,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/450725/",
   }, // смерть на похоронах
   {
@@ -2037,7 +2037,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 25,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4478603/",
   }, // начальная школа эбботт 2
   {
@@ -2050,7 +2050,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 16,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4478603/",
   }, // начальная школа эбботт 1
   {
@@ -2061,7 +2061,7 @@ export const movies = [
     directors: ["Майк Митчелл"],
     format: "фильм",
     liked: "like",
-    screenshots: 15,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/20105/",
   }, // пережить рождество
   {
