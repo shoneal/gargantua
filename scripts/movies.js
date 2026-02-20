@@ -1711,7 +1711,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "like",
-    screenshots: 310,
+    screenshots: 309,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1311083/",
   }, // рипли
   {
@@ -1723,7 +1723,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 23,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/762194/",
   }, // полиция токио 2
   {
@@ -1735,7 +1735,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "dislike",
-    screenshots: 44,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1137249/",
   }, // программисты
   {
@@ -2074,7 +2074,7 @@ export const movies = [
     season: "7",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 30,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
   }, // рик и морти 7
   {
@@ -2085,7 +2085,7 @@ export const movies = [
     directors: ["Алессандро Карлони", "Дженнифер Ю Нельсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 20,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/692865/",
   }, // кунг-фу панда 3
   {
@@ -2107,7 +2107,7 @@ export const movies = [
     directors: ["Дженнифер Ю Нельсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 21,
+    screenshots: 20,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/427878/",
   }, // кунг-фу панда 2
   {
