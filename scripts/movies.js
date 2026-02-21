@@ -1032,7 +1032,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 46,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/817509/",
   }, // сорвиголова 2
   {
@@ -1867,7 +1867,7 @@ export const movies = [
     directors: ["Йоргос Лантимос"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4396438/",
   }, // бедные несчастные
   {
@@ -1878,7 +1878,7 @@ export const movies = [
     directors: ["Корд Джефферсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 23,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5212291/",
   }, // американское чтиво
   {
@@ -1891,7 +1891,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 29,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/817509/",
   }, // сорвиголова 1
   {
@@ -1902,7 +1902,7 @@ export const movies = [
     directors: ["Бенжамин Реннер", "Гейло Хомси"],
     format: "фильм",
     liked: "like",
-    screenshots: 22,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4878248/",
   }, // миграция
   {
@@ -1914,7 +1914,7 @@ export const movies = [
     season: "5",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 28,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/982730/",
   }, // гранд тур 5
   {
@@ -1927,7 +1927,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 89,
+    screenshots: 102,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4363942/",
   }, // мистер и миссис смит 1
   {
