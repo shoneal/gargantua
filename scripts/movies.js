@@ -1785,7 +1785,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "dislike",
-    screenshots: 27,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5405539/",
   }, // кэрол и конец света
   {
@@ -1796,7 +1796,7 @@ export const movies = [
     directors: ["Пабло Берхер"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 29,
+    screenshots: 28,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5321227/",
   }, // мечты робота
   {
@@ -1807,7 +1807,7 @@ export const movies = [
     directors: ["Стефани Обье", "Венсан Патар", "Бенжамин Реннер"],
     format: "фильм",
     liked: "like",
-    screenshots: 17,
+    screenshots: 22,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/592260/",
   }, // эрнест и селестина
   {
@@ -1818,7 +1818,7 @@ export const movies = [
     directors: ["А.В. Рокуэлл"],
     format: "фильм",
     liked: "like",
-    screenshots: 50,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1431429/",
   }, // тысяча и один
   {
@@ -1831,7 +1831,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 23,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1108755/",
   }, // рами 3
   {
@@ -1842,7 +1842,7 @@ export const movies = [
     directors: ["Марко Кройцпайнтнер"],
     format: "фильм",
     liked: "like",
-    screenshots: 14,
+    screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1179501/",
   }, // дело коллини
   {
@@ -1856,7 +1856,7 @@ export const movies = [
     directors: ["Патрик Имбер", "Бенжамин Реннер"],
     format: "фильм",
     liked: "like",
-    screenshots: 43,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1047719/",
   }, // большой злой лис и другие сказки
   {
