@@ -549,7 +549,7 @@ export const movies = [
     season: "7",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 47,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 7
   {
@@ -853,7 +853,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 57,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 3
   {
@@ -1583,7 +1583,7 @@ export const movies = [
     season: "6",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 24,
+    screenshots: 29,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 6
   {
@@ -1595,7 +1595,7 @@ export const movies = [
     season: "5",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 23,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 5
   {
@@ -1628,7 +1628,7 @@ export const movies = [
     directors: ["Лука Гуаданьино"],
     format: "фильм",
     liked: "like",
-    screenshots: 67,
+    screenshots: 69,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4860116/",
   }, // претенденты
   {
@@ -1639,7 +1639,7 @@ export const movies = [
     directors: ["Дэвид Литч"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 14,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/535243/",
   }, // каскадеры
   {
@@ -1651,7 +1651,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 17,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 4
   {
@@ -1663,7 +1663,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 11,
+    screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 3
   {
@@ -1675,7 +1675,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 43,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4711940/",
   }, // люди икс ’97 1
   {
@@ -1686,7 +1686,7 @@ export const movies = [
     directors: ["Энтони Мингелла"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 50,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5558/",
   }, // талантливый мистер рипли
   {
@@ -1748,7 +1748,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 33,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1394131/",
   }, // fallout 1
   {
@@ -1761,7 +1761,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 29,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 2
   {
@@ -2496,7 +2496,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 21,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 1
 ]; // ГЛАВНЫЙ МАССИВ
