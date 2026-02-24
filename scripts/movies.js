@@ -1387,7 +1387,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 30,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
   }, // медведь 3
   {
@@ -1490,7 +1490,7 @@ export const movies = [
     directors: ["Питер Фаррелли"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 25,
+    screenshots: 17,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/523111/",
   }, // рики стэники
   {
@@ -1502,7 +1502,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "like",
-    screenshots: 35,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/2886/",
   }, // невыносимая жестокость
   {
@@ -1513,7 +1513,7 @@ export const movies = [
     directors: ["Даг Лайман"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 21,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5274244/",
   }, // зачинщики
   {
@@ -1524,7 +1524,7 @@ export const movies = [
     directors: ["Мартин Скорсезе"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 30,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/374/",
   }, // бешеный бык
   {
@@ -1535,7 +1535,7 @@ export const movies = [
     directors: ["Клер Скэнлон"],
     format: "фильм",
     liked: "like",
-    screenshots: 18,
+    screenshots: 22,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/976520/",
   }, // подстава
   {
@@ -1546,7 +1546,7 @@ export const movies = [
     directors: ["Майкл Кёртиц"],
     format: "фильм",
     liked: "like",
-    screenshots: 21,
+    screenshots: 26,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/330/",
   }, // касабланка
   {
@@ -1558,7 +1558,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 35,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5024113/",
   }, // темная материя 1
   {
@@ -1571,7 +1571,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 25,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/460586/",
   }, // пацаны 4
   {
@@ -1606,7 +1606,7 @@ export const movies = [
     directors: ["Ричард Линклейтер"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5051126/",
   }, // я не киллер
   {
@@ -1617,7 +1617,7 @@ export const movies = [
     directors: ["Марк Диндал"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 27,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1044220/",
   }, // гарфилд
   {
