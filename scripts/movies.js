@@ -8,7 +8,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 78,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
   }, // медведь 4
   {
@@ -19,7 +19,7 @@ export const movies = [
     directors: ["Акива Шаффер"],
     format: "фильм",
     liked: "like",
-    screenshots: 24,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/817971/",
   }, // голый пистолет (2025)
   {
@@ -43,7 +43,7 @@ export const movies = [
     season: "8",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 36,
+    screenshots: 26,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
   }, // рик и морти 8
   {
@@ -54,7 +54,7 @@ export const movies = [
     directors: ["Джеймс Ганн"],
     format: "фильм",
     liked: "like",
-    screenshots: 50,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/997647/",
   }, // супермен
   {
