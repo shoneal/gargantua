@@ -65,7 +65,7 @@ export const movies = [
     directors: ["Генндий Тартаковский"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 20,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4695962/",
   }, // стерилизован
   {
@@ -76,7 +76,7 @@ export const movies = [
     directors: ["Кристофер Маккуорри"],
     format: "фильм",
     liked: "like",
-    screenshots: 33,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1229683/",
   }, // миссия невыполнима: финальная расплата
   {
@@ -98,13 +98,13 @@ export const movies = [
     directors: ["Ева Виктор"],
     format: "фильм",
     liked: "like",
-    screenshots: 57,
+    screenshots: 62,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7092649/",
   }, // прости, детка
   {
     title: "Жизнь Чака",
     original: ["The Life of Chuck"],
-    release: "2025-06-13",
+    release: "2024-09-06",
     publish: "2025-08-16T16:28:55",
     directors: ["Майк Флэнаган"],
     format: "фильм",
@@ -274,7 +274,7 @@ export const movies = [
     directors: ["Дэн Трахтенберг", "Джошуа Вассунг"],
     format: "фильм",
     liked: "like",
-    screenshots: 51,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7596122/",
   }, // хищник: убийца убийц
   {
@@ -297,7 +297,7 @@ export const movies = [
     directors: ["Джейк Шрейер"],
     format: "фильм",
     liked: "like",
-    screenshots: 66,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5001443/",
   }, // громовержцы*
   {
@@ -308,7 +308,7 @@ export const movies = [
     directors: ["Райан Куглер"],
     format: "фильм",
     liked: "like",
-    screenshots: 51,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5499518/",
   }, // грешники
   {
@@ -330,7 +330,7 @@ export const movies = [
     directors: ["Джесси Армстронг"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 27,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7770979/",
   }, // на вершине горы
   {
@@ -400,7 +400,7 @@ export const movies = [
     directors: ["Алекс Шарфман"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 24,
+    screenshots: 20,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5445197/",
   }, // смерть единорога
   {
@@ -560,7 +560,7 @@ export const movies = [
     directors: ["Лоуренс Ламонт"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 15,
+    screenshots: 12,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/7002807/",
   }, // тот самый день
   {
@@ -616,7 +616,7 @@ export const movies = [
     operator: "Дариус Хонджи",
     format: "фильм",
     liked: "dislike",
-    screenshots: 66,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1320476/",
   }, // микки 17
   {
@@ -975,7 +975,7 @@ export const movies = [
     directors: ["Скотт Дерриксон"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 48,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5098653/",
   }, // ущелье
   {
@@ -1479,7 +1479,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "like",
-    screenshots: 47,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/554/",
   }, // человек, которого не было
   {
