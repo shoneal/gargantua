@@ -82,12 +82,12 @@ export const movies = [
   {
     title: "Шалом, папик!",
     original: ["Shiva Baby"],
-    release: "2021-04-21",
+    release: "2020-03-15",
     publish: "2025-08-19T07:11:31",
     directors: ["Эмма Селигман"],
     format: "фильм",
     liked: "like",
-    screenshots: 18,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1324912/",
   }, // шалом, папик!
   {
@@ -1265,7 +1265,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 19,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5450042/",
   }, // vince staples show
   {
@@ -1287,7 +1287,7 @@ export const movies = [
     directors: ["Зои Кравиц"],
     format: "фильм",
     liked: "like",
-    screenshots: 33,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4630624/",
   }, // подай знак
   {
@@ -1298,7 +1298,7 @@ export const movies = [
     directors: ["Джон Уоттс"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 30,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4825582/",
   }, // одинокие волки
   {
@@ -1310,7 +1310,7 @@ export const movies = [
     season: "6",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 20,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/982730/",
   }, // гранд тур 6
   {
@@ -1323,7 +1323,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 28,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/972587/",
   }, // барри 4
   {
@@ -1336,7 +1336,7 @@ export const movies = [
     season: "3",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 27,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/972587/",
   }, // барри 3
   {
@@ -1349,7 +1349,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 25,
+    screenshots: 50,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/972587/",
   }, // барри 2
   {
@@ -1362,7 +1362,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 21,
+    screenshots: 26,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/972587/",
   }, // барри 1
   {
@@ -1400,7 +1400,7 @@ export const movies = [
     season: "35",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 17,
+    screenshots: 41,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/77164/",
   }, // симпсоны 35
   {
@@ -1411,7 +1411,7 @@ export const movies = [
     directors: ["Билли Уайлдер"],
     format: "фильм",
     liked: "like",
-    screenshots: 16,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/404/",
   }, // квартира
   {
@@ -1422,7 +1422,7 @@ export const movies = [
     directors: ["Вуди Аллен"],
     format: "фильм",
     liked: "like",
-    screenshots: 17,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4541527/",
   }, // великая ирония
   {
@@ -1433,20 +1433,9 @@ export const movies = [
     directors: ["Рубен Эстлунд"],
     format: "фильм",
     liked: "like",
-    screenshots: 36,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1348487/",
   }, // треугольник печали
-  {
-    title: "Смерч 2",
-    original: ["Twisters"],
-    release: "2024-07-19",
-    publish: "2024-08-18T12:23:30",
-    directors: ["Ли Айзек Чун"],
-    format: "фильм",
-    liked: "dislike",
-    screenshots: 15,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/5388362/",
-  }, // смерч 2
   {
     title: "Мы",
     original: ["Us"],
@@ -1455,7 +1444,7 @@ export const movies = [
     directors: ["Джордан Пил"],
     format: "фильм",
     liked: "like",
-    screenshots: 19,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1122138/",
   }, // мы
   {
@@ -1467,7 +1456,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "like",
-    screenshots: 24,
+    screenshots: 25,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/546/",
   }, // о где же ты брат
   {
