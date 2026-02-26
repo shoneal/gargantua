@@ -109,7 +109,7 @@ export const movies = [
     directors: ["Майк Флэнаган"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 27,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5406956/",
   }, // жизнь чака
   {
@@ -131,7 +131,7 @@ export const movies = [
     directors: ["Стивен Спилберг"],
     format: "фильм",
     liked: "like",
-    screenshots: 44,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/406186/",
   }, // приключения тинтина
   {
@@ -142,7 +142,7 @@ export const movies = [
     directors: ["Шон Ван"],
     format: "фильм",
     liked: "like",
-    screenshots: 48,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5448457/",
   }, // младший брат
   {
@@ -153,7 +153,7 @@ export const movies = [
     directors: ["Ник Кассаветис"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 45,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/720/",
   }, // джон кью
   {
@@ -164,7 +164,7 @@ export const movies = [
     directors: ["Джастин Чон"],
     format: "фильм",
     liked: "like",
-    screenshots: 75,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1313196/",
   }, // голубой байу
   {
@@ -175,7 +175,7 @@ export const movies = [
     directors: ["Мэттью Вон"],
     format: "фильм",
     liked: "like",
-    screenshots: 51,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/47250/",
   }, // слоеный торт
   {
@@ -186,7 +186,7 @@ export const movies = [
     directors: ["Эдвард Цвик"],
     format: "фильм",
     liked: "like",
-    screenshots: 90,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6764/",
   }, // последний самурай
   {
@@ -197,7 +197,7 @@ export const movies = [
     directors: ["Кейр О’Доннелл"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5071324/",
   }, // мармелад
   {
@@ -208,7 +208,7 @@ export const movies = [
     directors: ["Майкл Манн"],
     format: "фильм",
     liked: "like",
-    screenshots: 18,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61325/",
   }, // соучастник
   {
@@ -1043,20 +1043,31 @@ export const movies = [
     directors: ["Антуан Фукуа"],
     format: "фильм",
     liked: "like",
-    screenshots: 44,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/863/",
   }, // тренировочный день
   {
-    title: "Идеальный шторм",
-    original: ["The Perfect Storm"],
-    release: "2000-06-30",
-    publish: "2025-01-24T19:42:57",
-    directors: ["Вольфганг Петерсен"],
+    title: "Сокровище нации: Книга Тайн",
+    original: ["National Treasure: Book of Secrets"],
+    release: "2007-12-21",
+    publish: "2025-01-26T11:21:58",
+    directors: ["Джон Тёртлтауб"],
     format: "фильм",
-    liked: "dislike",
-    screenshots: 12,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/783/",
-  }, // идеальный шторм
+    liked: "like",
+    screenshots: 20,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/195408/",
+  }, // сокровище нации
+  {
+    title: "Сокровище нации",
+    original: ["National Treasure"],
+    release: "2004-11-19",
+    publish: "2025-01-25T14:11:06",
+    directors: ["Джон Тёртлтауб"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/61333/",
+  }, // сокровище нации
   {
     title: "Не пойман – не вор",
     original: ["Inside Man"],
@@ -1065,7 +1076,7 @@ export const movies = [
     directors: ["Спайк Ли"],
     format: "фильм",
     liked: "like",
-    screenshots: 16,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/103785/",
   }, // не пойман не вор
   {
@@ -1078,7 +1089,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 36,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4909559/",
   }, // лэндмен 1
   {
@@ -1102,7 +1113,7 @@ export const movies = [
     directors: ["Джесси Айзенберг"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 21,
+    screenshots: 19,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5105866/",
   }, // настоящая боль
   {
@@ -1113,7 +1124,7 @@ export const movies = [
     directors: ["Питер Джексон"],
     format: "фильм",
     liked: "like",
-    screenshots: 15,
+    screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/694633/",
   }, // хоббит: битва пяти воинств (3)
   {
@@ -1124,7 +1135,7 @@ export const movies = [
     directors: ["Питер Джексон"],
     format: "фильм",
     liked: "like",
-    screenshots: 22,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/408876/",
   }, // хоббит: пустошь смауга (2)
   {
@@ -1135,7 +1146,7 @@ export const movies = [
     directors: ["Питер Джексон"],
     format: "фильм",
     liked: "like",
-    screenshots: 40,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/278522/",
   }, // хоббит: нежданное путешествие (1)
   {
@@ -1146,7 +1157,7 @@ export const movies = [
     directors: ["Вим Вендерс"],
     format: "фильм",
     liked: "like",
-    screenshots: 59,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5283168/",
   }, // идеальные дни
   {
@@ -1157,7 +1168,7 @@ export const movies = [
     directors: ["Азазель Джейкобс"],
     format: "фильм",
     liked: "like",
-    screenshots: 39,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5368757/",
   }, // его три дочери
   {
@@ -1169,7 +1180,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "dislike",
-    screenshots: 45,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/749562/",
   }, // сёгун 1
   {
@@ -1181,7 +1192,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 59,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4445150/",
   }, // aркейн 2
   {
@@ -1193,7 +1204,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 54,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4445150/",
   }, // aркейн 1
   {
@@ -1204,7 +1215,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "like",
-    screenshots: 33,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4635062/",
   }, // пингвин
   {
@@ -1215,7 +1226,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "like",
-    screenshots: 21,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // это всё агата
   {
@@ -1226,7 +1237,7 @@ export const movies = [
     directors: ["Крис Сандерс"],
     format: "фильм",
     liked: "like",
-    screenshots: 25,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5457899/",
   }, // дикий робот
   {
@@ -1268,17 +1279,6 @@ export const movies = [
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/5450042/",
   }, // vince staples show
-  {
-    title: "Район №9",
-    original: ["District 9"],
-    release: "2009-08-14",
-    publish: "2024-10-02T14:43:16",
-    directors: ["Нил Бломкамп"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 11,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/397494/",
-  }, // район № 9
   {
     title: "Подай знак",
     original: ["Blink Twice"],
