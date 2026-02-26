@@ -219,7 +219,7 @@ export const movies = [
     directors: ["Джон Мэйбери"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 32,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/47382/",
   }, // пиджак
   {
@@ -909,7 +909,7 @@ export const movies = [
     directors: ["Алехандро Гонсалес Иньярриту"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 27,
+    screenshots: 23,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/102125/",
   }, // вавилон (2006)
   {
@@ -931,7 +931,7 @@ export const movies = [
     directors: ["Дени Вильнёв"],
     format: "фильм",
     liked: "like",
-    screenshots: 53,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/425400/",
   }, // пожары
   {
@@ -942,7 +942,7 @@ export const movies = [
     directors: ["Джо Руссо", "Энтони Руссо"],
     format: "фильм",
     liked: "like",
-    screenshots: 69,
+    screenshots: 81,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/843650/",
   }, // мстители: финал
   {
@@ -953,7 +953,7 @@ export const movies = [
     directors: ["Джо Руссо", "Энтони Руссо"],
     format: "фильм",
     liked: "like",
-    screenshots: 89,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/843649/",
   }, // мстители: война бесконечности
   {
@@ -964,7 +964,7 @@ export const movies = [
     directors: ["Патрик Имбер"],
     format: "фильм",
     liked: "like",
-    screenshots: 57,
+    screenshots: 69,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1090932/",
   }, // вершина богов
   {
@@ -986,7 +986,7 @@ export const movies = [
     directors: ["Джош Кули"],
     format: "фильм",
     liked: "like",
-    screenshots: 24,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1229682/",
   }, // трансформеры: начало
   {
@@ -997,7 +997,7 @@ export const movies = [
     directors: ["Брэйди Корбе"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 72,
+    screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1405331/",
   }, // бруталист
   {
@@ -1008,7 +1008,7 @@ export const movies = [
     directors: ["Альфонсо Куарон"],
     format: "фильм",
     liked: "like",
-    screenshots: 39,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1008486/",
   }, // рома
   {
