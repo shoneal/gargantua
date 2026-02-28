@@ -230,7 +230,7 @@ export const movies = [
     directors: ["Уэс Андерсон"],
     format: "фильм",
     liked: "like",
-    screenshots: 63,
+    screenshots: 69,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/278185/",
   }, // поезд на дарджилинг
   {
@@ -241,7 +241,7 @@ export const movies = [
     directors: ["Аарон Хорват", "Михаэль Еленик", "Пьер Ледюк"],
     format: "фильм",
     liked: "like",
-    screenshots: 33,
+    screenshots: 38,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1111005/",
   }, // братья супер марио в кино
   {
@@ -252,7 +252,7 @@ export const movies = [
     directors: ["Кристофер Моррис"],
     format: "фильм",
     liked: "like",
-    screenshots: 14,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/448665/",
   }, // четыре льва
   {
@@ -263,7 +263,7 @@ export const movies = [
     directors: ["Тим Стори"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 41,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/23263/",
   }, // фантастическая четверка (2005)
   {
@@ -865,7 +865,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "like",
-    screenshots: 81,
+    screenshots: 78,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/589290/",
   }, // бегущий по лезвию 2049
   {
@@ -876,7 +876,7 @@ export const movies = [
     directors: ["Дени Вильнёв"],
     format: "фильм",
     liked: "like",
-    screenshots: 48,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/673910/",
   }, // враг
   {
@@ -887,7 +887,7 @@ export const movies = [
     directors: ["Джосс Уидон"],
     format: "фильм",
     liked: "like",
-    screenshots: 48,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/679830/",
   }, // мстители: эра альтрона
   {
@@ -898,7 +898,7 @@ export const movies = [
     directors: ["Джозеф Косински"],
     format: "фильм",
     liked: "like",
-    screenshots: 96,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/572032/",
   }, // топ ган: мэверик
   {
