@@ -286,7 +286,7 @@ export const movies = [
     operator: "Роберт Элсвит",
     format: "фильм",
     liked: "like",
-    screenshots: 26,
+    screenshots: 18,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1272469/",
   }, // король ричард
   {
@@ -319,7 +319,7 @@ export const movies = [
     directors: ["Уилл Глак"],
     format: "фильм",
     liked: "like",
-    screenshots: 32,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5305423/",
   }, // кто угодно, кроме тебя
   {
@@ -446,7 +446,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "dislike",
-    screenshots: 30,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/102127/",
   }, // как трусливый роберт форд убил джесси джеймса
   {
@@ -457,7 +457,7 @@ export const movies = [
     directors: ["Сэм Рэйми"],
     format: "фильм",
     liked: "like",
-    screenshots: 24,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/2273/",
   }, // быстрый и мертвый
   {
@@ -469,7 +469,7 @@ export const movies = [
     operator: "Роберт Ричардсон",
     format: "фильм",
     liked: "like",
-    screenshots: 77,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/819101/",
   }, // омерзительная восьмерка
   {
@@ -480,7 +480,7 @@ export const movies = [
     directors: ["Джеймс Мэнголд"],
     format: "фильм",
     liked: "like",
-    screenshots: 27,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/78240/",
   }, // поезд на юму
   {
@@ -491,7 +491,7 @@ export const movies = [
     directors: ["Алекс Гарленд"],
     format: "фильм",
     liked: "like",
-    screenshots: 24,
+    screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4968810/",
   }, // падение империи
   {
@@ -502,7 +502,7 @@ export const movies = [
     directors: ["Габриэла Каупертуэйт"],
     format: "фильм",
     liked: "like",
-    screenshots: 48,
+    screenshots: 38,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1231105/",
   }, // друзья навсегда
   {
@@ -526,7 +526,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "like",
-    screenshots: 41,
+    screenshots: 28,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/462553/",
   }, // железная хватка
   {
@@ -537,7 +537,7 @@ export const movies = [
     directors: ["Шон Дуркин"],
     format: "фильм",
     liked: "like",
-    screenshots: 63,
+    screenshots: 57,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5005446/",
   }, // стальная хватка
   {
@@ -553,17 +553,6 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 7
   {
-    title: "Тот самый день",
-    original: ["One of Them Days", "Один из этих дней"],
-    release: "2025-01-17",
-    publish: "2025-04-29T09:02:30",
-    directors: ["Лоуренс Ламонт"],
-    format: "фильм",
-    liked: "dislike",
-    screenshots: 12,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/7002807/",
-  }, // тот самый день
-  {
     title: "Жажда славы",
     original: ["Magazine Dreams"],
     release: "2023-01-20",
@@ -571,7 +560,7 @@ export const movies = [
     directors: ["Элайджа Байнум"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 60,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4704816/",
   }, // жажда славы
   {
@@ -593,7 +582,7 @@ export const movies = [
     directors: ["Бабак Джалали"],
     format: "фильм",
     liked: "like",
-    screenshots: 60,
+    screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5108082/",
   }, // фримонт
   {
@@ -604,7 +593,7 @@ export const movies = [
     directors: ["Джон Фрэнсис Дейли", "Джонатан М. Голдштейн"],
     format: "фильм",
     liked: "like",
-    screenshots: 18,
+    screenshots: 20,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/762646/",
   }, // подземелья и драконы: честь среди воров
   {
@@ -638,7 +627,7 @@ export const movies = [
     directors: ["Зак Креггер"],
     format: "фильм",
     liked: "like",
-    screenshots: 50,
+    screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4749790/",
   }, // варвар
   {
@@ -661,7 +650,7 @@ export const movies = [
     directors: ["Дэвид Цукер"],
     format: "фильм",
     liked: "like",
-    screenshots: 23,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4067/",
   }, // голый пистолет (1988)
   {
@@ -674,7 +663,7 @@ export const movies = [
     season: "2",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 237,
+    screenshots: 132,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 2
   {
@@ -685,7 +674,7 @@ export const movies = [
     directors: ["Брэд Бёрд"],
     format: "фильм",
     liked: "like",
-    screenshots: 87,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/839650/",
   }, // суперсемейка 2
   {
@@ -696,7 +685,7 @@ export const movies = [
     directors: ["Брэд Бёрд"],
     format: "фильм",
     liked: "like",
-    screenshots: 27,
+    screenshots: 33,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/38903/",
   }, // суперсемейка
   {
@@ -840,7 +829,7 @@ export const movies = [
     operator: "Роберт Элсвит",
     format: "фильм",
     liked: "like",
-    screenshots: 47,
+    screenshots: 36,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/462732/",
   }, // город воров
   {
@@ -1296,6 +1285,7 @@ export const movies = [
     release: "2024-09-27",
     publish: "2024-10-01T19:40:30",
     directors: ["Джон Уоттс"],
+    operator: "Ларкин Сайпл",
     format: "фильм",
     liked: "dislike",
     screenshots: 33,
@@ -2172,7 +2162,6 @@ export const movies = [
     release: "2015-03-17",
     publish: "2023-12-03T23:42:44",
     creators: ["Дэн Хармон"],
-    directors: ["Джо Руссо", "Энтони Руссо"],
     format: "сериал",
     season: "6",
     isMiniSeries: false,
@@ -2300,17 +2289,6 @@ export const movies = [
     screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/597/",
   }, // атлантида: затерянный мир
-  {
-    title: "Американский неудачник",
-    original: ["American Underdog"],
-    release: "2021-12-25",
-    publish: "2023-10-28T13:20:53",
-    directors: ["Эндрю Эрвин", "Джон Эрвин"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 12,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/1347733/",
-  }, // американский неудачник
   {
     title: "Неудачницы",
     original: ["Bottoms"],
@@ -2461,6 +2439,52 @@ export const movies = [
     screenshots: 34,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61361/",
   }, // люди икс 3
+  {
+    title: "Люди Икс 2",
+    original: ["X2"],
+    release: "2003-05-02",
+    publish: "2023-09-15T18:15:23",
+    directors: ["Брайан Сингер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 22,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/298/",
+  }, // люди икс 2
+  {
+    title: "Люди Икс",
+    original: ["X-Men"],
+    release: "2000-07-14",
+    publish: "2023-09-13T21:11:15",
+    directors: ["Брайан Сингер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 26,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/886/",
+  }, // люди икс
+  {
+    title: "Время Армагеддона",
+    original: ["Armageddon Time"],
+    release: "2022-11-04",
+    publish: "2023-09-11T07:47:02",
+    directors: ["Джеймс Грэй"],
+    operator: "Дариус Хонджи",
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1388894/",
+  }, // время армагеддона
+  {
+    title: "Медведь",
+    original: ["The Bear"],
+    release: "2023-06-22",
+    publish: "2023-08-05T22:53:38",
+    format: "сериал",
+    season: "2",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 63,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
+  }, // медведь 2
 
   {
     title: "Разделение",
@@ -2472,7 +2496,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 74,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 1
   {
