@@ -817,7 +817,7 @@ export const movies = [
     directors: ["Джеймс Мэнголд"],
     format: "фильм",
     liked: "like",
-    screenshots: 90,
+    screenshots: 54,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/807682/",
   }, // логан: нуар
   {
