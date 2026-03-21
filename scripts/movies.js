@@ -768,7 +768,7 @@ export const movies = [
   {
     title: "Синг-Синг",
     original: ["Sing Sing"],
-    release: "2024-08-02",
+    release: "2023-09-10",
     publish: "2025-03-21T20:44:06",
     directors: ["Грег Куидар"],
     format: "фильм",
