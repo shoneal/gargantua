@@ -784,7 +784,7 @@ export const movies = [
     directors: ["Джеймс Ганн"],
     format: "фильм",
     liked: "like",
-    screenshots: 57,
+    screenshots: 48,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1008477/",
   }, // отряд самоубийц: миссия навылет
   {
@@ -795,7 +795,7 @@ export const movies = [
     directors: ["Джон Фавро"],
     format: "фильм",
     liked: "like",
-    screenshots: 36,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/779024/",
   }, // книга джунглей
   {
@@ -829,7 +829,7 @@ export const movies = [
     operator: "Роберт Элсвит",
     format: "фильм",
     liked: "like",
-    screenshots: 36,
+    screenshots: 35,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/462732/",
   }, // город воров
   {
