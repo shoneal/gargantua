@@ -713,7 +713,7 @@ export const movies = [
   {
     title: "Жаркие летние ночи",
     original: ["Hot Summer Nights"],
-    release: "2018-07-27",
+    release: "2017-03-13",
     publish: "2025-03-29T22:05:00",
     directors: ["Элайджа Байнум"],
     format: "фильм",
