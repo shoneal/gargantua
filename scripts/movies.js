@@ -2485,6 +2485,110 @@ export const movies = [
     screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
   }, // медведь 2
+  {
+    title: "Мексиканец",
+    original: ["The Mexican"],
+    release: "2001-03-02",
+    publish: "2023-07-31T07:10:21",
+    directors: ["Гор Вербински"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/753/",
+  }, // мексиканец
+  {
+    title: "Черепашки-ниндзя: Погром мутантов",
+    original: ["Teenage Mutant Ninja Turtles: Mutant Mayhem"],
+    release: "2023-08-02",
+    publish: "2023-09-07T09:09:49",
+    directors: ["Джефф Роу, Кайлер Спирс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1178862/",
+  }, // черепашки-ниндзя: погром мутантов
+  {
+    title: "Секс в большом городе",
+    original: ["Sex and the City"],
+    release: "2003-06-22",
+    publish: "2023-08-25T18:18:18",
+    creators: ["Даррен Стар"],
+    format: "сериал",
+    season: "6",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
+  }, // секс в большом городе 6
+  {
+    title: "Ничегошеньки",
+    original: ["Bupkis"],
+    release: "2023-05-04",
+    publish: "2023-08-24T17:52:29",
+    format: "сериал",
+    season: "1",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4967577/",
+  }, // ничегошеньки
+  {
+    title: "Симпсоны",
+    original: ["The Simpsons"],
+    release: "2022-09-25",
+    publish: "2023-08-13T15:19:09",
+    creators: ["Мэтт Грейнинг"],
+    format: "сериал",
+    season: "34",
+    isMiniSeries: false,
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77164/",
+  }, // симпсоны 34
+  {
+    title: "Человек-паук: Паутина вселенных",
+    original: ["Spider-Man: Across the Spider-Verse", "Чекпук"],
+    release: "2023-06-02",
+    publish: "2023-08-10T20:05:42",
+    directors: ["Жуакин Душ Сантуш", "Кемп Пауэрс", "Джастин Томпсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 66,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1219177/",
+  }, // человек-паук: паутина вселенных
+  {
+    title: "Человек-паук: Через вселенные",
+    original: ["Spider-Man: Into the Spider-Verse", "Чекпук"],
+    release: "2018-12-14",
+    publish: "2023-07-29T13:02:47",
+    directors: ["Боб Персичетти", "Питер Рэмзи", "Родни Ротман"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 72,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/920265/",
+  }, // человек-паук: через вселенные
+  {
+    title: "Финч",
+    original: ["Finch"],
+    release: "2021-11-05",
+    publish: "2023-07-29T16:33:24",
+    directors: ["Мигель Сапочник"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/823616/",
+  }, // финч
+  {
+    title: "Они клонировали Тайрона",
+    original: ["They Cloned Tyrone"],
+    release: "2023-07-21",
+    publish: "2023-07-28T08:08:01",
+    directors: ["Джуэл Тейлор"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1405266/",
+  }, // они клонировали тайрона
 
   {
     title: "Разделение",
