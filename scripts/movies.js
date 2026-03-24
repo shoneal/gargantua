@@ -168,6 +168,17 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1313196/",
   }, // голубой байу
   {
+    title: "Мармелад",
+    original: ["Marmalade"],
+    release: "2024-02-12",
+    publish: "2025-07-24T17:53:33",
+    directors: ["Кейр О’Доннелл"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 35,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5071324/",
+  }, // мармелад
+  {
     title: "Слоеный торт",
     original: ["Layer Cake"],
     release: "2004-10-01",
@@ -189,17 +200,6 @@ export const movies = [
     screenshots: 51,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6764/",
   }, // последний самурай
-  {
-    title: "Мармелад",
-    original: ["Marmalade"],
-    release: "2024-02-12",
-    publish: "2025-07-24T17:53:33",
-    directors: ["Кейр О’Доннелл"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 35,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/5071324/",
-  }, // мармелад
   {
     title: "Соучастник",
     original: ["Collateral"],
@@ -343,7 +343,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 23,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/6579800/",
   }, // киностудия 1
   {
@@ -354,7 +354,7 @@ export const movies = [
     directors: ["Ричард Лонкрэйн"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 17,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/19174/",
   }, // уимблдон
   {
@@ -365,7 +365,7 @@ export const movies = [
     directors: ["Дин ДеБлуа", "Крис Сандерс"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 60,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/740/",
   }, // лило и стич (2002)
   {
@@ -389,7 +389,7 @@ export const movies = [
     season: "4",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 20,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1228254/",
   }, // любовь, смерть и роботы 4
   {
@@ -411,7 +411,7 @@ export const movies = [
     directors: ["Флёр Форчун"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 63,
+    screenshots: 78,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/6042919/",
   }, // оценка
   {
@@ -423,7 +423,7 @@ export const movies = [
     format: "сериал",
     isMiniSeries: true,
     liked: "dislike",
-    screenshots: 18,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1100408/",
   }, // маленькая барабанщица
   {
@@ -434,7 +434,7 @@ export const movies = [
     directors: ["Скотт Купер"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 30,
+    screenshots: 42,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/963016/",
   }, // недруги
   {
@@ -639,7 +639,7 @@ export const movies = [
     season: "1",
     isMiniSeries: false,
     liked: "like",
-    screenshots: 36,
+    screenshots: 39,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/6990425/",
   }, // частые побочные явления 1
   {
@@ -696,7 +696,7 @@ export const movies = [
     directors: ["Том МакГрат"],
     format: "фильм",
     liked: "like",
-    screenshots: 30,
+    screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/405608/",
   }, // мегамозг
   {
@@ -718,7 +718,7 @@ export const movies = [
     directors: ["Элайджа Байнум"],
     format: "фильм",
     liked: "like",
-    screenshots: 42,
+    screenshots: 63,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/928993/",
   }, // жаркие летние ночи
   {
@@ -729,7 +729,7 @@ export const movies = [
     directors: ["Шон Бэйкер"],
     format: "фильм",
     liked: "like",
-    screenshots: 48,
+    screenshots: 44,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/998317/",
   }, // проект флорида
   {
@@ -740,7 +740,7 @@ export const movies = [
     directors: ["Роберт Эггерс"],
     format: "фильм",
     liked: "like",
-    screenshots: 81,
+    screenshots: 87,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1114927/",
   }, // маяк
   {
@@ -751,7 +751,7 @@ export const movies = [
     directors: ["Зак Снайдер"],
     format: "фильм",
     liked: "dislike",
-    screenshots: 126,
+    screenshots: 117,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4404112/",
   }, // лига справедливости зака снайдера
   {
@@ -2589,6 +2589,28 @@ export const movies = [
     screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1405266/",
   }, // они клонировали тайрона
+  {
+    title: "Человек-паук: Нет пути домой",
+    original: ["Spider-Man: No Way Home", "Чекпук"],
+    release: "2021-12-17",
+    publish: "2023-07-24T19:26:47",
+    directors: ["Джон Уоттс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 25,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1309570/",
+  }, // человек-паук: нет пути домой (3)
+  {
+    title: "Человек-паук: Вдали от дома",
+    original: ["Spider-Man: Far from Home", "Чекпук"],
+    release: "2019-07-02",
+    publish: "2023-07-21T07:40:54",
+    directors: ["Джон Уоттс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1008445/",
+  }, // человек-паук: вдали от дома (2)
 
   {
     title: "Разделение",

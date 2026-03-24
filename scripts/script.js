@@ -180,11 +180,8 @@ const createFilterItem = (text, value, type, isBase) => {
   return li;
 };
 buttons.forEach((button) => {
-  button
-    .querySelector("span")
-    .after(
-      document.querySelector(".select-wrapper .checkmark").cloneNode(true),
-    );
+  const checkmark = document.querySelector(".select-wrapper .checkmark");
+  button.querySelector("span").after(checkmark.cloneNode(true));
 
   const list = document.createElement("ul");
   list.classList.add("dropdown-list");
@@ -203,18 +200,51 @@ buttons.forEach((button) => {
       });
       break;
 
-    case "year":
+    case "year": {
       const years = new Set(
         movies.flatMap((movie) => [
           new Date(movie.release).getFullYear(),
           ...(movie.releaseDates?.map((d) => new Date(d).getFullYear()) || []),
         ]),
       );
-      const sortedYears = [...years].sort((a, b) => b - a);
-      sortedYears.forEach((year) =>
-        list.appendChild(createFilterItem(year, year, filterType)),
-      );
+
+      const minDecade = Math.floor(Math.min(...years) / 10) * 10;
+      const maxDecade = Math.floor(Math.max(...years) / 10) * 10;
+
+      for (let decade = maxDecade; decade >= minDecade; decade -= 10) {
+        const decadeYears = [...years].filter(
+          (year) => year >= decade && year <= decade + 9,
+        );
+
+        if (decadeYears.length === 0) continue;
+
+        decadeYears.sort((a, b) => b - a);
+
+        const periodName = `${decade}‑е`;
+
+        const li = document.createElement("li");
+        li.className = "submenu";
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "submenu-button";
+
+        const span = document.createElement("span");
+        span.textContent = periodName;
+
+        button.appendChild(span);
+        span.after(checkmark.cloneNode(true));
+        li.appendChild(button);
+
+        const ul = document.createElement("ul");
+        decadeYears.forEach((year) =>
+          ul.appendChild(createFilterItem(year, year, filterType)),
+        );
+        li.appendChild(ul);
+        list.appendChild(li);
+      }
       break;
+    }
 
     case "liked":
       ["like", "dislike"].forEach((liked) => {
@@ -225,15 +255,52 @@ buttons.forEach((button) => {
 
   button.after(list);
 
+  list.addEventListener("click", (e) => {
+    const button = e.target.closest("li.submenu > .submenu-button");
+    if (!button) return;
+
+    e.preventDefault();
+
+    const parent = button.parentElement;
+    const ul = parent.querySelector("ul");
+    const isAlreadyOpen = ul.classList.contains("is-open");
+
+    list.querySelectorAll("ul").forEach((ul) => ul.classList.remove("is-open"));
+
+    if (!isAlreadyOpen) ul.classList.add("is-open");
+  });
+
   button.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
 
     const isOpen = list.style.display === "block";
+
     document.querySelectorAll(".dropdown-list").forEach((el) => {
       if (el !== list) el.style.display = "none";
     });
+
     list.style.display = isOpen ? "none" : "block";
+
+    if (isOpen) return;
+
+    const uls = list.querySelectorAll("ul");
+
+    if (uls.length === 0) return;
+
+    uls.forEach((ul) => {
+      const labels = ul.querySelectorAll("label");
+
+      const allLabelsDisabled = [...labels].every((label) =>
+        label.classList.contains("disabled"),
+      );
+
+      const button = ul.closest("li.submenu")?.querySelector(".submenu-button");
+
+      button.disabled = allLabelsDisabled;
+
+      if (allLabelsDisabled) ul.classList.remove("is-open");
+    });
   });
 }); // Добавление фильтров формат, год и оценка
 
@@ -724,8 +791,8 @@ const openMoviePopup = (movie) => {
 
     popupElements.by.appendChild(span);
   };
-  if (movie.directors) renderPersons(movie.directors, "Режиссёр");
   if (movie.creators) renderPersons(movie.creators, "Создатель");
+  if (movie.directors) renderPersons(movie.directors, "Режиссёр");
   if (movie.operator) renderPersons([movie.operator], "Оператор");
 
   popupElements.publish.dateTime = movie.publish;
@@ -747,7 +814,19 @@ const openMoviePopup = (movie) => {
     size: "full",
   });
   popupElements.poster.alt = `Постер "${movie.title}"`;
-  setupImageWithContainer(popupElements.poster);
+  popupElements.poster.addEventListener(
+    "load",
+    function onPosterLoad() {
+      popupElements.poster.removeEventListener("load", onPosterLoad);
+      setupImageWithContainer(popupElements.poster);
+      loadScreenshots(movie);
+    },
+    { once: true },
+  );
+  if (popupElements.poster.complete) {
+    setupImageWithContainer(popupElements.poster);
+    loadScreenshots(movie);
+  }
 
   const count = movie.screenshots;
   const text =
@@ -760,8 +839,12 @@ const openMoviePopup = (movie) => {
           : "скриншотов";
   popupElements.figcaption.textContent = `${count} ${text}`;
 
+  openPopup(moviePopup);
+}; // Открытие попапа с фильмом
+const loadScreenshots = (movie) => {
   popupElements.body.replaceChildren();
   const fragment = document.createDocumentFragment();
+
   for (let i = 1; i <= movie.screenshots; i++) {
     const div = document.createElement("div");
     const img = document.createElement("img");
@@ -778,7 +861,7 @@ const openMoviePopup = (movie) => {
   popupElements.body.appendChild(fragment);
 
   if (window.currentSlideshow) {
-    window.currentSlideshow.close(); // Закрываем старый слайдер
+    window.currentSlideshow.close();
   }
   window.currentSlideshow = initSlideshow(
     slideshowPopup,
@@ -799,9 +882,7 @@ const openMoviePopup = (movie) => {
   const reverse = popupElements.body.classList.contains("odd");
   popupElements.body.classList.remove("odd", "even");
   popupElements.body.classList.add(reverse ? "even" : "odd");
-
-  openPopup(moviePopup);
-}; // Открытие попапа с фильмом
+}; // Функция для загрузки скриншотов (вызывается после загрузки постера)
 
 //
 //
