@@ -342,6 +342,28 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
   let filtered = [...movies];
   const filterValues = overrideFilters || getFiltersValues();
 
+  function normalizeText(text) {
+    if (!text) return "";
+    return text
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/ё/g, "е");
+  }
+
+  const moviesWithCache = movies.map((movie) => {
+    const normalizedTerms = [
+      normalizeText(movie.title),
+      normalizeText(movie.operator) || "",
+      ...movie.original.map(normalizeText),
+      ...(movie.directors || []).map(normalizeText),
+      ...(movie.creators || []).map(normalizeText),
+    ];
+    return { ...movie, _normalizedSearch: normalizedTerms };
+  });
+
+  filtered = [...moviesWithCache];
+
   if (filterValues.format !== "все") {
     filtered = filtered.filter((movie) => movie.format === filterValues.format);
   }
@@ -363,15 +385,12 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
   }
 
   if (query.trim() !== "") {
+    const normalizedQuery = normalizeText(query);
+
     filtered = filtered.filter((movie) => {
-      const searchTerms = [
-        movie.title.toLowerCase(),
-        movie.operator?.toLowerCase() || "",
-        ...movie.original.map((title) => title.toLowerCase()),
-        ...(movie.directors || []).map((d) => d.toLowerCase()),
-        ...(movie.creators || []).map((c) => c.toLowerCase()),
-      ];
-      return searchTerms.some((term) => term.includes(query.toLowerCase()));
+      return movie._normalizedSearch.some((term) =>
+        term.includes(normalizedQuery),
+      );
     });
   }
 
@@ -379,7 +398,14 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
     case "publish":
       return filtered.sort((a, b) => new Date(b.publish) - new Date(a.publish));
     case "release":
-      return filtered.sort((a, b) => new Date(b.release) - new Date(a.release));
+      return filtered.sort((a, b) => {
+        const dateA = new Date(a.release);
+        const dateB = new Date(b.release);
+
+        if (dateA.getTime() !== dateB.getTime()) return dateB - dateA;
+
+        return a.title.localeCompare(b.title);
+      });
     case "title":
       return filtered.sort((a, b) => a.title.localeCompare(b.title));
     default:
@@ -589,6 +615,8 @@ const updateResetButton = (onClearAction) => {
       btn.value = "Очистить";
       btn.onclick = () => onClearAction(btn);
       searchWrapper.appendChild(btn);
+    } else {
+      resetBtn.onclick = () => onClearAction(resetBtn);
     }
   } else if (resetBtn) {
     resetBtn.remove();
