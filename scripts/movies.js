@@ -2670,6 +2670,53 @@ export const movies = [
     screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/678549/",
   }, // миссия невыполнима: племя изгоев (5)
+  {
+    title: "Миссия невыполнима: Протокол Фантом",
+    original: ["Mission: Impossible - Ghost Protocol"],
+    release: "2011-12-04",
+    publish: "2023-05-21T15:06:32",
+    directors: ["Брэд Бёрд"],
+    operator: "Роберт Элсвит",
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/472362/",
+  }, // миссия невыполнима: протокол фантом (4)
+  {
+    title: "Миссия невыполнима 3",
+    original: ["Mission: Impossible III"],
+    release: "2006-04-24",
+    publish: "2023-05-19T07:53:37",
+    directors: ["Джей Джей Абрамс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/9552/",
+  }, // миссия: невыполнима 3
+  {
+    title: "Псы резервации",
+    original: ["Reservation Dogs"],
+    release: "2022-08-03",
+    publish: "2023-05-17T08:05:06",
+    creators: ["Тайка Вайтити", "Стерлин Харджо"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4296469/",
+  }, // псы резервации 2
+  {
+    title: "Король Талсы",
+    original: ["Tulsa King"],
+    release: "2022-11-13",
+    publish: "2023-05-13T11:28:56",
+    creators: ["Тейлор Шеридан"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4760854/",
+  }, // король талсы 1
 
   {
     title: "Разделение",

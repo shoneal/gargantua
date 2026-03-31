@@ -49,9 +49,17 @@ const updateHeader = () => {
     window.scrollY > 0 && !openPopups.includes(moviePopup),
   );
 }; // Border у шапки
+const regex = /\b(?:part\s+(?:ii|iii)|ii|iii)\b/gi;
+const romanMap = {
+  "part ii": "2",
+  "part iii": "3",
+  ii: "2",
+  iii: "3",
+}; // Римские цифры
 function toUrlFormat(str) {
   return str
     .toLowerCase()
+    .replace(regex, (match) => romanMap[match.toLowerCase()] || match)
     .replace(/[^a-z0-9\s\-:&]/g, "")
     .replace(/[\s:\-]+/g, "-")
     .replace(/-+/g, "-")
@@ -114,11 +122,12 @@ function getRandomItems(arr, count) {
   return result;
 }
 const randomMovies = getRandomItems(movies, 25); // 25 случайных элементов
-function createImageBlock(image) {
+function createImageBlock(image, alt) {
   const block = document.createElement("div");
   const img = document.createElement("img");
   img.style.opacity = "0";
   img.src = image;
+  img.alt = alt;
   block.appendChild(img);
   return block;
 }
@@ -140,15 +149,26 @@ const handleFigureLoad = (figure) => {
   });
 };
 randomMovies.forEach((movie) => {
+  const screenshot = Math.floor(Math.random() * movie.screenshots) + 1;
+
   const image = buildImageUrl({
     type: movie.format === "фильм" ? "movie" : "series",
     title: movie.original[0],
     season: movie.season,
-    screenshot: Math.floor(Math.random() * movie.screenshots) + 1,
+    screenshot: screenshot,
     release: movie.release,
   });
 
-  figures.forEach((figure) => figure.appendChild(createImageBlock(image)));
+  const altParts = [
+    movie.title,
+    movie.release?.split("-")[0],
+    movie.season && `сезон ${movie.season}`,
+    `скр. ${screenshot}`,
+  ].filter(Boolean);
+
+  const alt = altParts.join(" | ");
+
+  figures.forEach((figure) => figure.appendChild(createImageBlock(image, alt)));
 });
 figures.forEach(handleFigureLoad); // Создание анимационного блока с изображениями в верхнюю часть сайта
 
