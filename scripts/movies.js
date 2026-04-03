@@ -33,7 +33,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4893253/",
   }, // элио
   {
-    title: "Рик и Морти",
+    title: "Рик и&nbsp;Морти",
     original: ["Rick and Morty"],
     release: "2025-05-25",
     publish: "2025-08-30T11:38:41",
@@ -221,7 +221,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/47382/",
   }, // пиджак
   {
-    title: "Поезд на Дарджилинг. Отчаянные путешественники",
+    title: "Поезд на&nbsp;Дарджилинг. Отчаянные путешественники",
     original: ["The Darjeeling Limited"],
     release: "2007-09-03",
     publish: "2025-07-20T11:42:43",
@@ -232,7 +232,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/278185/",
   }, // поезд на дарджилинг
   {
-    title: "Братья Супер Марио в кино",
+    title: "Братья Супер Марио в&nbsp;кино",
     original: ["The Super Mario Bros. Movie"],
     release: "2023-04-01",
     publish: "2025-07-20T18:05:35",
@@ -321,7 +321,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5305423/",
   }, // кто угодно, кроме тебя
   {
-    title: "На вершине горы",
+    title: "На&nbsp;вершине горы",
     original: ["Mountainhead"],
     release: "2025-05-31",
     publish: "2025-06-21T13:03:14",
@@ -355,7 +355,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/19174/",
   }, // уимблдон
   {
-    title: "Лило и Стич",
+    title: "Лило и&nbsp;Стич",
     original: ["Lilo & Stitch"],
     release: "2002-06-16",
     publish: "2025-06-08T11:08:27",
@@ -446,7 +446,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/102127/",
   }, // как трусливый роберт форд убил джесси джеймса
   {
-    title: "Быстрый и мертвый",
+    title: "Быстрый и&nbsp;мертвый",
     original: ["The Quick and the Dead"],
     release: "1995-02-10",
     publish: "2025-05-23T21:02:13",
@@ -468,7 +468,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/819101/",
   }, // омерзительная восьмерка
   {
-    title: "Поезд на Юму",
+    title: "Поезд на&nbsp;Юму",
     original: ["3:10 to Yuma"],
     release: "2007-08-21",
     publish: "2025-05-11T12:04:39",
@@ -535,7 +535,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5005446/",
   }, // стальная хватка
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2025-03-07",
     publish: "2025-05-03T15:36:46",
@@ -557,7 +557,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4704816/",
   }, // жажда славы
   {
-    title: "Чёрный чемодан – двойная игра",
+    title: "Чёрный чемодан&nbsp;– двойная игра",
     original: ["Black Bag"],
     release: "2025-03-09",
     publish: "2025-04-18T20:42:38",
@@ -579,7 +579,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5108082/",
   }, // фримонт
   {
-    title: "Подземелья и драконы: Честь среди воров",
+    title: "Подземелья и&nbsp;драконы: Честь среди воров",
     original: ["Dungeons & Dragons: Honor Among Thieves"],
     release: "2023-03-10",
     publish: "2025-04-06T10:30:32",
@@ -590,7 +590,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/762646/",
   }, // подземелья и драконы: честь среди воров
   {
-    title: "Микки 17",
+    title: "Микки&nbsp;17",
     original: ["Mickey 17"],
     release: "2025-02-15",
     publish: "2025-04-06T23:17:48",
@@ -657,7 +657,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
   }, // разделение 2
   {
-    title: "Суперсемейка 2",
+    title: "Суперсемейка&nbsp;2",
     original: ["Incredibles 2"],
     release: "2018-06-05",
     publish: "2025-03-30T20:46:55",
@@ -690,7 +690,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/405608/",
   }, // мегамозг
   {
-    title: "Кровью и потом: Анаболики",
+    title: "Кровью и&nbsp;потом: Анаболики",
     original: ["Pain & Gain", "Анатолики"],
     release: "2013-04-11",
     publish: "2025-03-29T16:06:51",
@@ -835,7 +835,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 3
   {
-    title: "Бегущий по лезвию 2049",
+    title: "Бегущий по&nbsp;лезвию&nbsp;2049",
     original: ["Blade Runner 2049"],
     release: "2017-10-03",
     publish: "2025-03-17T13:03:52",
@@ -1046,7 +1046,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61333/",
   }, // сокровище нации
   {
-    title: "Не пойман – не вор",
+    title: "Не&nbsp;пойман&nbsp;– не&nbsp;вор",
     original: ["Inside Man"],
     release: "2006-03-16",
     publish: "2025-01-19T13:04:41",
@@ -1410,7 +1410,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1122138/",
   }, // мы
   {
-    title: "О, где же ты, брат?",
+    title: "О, где&nbsp;же ты, брат?",
     original: ["O Brother, Where Art Thou?"],
     release: "2000-05-13",
     publish: "2024-08-14T21:00:46",
@@ -1422,7 +1422,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/546/",
   }, // о где же ты брат
   {
-    title: "Человек, которого не было",
+    title: "Человек, которого не&nbsp;было",
     original: ["The Man Who Wasn't There"],
     release: "2001-05-13",
     publish: "2024-08-11T16:39:28",
@@ -1524,7 +1524,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/460586/",
   }, // пацаны 4
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2024-02-23",
     publish: "2024-07-21T23:42:09",
@@ -1535,7 +1535,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 6
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2023-02-24",
     publish: "2024-07-14T11:36:49",
@@ -1546,7 +1546,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 5
   {
-    title: "Я не киллер",
+    title: "Я&nbsp;не&nbsp;киллер",
     original: ["Hit Man"],
     release: "2023-09-05",
     publish: "2024-07-13T21:21:09",
@@ -1590,7 +1590,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/535243/",
   }, // каскадеры
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2022-03-11",
     publish: "2024-06-07T07:34:54",
@@ -1601,7 +1601,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 4
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2021-03-19",
     publish: "2024-05-30T07:27:24",
@@ -1612,7 +1612,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 3
   {
-    title: "Люди Икс ’97",
+    title: "Люди Икс&nbsp;’97",
     original: ["X-Men '97"],
     release: "2024-03-20",
     publish: "2024-05-19T15:51:51",
@@ -1718,7 +1718,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4475348/",
   }, // третий лишний 1
   {
-    title: "Кэрол и конец света",
+    title: "Кэрол и&nbsp;конец света",
     original: ["Carol & The End of the World"],
     release: "2023-12-15",
     publish: "2024-03-24T13:20:18",
@@ -1740,7 +1740,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/5321227/",
   }, // мечты робота
   {
-    title: "Эрнест и Селестина: Приключения мышки и медведя",
+    title: "Эрнест и&nbsp;Селестина: Приключения мышки и&nbsp;медведя",
     original: ["Ernest & Celestine", "Ernest et Célestine"],
     release: "2012-05-23",
     publish: "2024-03-20T20:51:18",
@@ -1751,7 +1751,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/592260/",
   }, // эрнест и селестина
   {
-    title: "Тысяча и один",
+    title: "Тысяча и&nbsp;один",
     original: ["A Thousand and One"],
     release: "2023-01-22",
     publish: "2024-03-18T21:09:25",
@@ -1785,7 +1785,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1179501/",
   }, // дело коллини
   {
-    title: "Большой злой лис и другие сказки",
+    title: "Большой злой лис и&nbsp;другие сказки",
     original: [
       "The Big Bad Fox and Other Tales...",
       "Le grand méchant renard et autres contes...",
@@ -1855,7 +1855,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/982730/",
   }, // гранд тур 5
   {
-    title: "Мистер и миссис Смит",
+    title: "Мистер и&nbsp;миссис Смит",
     original: ["Mr. & Mrs. Smith"],
     release: "2024-02-02",
     publish: "2024-02-17T14:46:09",
@@ -1879,7 +1879,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/402955/",
   }, // прослушка 3
   {
-    title: "Орион и Тьма",
+    title: "Орион и&nbsp;Тьма",
     original: ["Orion and the Dark"],
     release: "2024-02-02",
     publish: "2024-02-06T07:19:09",
@@ -1914,7 +1914,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/767379/",
   }, // фарго 5
   {
-    title: "Следующий гол – победный",
+    title: "Следующий гол&nbsp;– победный",
     original: ["Next Goal Wins"],
     release: "2023-09-10",
     publish: "2024-01-28T13:10:39",
@@ -1948,7 +1948,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1272097/",
   }, // расцвет династии лейкерс 2
   {
-    title: "Смерть на похоронах",
+    title: "Смерть на&nbsp;похоронах",
     original: ["Death at a Funeral"],
     release: "2010-04-12",
     publish: "2024-01-13T22:50:52",
@@ -1994,7 +1994,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/20105/",
   }, // пережить рождество
   {
-    title: "Рик и Морти",
+    title: "Рик и&nbsp;Морти",
     original: ["Rick and Morty"],
     release: "2023-10-15",
     publish: "2023-12-28T07:54:25",
@@ -2006,7 +2006,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
   }, // рик и морти 7
   {
-    title: "Кунг-фу Панда 3",
+    title: "Кунг-фу Панда&nbsp;3",
     original: ["Kung Fu Panda 3"],
     release: "2016-01-16",
     publish: "2023-12-26T21:49:36",
@@ -2017,7 +2017,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/692865/",
   }, // кунг-фу панда 3
   {
-    title: "Ну что, приехали: Ремонт",
+    title: "Ну&nbsp;что, приехали: Ремонт",
     original: ["Are We Done Yet?"],
     release: "2007-04-04",
     publish: "2023-12-24T15:48:47",
@@ -2028,7 +2028,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/102247/",
   }, // ну что, приехали: ремонт
   {
-    title: "Кунг-фу Панда 2",
+    title: "Кунг-фу Панда&nbsp;2",
     original: ["Kung Fu Panda 2"],
     release: "2011-05-22",
     publish: "2023-12-21T07:37:37",
@@ -2379,7 +2379,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/61361/",
   }, // люди икс 3
   {
-    title: "Люди Икс 2",
+    title: "Люди Икс&nbsp;2",
     original: ["X2"],
     release: "2003-04-24",
     publish: "2023-09-15T18:15:23",
@@ -2445,7 +2445,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1178862/",
   }, // черепашки-ниндзя: погром мутантов
   {
-    title: "Секс в большом городе",
+    title: "Секс в&nbsp;большом городе",
     original: ["Sex and the City"],
     release: "2003-06-22",
     publish: "2023-08-25T18:18:18",
@@ -2535,7 +2535,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1309570/",
   }, // человек-паук: нет пути домой (3)
   {
-    title: "Человек-паук: Вдали от дома",
+    title: "Человек-паук: Вдали от&nbsp;дома",
     original: ["Spider-Man: Far from Home", "Чекпук"],
     release: "2019-06-26",
     publish: "2023-07-21T07:40:54",
@@ -2557,7 +2557,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/690593/",
   }, // человек-паук: возвращение домой (1)
   {
-    title: "Облачно, возможны осадки в виде фрикаделек",
+    title: "Облачно, возможны осадки в&nbsp;виде фрикаделек",
     original: ["Cloudy with a Chance of Meatballs"],
     release: "2009-09-12",
     publish: "2023-07-14T07:31:37",
@@ -2579,7 +2579,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4395987/",
   }, // город астероидов
   {
-    title: "Стражи Галактики. Часть 3",
+    title: "Стражи Галактики. Часть&nbsp;3",
     original: ["Guardians of the Galaxy Vol. 3"],
     release: "2023-04-19",
     publish: "2023-07-09T16:27:06",
@@ -2590,7 +2590,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/1044280/",
   }, // стражи галактики 3
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2020-02-28",
     publish: "2023-07-08T10:09:01",
@@ -2601,7 +2601,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1240162/",
   }, // формула 1. драйв выживания 2
   {
-    title: "Формула 1. Драйв выживания",
+    title: "Формула&nbsp;1. Драйв выживания",
     original: ["Formula 1: Drive to Survive"],
     release: "2019-03-08",
     publish: "2023-07-02T20:04:34",
@@ -2624,7 +2624,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1309707/",
   }, // тед лассо 3
   {
-    title: "Старикам тут не место",
+    title: "Старикам тут не&nbsp;место",
     original: ["No Country for Old Men"],
     release: "2007-05-19",
     publish: "2023-05-30T19:31:55",
@@ -2683,7 +2683,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/film/472362/",
   }, // миссия невыполнима: протокол фантом (4)
   {
-    title: "Миссия невыполнима 3",
+    title: "Миссия невыполнима&nbsp;3",
     original: ["Mission: Impossible III"],
     release: "2006-04-24",
     publish: "2023-05-19T07:53:37",
@@ -2742,4 +2742,26 @@ export const movies = [
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 1
+  {
+    title: "Знакомьтесь, Джо Блэк",
+    original: ["Meet Joe Black"],
+    release: "1998-11-02",
+    publish: "2019-01-04T13:17:00",
+    directors: ["Мартин Брест"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5059/",
+  }, // знакомьтесь, джо блэк
+  {
+    title: "Жизнь&nbsp;Пи",
+    original: ["Life of Pi"],
+    release: "2012-09-28",
+    publish: "2019-01-13T14:58:00",
+    directors: ["Энг Ли"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 19,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/158786/",
+  }, // жизнь пи
 ]; // ГЛАВНЫЙ МАССИВ

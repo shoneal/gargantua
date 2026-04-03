@@ -82,6 +82,7 @@ function buildImageUrl({ type, title, season, screenshot, release, size }) {
       )}${seasonPart}/${screenshot}.jpg`
     : `${basicLink}${dir}/${size}/${toUrlFormat(title)}${seasonPart}.jpg`;
 } // Построение URL изображения
+const replaceSpace = (text) => text.replace(/&nbsp;/g, " "); // «&nbsp;» в пробелы
 const setupImageWithContainer = (img) => {
   const onLoadOrError = () => {
     img.style.opacity = "1";
@@ -160,7 +161,7 @@ randomMovies.forEach((movie) => {
   });
 
   const altParts = [
-    movie.title,
+    replaceSpace(movie.title),
     movie.release?.split("-")[0],
     movie.season && `сезон ${movie.season}`,
     `скр. ${screenshot}`,
@@ -365,21 +366,26 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
   function normalizeText(text) {
     if (!text) return "";
     return text
+      .replace(/\s+/g, " ")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
-      .replace(/ё/g, "е");
+      .replace(/\p{P}/gu, "");
   }
 
   const moviesWithCache = movies.map((movie) => {
     const normalizedTerms = [
-      normalizeText(movie.title),
+      normalizeText(replaceSpace(movie.title)),
       normalizeText(movie.operator) || "",
       ...movie.original.map(normalizeText),
       ...(movie.directors || []).map(normalizeText),
       ...(movie.creators || []).map(normalizeText),
     ];
-    return { ...movie, _normalizedSearch: normalizedTerms };
+    return {
+      ...movie,
+      _normalizedSearch: normalizedTerms,
+      _sortTitle: replaceSpace(movie.title),
+    };
   });
 
   filtered = [...moviesWithCache];
@@ -424,10 +430,10 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
 
         if (dateA.getTime() !== dateB.getTime()) return dateB - dateA;
 
-        return a.title.localeCompare(b.title);
+        return a._sortTitle.localeCompare(b._sortTitle);
       });
     case "title":
-      return filtered.sort((a, b) => a.title.localeCompare(b.title));
+      return filtered.sort((a, b) => a._sortTitle.localeCompare(b._sortTitle));
     default:
       return filtered;
   }
@@ -456,7 +462,7 @@ const renderMovies = (moviesToRender, startIndex, endIndex) => {
       season: movie.season,
       size: "thumb",
     });
-    img.alt = `Постер "${movie.title}"`;
+    img.alt = `Постер "${replaceSpace(movie.title)}"`;
     setupImageWithContainer(img);
 
     div.appendChild(img);
@@ -793,10 +799,10 @@ const getScreenshotUrl = (movie, index) =>
 window.currentSlideshow = null;
 const openMoviePopup = (movie) => {
   popupElements.opinion.textContent = movie.liked;
-  popupElements.title.textContent = movie.title;
-  popupElements.title.classList[movie.title.length > 20 ? "add" : "remove"](
-    "smaller",
-  );
+  popupElements.title.innerHTML = movie.title;
+  popupElements.title.classList[
+    replaceSpace(movie.title).length > 20 ? "add" : "remove"
+  ]("smaller");
 
   const year = new Date(movie.release).getFullYear();
   let yearText = year;
@@ -861,7 +867,7 @@ const openMoviePopup = (movie) => {
     season: movie.season,
     size: "full",
   });
-  popupElements.poster.alt = `Постер "${movie.title}"`;
+  popupElements.poster.alt = `Постер "${replaceSpace(movie.title)}"`;
   popupElements.poster.addEventListener(
     "load",
     function onPosterLoad() {
