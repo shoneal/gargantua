@@ -349,6 +349,7 @@ export const movies = [
     release: "2004-09-13",
     publish: "2025-06-14T15:36:43",
     directors: ["Ричард Лонкрэйн"],
+    operator: "Дариус Хонджи",
     format: "фильм",
     liked: "dislike",
     screenshots: 27,
@@ -595,6 +596,7 @@ export const movies = [
     release: "2025-02-15",
     publish: "2025-04-06T23:17:48",
     directors: ["Пон Джун-хо"],
+    operator: "Дариус Хонджи",
     format: "фильм",
     liked: "dislike",
     screenshots: 42,
@@ -2406,6 +2408,7 @@ export const movies = [
     release: "2022-05-19",
     publish: "2023-09-11T07:47:02",
     directors: ["Джеймс Грэй"],
+    operator: "Дариус Хонджи",
     format: "фильм",
     liked: "dislike",
     screenshots: 21,
@@ -2742,6 +2745,55 @@ export const movies = [
   }, // первобытный 1
 
   {
+    title: "Атланта",
+    original: ["Atlanta"],
+    release: "2022-11-16",
+    publish: "2022-11-16T20:34:58",
+    creators: ["Дональд Гловер"],
+    format: "сериал",
+    season: "4",
+    liked: "like",
+    screenshots: 114,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
+  }, // атланта 4
+  {
+    title: "Атланта",
+    original: ["Atlanta"],
+    release: "2022-03-24",
+    publish: "2022-05-27T13:54:13",
+    creators: ["Дональд Гловер"],
+    format: "сериал",
+    season: "3",
+    liked: "like",
+    screenshots: 105,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
+  }, // атланта 3
+  {
+    title: "Атланта",
+    original: ["Atlanta"],
+    release: "2018-03-01",
+    publish: "2021-11-21T07:57:58",
+    creators: ["Дональд Гловер"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 66,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
+  }, // атланта 2
+  {
+    title: "Атланта",
+    original: ["Atlanta"],
+    release: "2016-09-06",
+    publish: "2021-11-17T20:50:22",
+    creators: ["Дональд Гловер"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 64,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
+  }, // атланта 1
+
+  {
     title: "Разделение",
     original: ["Severance"],
     release: "2022-02-18",
@@ -2809,17 +2861,6 @@ export const movies = [
     screenshots: 14,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/931677/",
   }, // проект х
-  {
-    title: "Семь психопатов",
-    original: ["Seven Psychopaths"],
-    release: "2012-09-07",
-    publish: "2019-07-16T10:47:00",
-    directors: ["Мартин Макдона"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 12,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/586584/",
-  }, // семь психопатов
   {
     title: "Когда они нас увидят",
     original: ["When They See Us"],
