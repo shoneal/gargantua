@@ -2717,6 +2717,29 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4760854/",
   }, // король талсы 1
+  {
+    title: "Air: Большой прыжок",
+    original: ["Air"],
+    release: "2023-03-18",
+    publish: "2023-05-13T15:09:13",
+    directors: ["Бен Аффлек"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5000997/",
+  }, // air: большой прыжок
+  {
+    title: "Первобытный",
+    original: ["Primal"],
+    release: "2019-10-07",
+    publish: "2023-05-06T15:41:34",
+    creators: ["Генндий Тартаковский"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 45,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1263399/",
+  }, // первобытный 1
 
   {
     title: "Разделение",
@@ -2742,6 +2765,118 @@ export const movies = [
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 1
+  {
+    title: "Дикая жизнь",
+    original: ["Wildlife"],
+    release: "2018-01-20",
+    publish: "2019-10-02T16:54:00",
+    directors: ["Пол Дано"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1005852/",
+  }, // дикая жизнь
+  {
+    title: "Искупление",
+    original: ["Atonement"],
+    release: "2007-08-28",
+    publish: "2019-09-10T20:50:00",
+    directors: ["Джо Райт"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/255611/",
+  }, // искупление
+  {
+    title: "Хороший динозавр",
+    original: ["The Good Dinosaur"],
+    release: "2015-11-10",
+    publish: "2019-09-09T17:27:00",
+    directors: ["Питер Сон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/596451/",
+  }, // хороший динозавр
+  {
+    title: "Проект X: Дорвались",
+    original: ["Project X"],
+    release: "2012-03-01",
+    publish: "2019-08-13T11:54:00",
+    directors: ["Нима Нуризаде"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/931677/",
+  }, // проект х
+  {
+    title: "Семь психопатов",
+    original: ["Seven Psychopaths"],
+    release: "2012-09-07",
+    publish: "2019-07-16T10:47:00",
+    directors: ["Мартин Макдона"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/586584/",
+  }, // семь психопатов
+  {
+    title: "Когда они нас увидят",
+    original: ["When They See Us"],
+    release: "2019-05-31",
+    publish: "2019-06-24T09:18:00",
+    creators: ["Ава ДюВерней"],
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "like",
+    screenshots: 20,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1174230/",
+  }, // когда они нас увидят
+  {
+    title: "Семь",
+    original: ["Se7en", "Seven"],
+    release: "1995-09-15",
+    publish: "2019-06-14T22:03:00",
+    directors: ["Дэвид Финчер"],
+    operator: "Дариус Хонджи",
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/377/",
+  }, // семь
+  {
+    title: "Уловка-22",
+    original: ["Catch-22"],
+    release: "2019-05-17",
+    publish: "2019-05-28T01:12:00",
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1134613/",
+  }, // уловка-22
+  {
+    title: "Середина&nbsp;90-х",
+    original: ["Mid90s"],
+    release: "2018-09-09",
+    publish: "2019-05-26T16:30:00",
+    directors: ["Джона Хилл"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1040690/",
+  }, // середина 90-х
+  {
+    title: "Зеленая книга",
+    original: ["Green Book"],
+    release: "2018-09-11",
+    publish: "2019-03-22T22:09:00",
+    directors: ["Питер Фаррелли"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1108577/",
+  }, // зеленая книга
   {
     title: "Знакомьтесь, Джо Блэк",
     original: ["Meet Joe Black"],
