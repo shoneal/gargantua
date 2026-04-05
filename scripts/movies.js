@@ -2454,11 +2454,12 @@ export const movies = [
     publish: "2023-08-25T18:18:18",
     creators: ["Даррен Стар"],
     format: "сериал",
-    season: "6",
+    season: "5-6",
+    releaseDates: ["2002-07-21"],
     liked: "like",
-    screenshots: 21,
+    screenshots: 27,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
-  }, // секс в большом городе 6
+  }, // секс в большом городе 5-6
   {
     title: "Ничегошеньки",
     original: ["Bupkis"],
@@ -2743,6 +2744,111 @@ export const movies = [
     screenshots: 45,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1263399/",
   }, // первобытный 1
+  {
+    title: "Битва полов",
+    original: ["Battle of the Sexes"],
+    release: "2017-09-02",
+    publish: "2023-05-05T18:38:51",
+    directors: ["Джонатан Дэйтон", "Валери Фэрис"],
+    operator: "Линус Сандгрен",
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/928805/",
+  }, // битва полов
+  {
+    title: "Королевство полной луны",
+    original: ["Moonrise Kingdom"],
+    release: "2012-05-16",
+    publish: "2023-05-02T20:18:51",
+    directors: ["Уэс Андерсон"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/571892/",
+  }, // королевство полной луны
+  {
+    title: "Бесподобный мистер Фокс",
+    original: ["Fantastic Mr. Fox"],
+    release: "2009-10-14",
+    publish: "2023-05-01T21:29:20",
+    directors: ["Уэс Андерсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/86621/",
+  }, // бесподобный мистер фокс
+  {
+    title: "Жить",
+    original: ["Living"],
+    release: "2022-01-21",
+    publish: "2023-04-30T09:32:21",
+    directors: ["Оливер Херманус"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4502701/",
+  }, // жить
+  {
+    title: "Солнце моё",
+    original: ["Aftersun"],
+    release: "2022-05-21",
+    publish: "2023-04-28T22:28:37",
+    directors: ["Шарлотта Уэллс"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4948281/",
+  }, // солнце моё
+  {
+    title: "Грызня",
+    original: ["Beef"],
+    release: "2023-04-06",
+    publish: "2023-04-27T07:09:10",
+    creators: ["Ли Сон-джин"],
+    directors: ["Джейк Шрейер", "Хикари", "Ли Сон-джин"],
+    operator: "Ларкин Сайпл",
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4477341/",
+  }, // грызня 1
+  {
+    title: "Ты",
+    original: ["You"],
+    release: "2023-02-09",
+    publish: "2023-04-14T22:46:33",
+    format: "сериал",
+    season: "4",
+    liked: "like",
+    screenshots: 32,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1115630/",
+  }, // ты 4
+  {
+    title: "Секс в&nbsp;большом городе",
+    original: ["Sex and the City"],
+    release: "2001-06-03",
+    publish: "2023-04-07T22:35:05",
+    creators: ["Даррен Стар"],
+    format: "сериал",
+    season: "4",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
+  }, // секс в большом городе 4
+  {
+    title: "Терапия",
+    original: ["Shrinking"],
+    release: "2023-01-27",
+    publish: "2023-04-05T07:11:30",
+    creators: ["Бретт Голдстин", "Джейсон Сигел", "Билл Лоуренс"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4675392/",
+  }, // терапия 1
 
   {
     title: "Атланта",
@@ -2753,7 +2859,7 @@ export const movies = [
     format: "сериал",
     season: "4",
     liked: "like",
-    screenshots: 114,
+    screenshots: 111,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
   }, // атланта 4
   {
