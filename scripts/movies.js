@@ -2861,6 +2861,17 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
   }, // сообщетсво 5
+  {
+    title: "Сообщество",
+    original: ["Community"],
+    release: "2013-02-07",
+    publish: "2023-03-20T19:17:35",
+    format: "сериал",
+    season: "4",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
+  }, // сообщетсво 4
 
   {
     title: "Атланта",
