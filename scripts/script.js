@@ -811,8 +811,7 @@ const openMoviePopup = (movie) => {
       yearText = `Мини-сериал, ${year}`;
     } else if (movie.releaseDates) {
       const firstYear = new Date(movie.releaseDates[0]).getFullYear();
-      const lastYear = new Date(movie.releaseDates.at(-1)).getFullYear();
-      yearText = `Сезоны ${movie.season}, ${firstYear}–${lastYear}`;
+      yearText = `Сезоны ${movie.season}, ${firstYear}–${year}`;
     } else {
       yearText = `Сезон ${movie.season}, ${year}`;
     }

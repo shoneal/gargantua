@@ -2849,6 +2849,18 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4675392/",
   }, // терапия 1
+  {
+    title: "Сообщество",
+    original: ["Community"],
+    release: "2014-01-02",
+    publish: "2023-03-27T22:23:58",
+    creators: ["Дэн Хармон"],
+    format: "сериал",
+    season: "5",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
+  }, // сообщетсво 5
 
   {
     title: "Атланта",
