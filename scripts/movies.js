@@ -2916,7 +2916,7 @@ export const movies = [
     operator: "Роджер Дикинс",
     format: "фильм",
     liked: "dislike",
-    screenshots: 0,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4477121/",
   }, // империя света
   {
@@ -2938,7 +2938,7 @@ export const movies = [
     directors: ["М. Найт Шьямалан"],
     format: "фильм",
     liked: "like",
-    screenshots: 0,
+    screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4675164/",
   }, // стук в хижине
 
