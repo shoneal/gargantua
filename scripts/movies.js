@@ -2872,6 +2872,75 @@ export const movies = [
     screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
   }, // сообщетсво 4
+  {
+    title: "Кокаиновый медведь",
+    original: ["Cocaine Bear"],
+    release: "2023-02-22",
+    publish: "2023-03-17T07:25:06",
+    directors: ["Элизабет Бэнкс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4476889/",
+  }, // кокаиновый медведь
+  {
+    title: "Сообщество",
+    original: ["Community"],
+    release: "2011-09-22",
+    publish: "2023-03-12T08:57:29",
+    creators: ["Дэн Хармон"],
+    format: "сериал",
+    season: "3",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
+  }, // сообщетсво 3
+  {
+    title: "Секс в&nbsp;большом городе",
+    original: ["Sex and the City"],
+    release: "2000-06-04",
+    publish: "2023-03-11T13:41:36",
+    creators: ["Даррен Стар"],
+    format: "сериал",
+    season: "3",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
+  }, // секс в большом городе 3
+  {
+    title: "Империя света",
+    original: ["Empire of Light"],
+    release: "2022-09-03",
+    publish: "2023-03-02T07:27:44",
+    directors: ["Сэм Мендес"],
+    operator: "Роджер Дикинс",
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 0,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4477121/",
+  }, // империя света
+  {
+    title: "Милая встреча",
+    original: ["Meet Cute"],
+    release: "2022-09-21",
+    publish: "2023-02-09T07:57:55",
+    directors: ["Александр Леманн"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4542022/",
+  }, // милая встреча
+  {
+    title: "Стук в&nbsp;хижине",
+    original: ["Knock at the Cabin"],
+    release: "2023-01-24",
+    publish: "2023-02-26T09:59:51",
+    directors: ["М. Найт Шьямалан"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 0,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4675164/",
+  }, // стук в хижине
 
   {
     title: "Атланта",

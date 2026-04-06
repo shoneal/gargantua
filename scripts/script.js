@@ -881,6 +881,8 @@ const openMoviePopup = (movie) => {
     loadScreenshots(movie);
   }
 
+  popupElements.body.replaceChildren();
+
   const count = movie.screenshots;
   const text =
     count % 100 >= 11 && count % 100 <= 19
@@ -892,10 +894,13 @@ const openMoviePopup = (movie) => {
           : "скриншотов";
   popupElements.figcaption.textContent = `${count} ${text}`;
 
+  const reverse = popupElements.body.classList.contains("odd");
+  popupElements.body.classList.remove("odd", "even");
+  popupElements.body.classList.add(reverse ? "even" : "odd");
+
   openPopup(moviePopup);
 }; // Открытие попапа с фильмом
 const loadScreenshots = (movie) => {
-  popupElements.body.replaceChildren();
   const fragment = document.createDocumentFragment();
 
   for (let i = 1; i <= movie.screenshots; i++) {
@@ -932,9 +937,6 @@ const loadScreenshots = (movie) => {
     },
     { passive: true },
   );
-  const reverse = popupElements.body.classList.contains("odd");
-  popupElements.body.classList.remove("odd", "even");
-  popupElements.body.classList.add(reverse ? "even" : "odd");
 }; // Функция для загрузки скриншотов (вызывается после загрузки постера)
 
 //
