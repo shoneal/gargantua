@@ -2941,6 +2941,50 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/4675164/",
   }, // стук в хижине
+  {
+    title: "Аферисты",
+    original: ["Sharper"],
+    release: "2023-02-10",
+    publish: "2023-02-21T07:27:39",
+    directors: ["Бенджамин Карон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 45,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4383102/",
+  }, // аферисты
+  {
+    title: "Фабельманы",
+    original: ["The Fabelmans"],
+    release: "2022-09-10",
+    publish: "2023-02-19T18:39:22",
+    directors: ["Стивен Спилберг"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 23,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4472502/",
+  }, // фабельманы
+  {
+    title: "Когда ты&nbsp;закончишь спасать мир",
+    original: ["When You Finish Saving the World"],
+    release: "2022-01-20",
+    publish: "2023-02-10T20:01:36",
+    directors: ["Джесси Айзенберг"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1400133/",
+  }, // когда ты закончишь спасать мир
+  {
+    title: "Дублеры",
+    original: ["The Replacements"],
+    release: "2000-08-07",
+    publish: "2023-02-10T23:48:34",
+    directors: ["Ховард Дойч"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 30,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/800/",
+  }, // дублеры
 
   {
     title: "Атланта",
@@ -3015,6 +3059,32 @@ export const movies = [
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 1
+
+  {
+    title: "Во&nbsp;все тяжкие",
+    original: ["Breaking Bad"],
+    release: "2012-07-15",
+    publish: "2019-11-22T16:16:58",
+    creators: ["Винс Гиллиган"],
+    format: "сериал",
+    season: "1-5",
+    releaseDates: ["2008-01-20", "2009-03-08", "2010-03-21", "2011-07-17"],
+    liked: "like",
+    screenshots: 57,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/404900/",
+  }, // во все тяжкие 1-5
+  {
+    title: "Футболисты",
+    original: ["Ballers", "Игроки"],
+    release: "2019-08-25",
+    publish: "2019-10-27T18:49:57",
+    creators: ["Стивен Левинсон", "Марк Уолберг"],
+    format: "сериал",
+    season: "5",
+    liked: "like",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/762087/",
+  }, // футболисты 5
   {
     title: "Дикая жизнь",
     original: ["Wildlife"],
