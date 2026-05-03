@@ -2985,6 +2985,110 @@ export const movies = [
     screenshots: 30,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/800/",
   }, // дублеры
+  {
+    title: "Вавилон",
+    original: ["Babylon"],
+    release: "2022-12-15",
+    publish: "2023-02-05T20:10:10",
+    directors: ["Дэмьен Шазелл"],
+    operator: "Линус Сандгрен",
+    format: "фильм",
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1283955/",
+  }, // вавилон (2022)
+  {
+    title: "Человек, который изменил всё",
+    original: ["Moneyball"],
+    release: "2011-09-09",
+    publish: "2023-02-02T23:20:02",
+    directors: ["Беннетт Миллер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/432791/",
+  }, // человек, который изменил всё
+  {
+    title: "Служители закона",
+    original: ["U.S. Marshals"],
+    release: "1998-03-06",
+    publish: "2023-02-01T20:31:43",
+    directors: ["Стюарт Бейрд"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/3901/",
+  }, // служители закона
+  {
+    title: "Белые люди не&nbsp;умеют прыгать",
+    original: ["White Men Can't Jump"],
+    release: "1992-03-27",
+    publish: "2023-01-29T21:27:25",
+    directors: ["Рон Шелтон"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4347/",
+  }, // белые люди не умеют прыгать
+  {
+    title: "Что за&nbsp;люди",
+    original: ["You People"],
+    release: "2023-01-20",
+    publish: "2023-01-28T18:25:58",
+    directors: ["Кенья Беррис"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4479402/",
+  }, // что за люди
+  {
+    title: "На&nbsp;грани",
+    original: ["The Edge"],
+    release: "1997-09-06",
+    publish: "2023-01-27T13:36:50",
+    directors: ["Ли Тамахори"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/3775/",
+  }, // на грани
+  {
+    title: "Секс в&nbsp;большом городе",
+    original: ["Sex and the City"],
+    release: "1999-06-06",
+    publish: "2023-01-21T00:16:14",
+    creators: ["Даррен Стар"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
+  }, // секс в большом городе 2
+  {
+    title: "Корпорация «Заговор»",
+    original: ["Inside Job"],
+    release: "2022-11-18",
+    publish: "2023-01-13T05:56:59",
+    creators: ["Сион Такэути", "Алекс Хирш"],
+    format: "сериал",
+    season: "1-2",
+    releaseDates: ["2021-10-22"],
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1263653/",
+  }, // корпорация «заговор» 1-2
+  {
+    title: "Рик и&nbsp;Морти",
+    original: ["Rick and Morty"],
+    release: "2022-09-04",
+    publish: "2023-01-03T21:09:12",
+    creators: ["Дэн Хармон", "Джастин Ройланд"],
+    format: "сериал",
+    season: "6",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
+  }, // рик и морти 6
 
   {
     title: "Атланта",
