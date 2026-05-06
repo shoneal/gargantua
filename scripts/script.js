@@ -762,6 +762,7 @@ function closePopup(popup) {
 const moviePopup = document.querySelector(".movie-popup");
 const popupContent = moviePopup.querySelector(".popup-content");
 const popupElements = {
+  back: popupContent.querySelector("header"),
   header: popupContent.querySelector(".header-container"),
   opinion: popupContent.querySelector(".opinion"),
   title: popupContent.querySelector(".heading"),
@@ -773,10 +774,7 @@ const popupElements = {
   figcaption: popupContent.querySelector("figcaption"),
   body: popupContent.querySelector(".article-body"),
 }; // Все элементы попапа с фильмом
-const popupHeader = document.createElement("header");
-popupHeader.appendChild(homepageButton.cloneNode(true));
-popupContent.insertBefore(popupHeader, popupElements.header);
-popupHeader.addEventListener("click", (e) => {
+popupElements.back.addEventListener("click", (e) => {
   if (e.target.closest(".homepage")) {
     e.preventDefault();
     closePopup(moviePopup);
@@ -785,7 +783,10 @@ popupHeader.addEventListener("click", (e) => {
   if (moviePopup.scrollTop) moviePopup.scrollTop = 0;
 }); // Добавление обработчика закрытия попапа и скролла наверх попапа на скопированный header
 const updatePopupHeader = () => {
-  popupHeader.classList.toggle("sticky-header", moviePopup.scrollTop > 0);
+  popupElements.back.classList.toggle(
+    "sticky-header",
+    moviePopup.scrollTop > 0,
+  );
 }; // Border у шапки попапа
 
 const getScreenshotUrl = (movie, index) =>
