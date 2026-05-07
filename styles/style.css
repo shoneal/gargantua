@@ -83,7 +83,7 @@ header {
   z-index: 200;
   border-bottom: 1px solid var(--background-color);
   background-color: var(--background-color);
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
 }
 
 body > header {
@@ -937,10 +937,6 @@ figcaption {
   .query-facet button:hover {
     color: var(--query-facet);
     text-decoration: line-through;
-  }
-
-  .movie-popup .homepage:hover {
-    background: var(--homepage-hover);
   }
 
   .byline a:hover {

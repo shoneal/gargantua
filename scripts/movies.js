@@ -3089,7 +3089,50 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/685246/",
   }, // рик и морти 6
-
+  {
+    title: "Целиком и&nbsp;полностью",
+    original: ["Bones and All"],
+    release: "2022-09-02",
+    publish: "2022-12-25T01:12:32",
+    directors: ["Лука Гуаданьино"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4422719/",
+  }, // целиком и полностью
+  {
+    title: "Достать ножи: Стеклянная луковица",
+    original: ["Glass Onion", "A Knives Out Mystery"],
+    release: "2022-09-10",
+    publish: "2022-12-24T00:54:49",
+    directors: ["Райан Джонсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 57,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1343908/",
+  }, // достать ножи: стеклянная луковица (2)
+  {
+    title: "Шоу Чашека!",
+    original: ["The Cuphead Show!"],
+    release: "2022-11-18",
+    publish: "2022-12-19T12:55:00",
+    format: "сериал",
+    season: "1-3",
+    liked: "like",
+    screenshots: 54,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1283374/",
+  }, // шоу чашека 1-3
+  {
+    title: "Банши Инишерина",
+    original: ["The Banshees of Inisherin"],
+    release: "2022-09-05",
+    publish: "2022-12-16T17:42:09",
+    directors: ["Мартин Макдона"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1354524/",
+  }, // банши инишерина
   {
     title: "Атланта",
     original: ["Atlanta"],
@@ -3102,6 +3145,19 @@ export const movies = [
     screenshots: 111,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
   }, // атланта 4
+  {
+    title: "Секс в&nbsp;большом городе",
+    original: ["Sex and the City"],
+    release: "1998-06-07",
+    publish: "2022-11-14T10:10:23",
+    creators: ["Даррен Стар"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
+  }, // секс в большом городе 1
+
   {
     title: "Атланта",
     original: ["Atlanta"],
