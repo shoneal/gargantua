@@ -330,7 +330,7 @@ buttons.forEach((button) => {
 //
 //
 //
-const homepageButton = document.querySelector(".homepage");
+const homepageButton = mainHeader.querySelector(".homepage");
 const statusMessage = document.querySelector(".search-form-status");
 const searchWrapper = document.querySelector(".input-wrapper");
 const searchLabel = searchWrapper.querySelector(".input-wrapper label");
@@ -761,6 +761,15 @@ function closePopup(popup) {
 //
 const moviePopup = document.querySelector(".movie-popup");
 const popupContent = moviePopup.querySelector(".popup-content");
+function clonedHeader() {
+  const cloned = mainHeader.cloneNode(true);
+  const img = cloned.querySelector("img");
+  const span = document.createElement("span");
+  span.textContent = "Назад";
+  img.insertAdjacentElement("afterend", span);
+  popupContent.insertBefore(cloned, popupContent.firstChild);
+}
+clonedHeader();
 const popupElements = {
   back: popupContent.querySelector("header"),
   header: popupContent.querySelector(".header-container"),
@@ -774,6 +783,7 @@ const popupElements = {
   figcaption: popupContent.querySelector("figcaption"),
   body: popupContent.querySelector(".article-body"),
 }; // Все элементы попапа с фильмом
+
 popupElements.back.addEventListener("click", (e) => {
   if (e.target.closest(".homepage")) {
     e.preventDefault();
@@ -781,7 +791,7 @@ popupElements.back.addEventListener("click", (e) => {
     return;
   }
   if (moviePopup.scrollTop) moviePopup.scrollTop = 0;
-}); // Добавление обработчика закрытия попапа и скролла наверх попапа на скопированный header
+}); // Добавление обработчика закрытия попапа и скролла наверх попапа
 const updatePopupHeader = () => {
   popupElements.back.classList.toggle(
     "sticky-header",
