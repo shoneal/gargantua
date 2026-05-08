@@ -83,7 +83,6 @@ header {
   z-index: 200;
   border-bottom: 1px solid var(--background-color);
   background-color: var(--background-color);
-  /* transition: all 0.2s ease-in-out; */
 }
 
 body > header {

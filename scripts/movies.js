@@ -3157,6 +3157,75 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/77042/",
   }, // секс в большом городе 1
+  {
+    title: "Сознавайтесь, Флетч",
+    original: ["Confess, Fletch"],
+    release: "2022-09-16",
+    publish: "2022-11-11T23:56:35",
+    directors: ["Грег Моттола"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1394147/",
+  }, // сознавайтесь, флетч
+  {
+    title: "Мост через озеро",
+    original: ["Causeway"],
+    release: "2022-09-10",
+    publish: "2022-11-08T19:36:31",
+    directors: ["Лайла Нойгебауэр"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1271993/",
+  }, // мост через озеро
+  {
+    title: "Не&nbsp;беспокойся, дорогая",
+    original: ["Don't Worry, Darling"],
+    release: "2022-09-05",
+    publish: "2022-11-04T21:11:27",
+    directors: ["Оливия Уайлд"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 32,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1379512/",
+  }, // не беспокойся, дорогая
+  {
+    title: "Дюна",
+    original: ["Dune: Part One"],
+    release: "2021-09-03",
+    publish: "2022-10-28T21:07:56",
+    directors: ["Дени Вильнёв"],
+    operator: "Грег Фрейзер",
+    format: "фильм",
+    liked: "like",
+    screenshots: 45,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/409424/",
+  }, // дюна
+  {
+    title: "Всё везде и&nbsp;сразу",
+    original: ["Everything Everywhere All at Once"],
+    release: "2022-03-11",
+    publish: "2022-10-24T23:19:48",
+    directors: ["Дэн Кван", "Дэниэл Шайнерт"],
+    operator: "Ларкин Сайпл",
+    format: "фильм",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1322324/",
+  }, // всё везде и сразу
+  {
+    title: "Сообщество",
+    original: ["Community"],
+    release: "2010-09-23",
+    publish: "2022-10-19T21:05:11",
+    creators: ["Дэн Хармон"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
+  }, // сообщетсво 2
 
   {
     title: "Атланта",

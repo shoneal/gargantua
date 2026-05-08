@@ -17,7 +17,7 @@ document.addEventListener("click", (e) => {
       list.style.display = "none";
     });
   }
-});
+}); // Закрытие видимых dropdown-list
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
 
@@ -44,10 +44,7 @@ window.addEventListener(
 
 const mainHeader = document.querySelector("header");
 const updateHeader = () => {
-  mainHeader.classList.toggle(
-    "sticky-header",
-    window.scrollY > 0 && !openPopups.includes(moviePopup),
-  );
+  mainHeader.classList.toggle("sticky-header", window.scrollY > 0);
 }; // Border у шапки
 const regex = /\b(?:part\s+(?:ii|iii)|ii|iii)\b/gi;
 const romanMap = {
@@ -83,7 +80,7 @@ function buildImageUrl({ type, title, season, screenshot, release, size }) {
     : `${basicLink}${dir}/${size}/${toUrlFormat(title)}${seasonPart}.jpg`;
 } // Построение URL изображения
 const replaceSpace = (text) => text.replace(/&nbsp;/g, " "); // «&nbsp;» в пробелы
-const setupImageWithContainer = (img) => {
+const setupImage = (img) => {
   const onLoadOrError = () => {
     img.style.opacity = "1";
   };
@@ -463,7 +460,7 @@ const renderMovies = (moviesToRender, startIndex, endIndex) => {
       size: "thumb",
     });
     img.alt = `Постер "${replaceSpace(movie.title)}"`;
-    setupImageWithContainer(img);
+    setupImage(img);
 
     div.appendChild(img);
     moviesContainer.appendChild(div);
@@ -790,7 +787,7 @@ popupElements.back.addEventListener("click", (e) => {
     closePopup(moviePopup);
     return;
   }
-  if (moviePopup.scrollTop) moviePopup.scrollTop = 0;
+  if (moviePopup.scrollTop > 0) moviePopup.scrollTop = 0;
 }); // Добавление обработчика закрытия попапа и скролла наверх попапа
 const updatePopupHeader = () => {
   popupElements.back.classList.toggle(
@@ -882,13 +879,13 @@ const openMoviePopup = (movie) => {
     "load",
     function onPosterLoad() {
       popupElements.poster.removeEventListener("load", onPosterLoad);
-      setupImageWithContainer(popupElements.poster);
+      setupImage(popupElements.poster);
       loadScreenshots(movie);
     },
     { once: true },
   );
   if (popupElements.poster.complete) {
-    setupImageWithContainer(popupElements.poster);
+    setupImage(popupElements.poster);
     loadScreenshots(movie);
   }
 
@@ -921,7 +918,7 @@ const loadScreenshots = (movie) => {
     img.style.opacity = "0";
     img.src = getScreenshotUrl(movie, i);
     img.loading = "lazy";
-    setupImageWithContainer(img);
+    setupImage(img);
 
     div.appendChild(img);
     fragment.appendChild(div);
