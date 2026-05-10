@@ -3226,6 +3226,29 @@ export const movies = [
     screenshots: 48,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
   }, // сообщетсво 2
+  {
+    title: "Женщина-Халк: Адвокат",
+    original: ["She-Hulk: Attorney at Law"],
+    release: "2022-08-18",
+    publish: "2022-10-15T17:11:39",
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "dislike",
+    screenshots: 23,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1301509/",
+  }, // женщина-халк: адвокат
+  {
+    title: "Сообщество",
+    original: ["Community"],
+    release: "2009-09-17",
+    publish: "2022-10-11T23:22:03",
+    creators: ["Дэн Хармон"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/471825/",
+  }, // сообщетсво 1
 
   {
     title: "Атланта",
