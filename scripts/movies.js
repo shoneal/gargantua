@@ -3509,6 +3509,17 @@ export const movies = [
     screenshots: 21,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1272097/",
   }, // расцвет династии лейкерс 1
+  {
+    title: "Бесконечно белый медведь",
+    original: ["Infinitely Polar Bear"],
+    release: "2014-01-18",
+    publish: "2022-08-04T09:32:42",
+    directors: ["Майя Форбс"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/596215/",
+  }, // бесконечно белый медведь
 
   {
     title: "Атланта",
