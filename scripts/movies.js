@@ -3669,17 +3669,6 @@ export const movies = [
     screenshots: 72,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/796660/",
   }, // лучше звоните солу 1
-  {
-    title: "Миньоны",
-    original: ["Minions"],
-    release: "2015-06-11",
-    publish: "2022-07-10T21:58:54",
-    directors: ["Кайл Балда", "Пьер Коффан"],
-    format: "фильм",
-    liked: "like",
-    screenshots: 0,
-    kinopoiskUrl: "https://www.kinopoisk.ru/film/694051/",
-  }, // миньоны
 
   {
     title: "Атланта",
