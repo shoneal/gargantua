@@ -3573,7 +3573,7 @@ export const movies = [
     format: "сериал",
     season: "1",
     liked: "like",
-    screenshots: 63,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4481731/",
   }, // медведь 1
   {
@@ -3669,6 +3669,143 @@ export const movies = [
     screenshots: 72,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/796660/",
   }, // лучше звоните солу 1
+  {
+    title: "Миньоны",
+    original: ["Minions"],
+    release: "2015-06-11",
+    publish: "2022-07-10T21:58:54",
+    directors: ["Кайл Балда", "Пьер Коффан"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/694051/",
+  }, // миньоны
+  {
+    title: "Пацаны",
+    original: ["The Boys"],
+    release: "2022-06-03",
+    publish: "2022-07-09T12:59:33",
+    creators: ["Эрик Крипке"],
+    format: "сериал",
+    season: "2-3",
+    releaseDates: ["2020-09-04"],
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/460586/",
+  }, // пацаны 2-3
+  {
+    title: "Отмена",
+    original: ["Undone"],
+    release: "2022-04-29",
+    publish: "2022-07-05T16:02:00",
+    creators: ["Рафаэль Боб-Ваксберг", "Кейт Парди"],
+    format: "сериал",
+    season: "1-2",
+    releaseDates: ["2019-09-13"],
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1134447/",
+  }, // отмена 1-2
+  {
+    title: "Очень странные дела",
+    original: ["Stranger Things"],
+    release: "2022-05-27",
+    publish: "2022-07-03T13:55:43",
+    creators: ["Мэтт Даффер", "Росс Даффер"],
+    format: "сериал",
+    season: "4",
+    liked: "like",
+    screenshots: 72,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/915196/",
+  }, // очень странные дела 4
+  {
+    title: "Крестный отец&nbsp;3",
+    original: ["The Godfather: Part III"],
+    release: "1990-12-20",
+    publish: "2022-06-29T00:21:54",
+    directors: ["Фрэнсис Форд Коппола"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 29,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4500/",
+  }, // крестный отец 3
+  {
+    title: "Крестный отец",
+    original: ["The Godfather"],
+    release: "1972-03-14",
+    publish: "2022-06-27T12:09:25",
+    directors: ["Фрэнсис Форд Коппола"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/325/",
+  }, // крестный отец
+  {
+    title: "Предложение",
+    original: ["The Offer"],
+    release: "2022-04-28",
+    publish: "2022-06-25T12:11:01",
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "like",
+    screenshots: 42,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1407744/",
+  }, // предложение
+  {
+    title: "Пэм и&nbsp;Томми",
+    original: ["Pam & Tommy"],
+    release: "2022-02-02",
+    publish: "2022-06-24T14:35:22",
+    format: "сериал",
+    isMiniSeries: true,
+    liked: "like",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4294378/",
+  }, // пэм и томми
+  {
+    title: "Доктор Стрэндж: В&nbsp;мультивселенной безумия",
+    original: ["Doctor Strange in the Multiverse of Madness"],
+    release: "2022-05-02",
+    publish: "2022-06-23T10:58:50",
+    directors: ["Сэм Рэйми"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 25,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1219909/",
+  }, // доктор стрэндж 2
+  {
+    title: "Аполлон-10½: Приключение космического века",
+    original: ["Apollo 10½: A Space Age Childhood"],
+    release: "2022-03-13",
+    publish: "2022-06-23T12:37:49",
+    directors: ["Ричард Линклейтер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1114648/",
+  }, // аполлон-10½
+  {
+    title: "Спайдерхед",
+    original: ["Spiderhead"],
+    release: "2022-06-17",
+    publish: "2022-06-18T19:27:24",
+    directors: ["Джозеф Косински"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1450799/",
+  }, // спайдерхед
+  {
+    title: "Линкольн для адвоката",
+    original: ["The Lincoln Lawyer"],
+    release: "2022-05-13",
+    publish: "2022-06-18T16:27:10",
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 13,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/4471789/",
+  }, // линкольн для адвоката 1
 
   {
     title: "Атланта",
