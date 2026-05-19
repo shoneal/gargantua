@@ -753,6 +753,8 @@ popupElements.back.addEventListener("click", (e) => {
     e.preventDefault();
     closePopup(moviePopup);
     return;
+  } else if (moviePopup.scrollTop > 0) {
+    moviePopup.scrollTop = 0;
   }
 }); // Добавление обработчика закрытия попапа
 const updatePopupHeader = () => {
