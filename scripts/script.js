@@ -1,59 +1,49 @@
 import { movies } from "./movies.js";
 
 const basicLink = "https://shoneal.github.io/gargantua/images/"; // Главная ссылка
+const body = {
+  header: document.querySelector("body > header"),
+  homeButton: document.querySelector("body > header .homepage"),
+  figures: document.querySelectorAll(".figure"),
+  moviesContainer: document.querySelector(".movies"),
+  status: document.querySelector(".search-form-status"),
+  searchWrapper: document.querySelector(".input-wrapper"),
+  search: document.getElementById("searchTextField"),
+  searchButton: document.querySelector(".input-wrapper button"),
+  sorting: document.querySelector(".search-form-sort-by"),
+  checkmark: document.querySelector(".select-wrapper .checkmark"),
+  forms: document.querySelector(".forms"),
+  buttons: document.querySelectorAll(".forms .search-multiselect-button"),
+}; // Основные элементы тела страницы
+let isScrolling = false; // Флаг состояния прокрутки
+let isFiltering = false; // Флаг состояния фильтрации
+let currentIndex = 0; // Текущий индекс для отображения элементов
+let currentFilteredMovies = movies; // Текущие отфильтрованные фильмы
+let moviesPerPage = window.innerWidth > 940 ? 18 : 12; // Количество фильмов на странице (зависит от ширины экрана)
+let currentSortType = body.sorting.value; // Текущий тип сортировки
+const defaultSortType = body.sorting.options[0].value; // Тип сортировки по умолчанию
+const movieElementMap = new WeakMap(); // Связь элементов с данными фильмов
+const openPopups = new Set(); // Стек открытых попапов
+const moviePopup = document.querySelector(".movie-popup"); // Попап фильма
+const popupContent = moviePopup.querySelector(".popup-content"); // Контент попапа фильма
+const slideshowPopup = document.querySelector(".slideshow-popup"); // Попап скришотов
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("theme") === "dark")
-    document.body.classList.add("dark-theme"); // Смена темы
-
-  updateHeader(); // Border у шапки
-  handleFilterUpdate(); // Первоначальная фильтрация и рендер
-});
-document.addEventListener("click", (e) => {
-  const target = e.target;
-
-  if (!target.closest(".dropdown-list")) {
-    document.querySelectorAll(".dropdown-list").forEach((list) => {
-      list.style.display = "none";
-    });
-  }
-}); // Закрытие видимых dropdown-list
-document.addEventListener("keydown", (e) => {
-  if (e.key !== "Escape") return;
-
-  if (openPopups.length) {
-    e.preventDefault();
-    closePopup(openPopups[openPopups.length - 1]);
-    return;
-  } // Закрытие попапов по Esc
-
-  document.querySelectorAll(".dropdown-list").forEach((list) => {
-    if (getComputedStyle(list).display === "block") {
-      list.style.display = "none";
-    }
-  }); // Закрытие видимых dropdown-list
-});
-window.addEventListener(
-  "scroll",
-  () => {
-    updateHeader();
-    handleScroll();
-  },
-  { passive: true },
-);
-
-const mainHeader = document.querySelector("header");
+//
+//
+//
+//
+//
 const updateHeader = () => {
-  mainHeader.classList.toggle("sticky-header", window.scrollY > 0);
+  body.header.classList.toggle("sticky-header", window.scrollY > 0);
 }; // Border у шапки
-const regex = /\b(?:part\s+(?:ii|iii)|ii|iii)\b/gi;
-const romanMap = {
-  "part ii": "2",
-  "part iii": "3",
-  ii: "2",
-  iii: "3",
-}; // Римские цифры
 function toUrlFormat(str) {
+  const regex = /\b(?:part\s+(?:ii|iii)|ii|iii)\b/gi;
+  const romanMap = {
+    "part ii": "2",
+    "part iii": "3",
+    ii: "2",
+    iii: "3",
+  };
   return str
     .toLowerCase()
     .replace(regex, (match) => romanMap[match.toLowerCase()] || match)
@@ -62,6 +52,15 @@ function toUrlFormat(str) {
     .replace(/-+/g, "-")
     .replace(/&/g, "and");
 } // Названия в URL-формат
+function normalizeText(text) {
+  if (!text) return "";
+  return text
+    .replace(/\s+/g, " ")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\p{P}/gu, "");
+} // Нормализация текста для поиска
 function buildImageUrl({ type, title, season, screenshot, release, size }) {
   const dir = type === "poster" ? "posters" : type;
   const yearPart =
@@ -73,11 +72,12 @@ function buildImageUrl({ type, title, season, screenshot, release, size }) {
         ? `-${season}`
         : "";
 
+  const startPath = `${basicLink}${dir}`;
+  const namePlusSeason = `${toUrlFormat(title)}${seasonPart}`;
+
   return screenshot
-    ? `${basicLink}${dir}${yearPart}/${toUrlFormat(
-        title,
-      )}${seasonPart}/${screenshot}.jpg`
-    : `${basicLink}${dir}/${size}/${toUrlFormat(title)}${seasonPart}.jpg`;
+    ? `${startPath}${yearPart}/${namePlusSeason}/${screenshot}.jpg`
+    : `${startPath}/${size}/${namePlusSeason}.jpg`;
 } // Построение URL изображения
 const replaceSpace = (text) => text.replace(/&nbsp;/g, " "); // «&nbsp;» в пробелы
 const setupImage = (img) => {
@@ -94,11 +94,19 @@ const setupImage = (img) => {
 }; // Функция для настройки прозрачности изображения
 const getResultPhrase = (count) => {
   const n = Math.abs(count) % 100;
+  if (n >= 11 && n <= 19) return "результатов";
+
   const lastDigit = n % 10;
-  if (lastDigit === 1 && n !== 11) {
-    return "результата";
+  switch (lastDigit) {
+    case 1:
+      return "результат";
+    case 2:
+    case 3:
+    case 4:
+      return "результата";
+    default:
+      return "результатов";
   }
-  return "результатов";
 }; // Склонение слова "результат"
 
 //
@@ -106,7 +114,6 @@ const getResultPhrase = (count) => {
 // АНИМИРОВАННАЯ ШАПКА СО СКРИНШОТАМИ
 //
 //
-const figures = document.querySelectorAll(".figure");
 function getRandomItems(arr, count) {
   const result = [];
   const indices = Array.from({ length: arr.length }, (_, i) => i);
@@ -118,17 +125,16 @@ function getRandomItems(arr, count) {
   }
 
   return result;
-}
+} // Случайное количество элементов
 const randomMovies = getRandomItems(movies, 25); // 25 случайных элементов
-function createImageBlock(image, alt) {
+function createImageBlock(image) {
   const block = document.createElement("div");
   const img = document.createElement("img");
   img.style.opacity = "0";
   img.src = image;
-  img.alt = alt;
   block.appendChild(img);
   return block;
-}
+} // Блок с изображением
 const handleFigureLoad = (figure) => {
   const images = figure.querySelectorAll("img");
   let loaded = 0;
@@ -145,7 +151,7 @@ const handleFigureLoad = (figure) => {
           img.addEventListener(event, onDone, { once: true }),
         );
   });
-};
+}; // Обработчик загрузки изображений
 randomMovies.forEach((movie) => {
   const screenshot = Math.floor(Math.random() * movie.screenshots) + 1;
 
@@ -157,26 +163,15 @@ randomMovies.forEach((movie) => {
     release: movie.release,
   });
 
-  const altParts = [
-    replaceSpace(movie.title),
-    movie.release?.split("-")[0],
-    movie.season && `сезон ${movie.season}`,
-    `скр. ${screenshot}`,
-  ].filter(Boolean);
-
-  const alt = altParts.join(" | ");
-
-  figures.forEach((figure) => figure.appendChild(createImageBlock(image, alt)));
-});
-figures.forEach(handleFigureLoad); // Создание анимационного блока с изображениями в верхнюю часть сайта
+  body.figures.forEach((figure) => figure.appendChild(createImageBlock(image)));
+}); // Создание анимационного блока с изображениями в верхнюю часть сайта
+body.figures.forEach(handleFigureLoad); // После полной загрузки все изображения плавно появляются
 
 //
 //
 // ФОРМИРОВАНИЕ ФИЛЬТРОВ ИЗ ГЛАВНОГО МАССИВА
 //
 //
-const forms = document.querySelector(".forms");
-const buttons = forms.querySelectorAll(".search-multiselect-button");
 const createFilterItem = (text, value, type, isBase) => {
   const li = document.createElement("li");
   const label = document.createElement("label");
@@ -196,10 +191,9 @@ const createFilterItem = (text, value, type, isBase) => {
   }
   li.appendChild(label);
   return li;
-};
-buttons.forEach((button) => {
-  const checkmark = document.querySelector(".select-wrapper .checkmark");
-  button.querySelector("span").after(checkmark.cloneNode(true));
+}; // Функция создаёт радио‑кнопку с меткой и счётчиком
+body.buttons.forEach((button) => {
+  button.querySelector("span").after(body.checkmark.cloneNode(true));
 
   const list = document.createElement("ul");
   list.classList.add("dropdown-list");
@@ -251,7 +245,7 @@ buttons.forEach((button) => {
         span.textContent = periodName;
 
         button.appendChild(span);
-        span.after(checkmark.cloneNode(true));
+        span.after(body.checkmark.cloneNode(true));
         li.appendChild(button);
 
         const ul = document.createElement("ul");
@@ -320,55 +314,24 @@ buttons.forEach((button) => {
       if (allLabelsDisabled) ul.classList.remove("is-open");
     });
   });
-}); // Добавление фильтров формат, год и оценка
-
-//
-//
-//
-//
-//
-const homepageButton = mainHeader.querySelector(".homepage");
-const statusMessage = document.querySelector(".search-form-status");
-const searchWrapper = document.querySelector(".input-wrapper");
-const searchLabel = searchWrapper.querySelector(".input-wrapper label");
-const searchInput = document.getElementById("searchTextField");
-const searchButton = searchInput.parentElement.nextElementSibling;
-const sortSelect = document.querySelector(".search-form-sort-by");
-const filters = forms.querySelectorAll('input[type="radio"]');
-const moviesContainer = document.querySelector(".movies");
-
-let currentFilteredMovies = movies;
-let currentIndex = 0;
-let moviesPerPage = window.innerWidth > 940 ? 18 : 12;
-let isFiltering = false;
-const defaultSortType = sortSelect.options[0].value;
-let currentSortType = sortSelect.value;
+}); // Для каждой кнопки фильтра создаём выпадающий список с опциями
 
 //
 //
 // ФИЛЬТРАЦИЯ И СОРТИРОВКА
 //
 //
+const filters = body.forms.querySelectorAll('input[type="radio"]'); // Все радио‑кнопки фильтров
 function getFiltersValues() {
   const values = {};
   filters.forEach((filter) => {
     if (filter.checked) values[filter.name] = filter.value;
   });
   return values;
-} // Получение значений фильтров
+} // Получение текущих значений активных фильтров
 const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
   let filtered = [...movies];
   const filterValues = overrideFilters || getFiltersValues();
-
-  function normalizeText(text) {
-    if (!text) return "";
-    return text
-      .replace(/\s+/g, " ")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/\p{P}/gu, "");
-  }
 
   const moviesWithCache = movies.map((movie) => {
     const normalizedTerms = [
@@ -441,9 +404,10 @@ const applyFiltersAndSort = (movies, query, sortType, overrideFilters) => {
 // ВЫВОД ПОСТЕРОВ НА СТРАНИЦУ
 //
 //
-const movieElementMap = new WeakMap();
 const renderMovies = (moviesToRender, startIndex, endIndex) => {
-  if (startIndex === 0) moviesContainer.innerHTML = "";
+  if (startIndex === 0) body.moviesContainer.innerHTML = "";
+
+  const fragment = document.createDocumentFragment();
 
   for (let i = startIndex; i < endIndex && i < moviesToRender.length; i++) {
     const movie = moviesToRender[i];
@@ -463,11 +427,12 @@ const renderMovies = (moviesToRender, startIndex, endIndex) => {
     setupImage(img);
 
     div.appendChild(img);
-    moviesContainer.appendChild(div);
+    fragment.appendChild(div);
     movieElementMap.set(div, movie);
   }
+  body.moviesContainer.appendChild(fragment);
 }; // Рендер фильмов
-moviesContainer.addEventListener(
+body.moviesContainer.addEventListener(
   "click",
   (e) => {
     const movieElement = e.target.closest(".movie");
@@ -478,10 +443,9 @@ moviesContainer.addEventListener(
   },
   { passive: true },
 ); // Клик по постерам
-
 function handleFilterUpdate() {
   const currentFilters = getFiltersValues();
-  const searchQuery = searchInput.value.trim();
+  const searchQuery = body.search.value.trim();
 
   filters.forEach((input) => {
     const label = input.closest("label");
@@ -513,7 +477,8 @@ function handleFilterUpdate() {
 
   updateMoviesDisplay();
   updateButtonState();
-} // Функция активных/неактивных фильтров и обновления счётчиков
+}
+// Функция обновляет состояние фильтров: включает/отключает опции и обновляет счётчики
 const updateHiddenFiltersUI = () => {
   const searchForm = document.querySelector(".search-form");
   const filterValues = getFiltersValues();
@@ -582,11 +547,11 @@ const applyFiltersAndRender = () => {
     currentIndex,
     currentIndex + moviesPerPage,
   );
-};
+}; // Функция сбрасывает индекс и рендерит фильмы с начала (для новых фильтров/поиска)
 const updateMoviesDisplay = () => {
-  statusMessage.textContent = "Загрузка...";
+  body.status.textContent = "Загрузка...";
 
-  const query = searchInput.value.trim();
+  const query = body.search.value.trim();
   isFiltering = true;
 
   currentFilteredMovies = applyFiltersAndSort(movies, query, currentSortType);
@@ -597,13 +562,13 @@ const updateMoviesDisplay = () => {
   if (query) {
     const count = currentFilteredMovies.length;
     const word = getResultPhrase(count);
-    statusMessage.textContent = `Отображение ${count} ${word} для:`;
+    body.status.textContent = `Отображение ${count} ${word} для:`;
   } else {
-    statusMessage.textContent = "";
+    body.status.textContent = "";
   }
 
   isFiltering = false;
-}; // Основной рендер + обновление
+}; // Основной обработчик обновления отображения фильмов и интерфейса
 const loadMoreMovies = () => {
   const endIndex = currentIndex + moviesPerPage;
 
@@ -628,47 +593,52 @@ const handleScroll = () => {
 //
 //
 const updateResetButton = (onClearAction) => {
-  const resetBtn = searchWrapper.querySelector(".search-reset");
+  const resetBtn = body.searchWrapper.querySelector(".search-reset");
 
-  if (searchInput.value) {
+  if (body.search.value) {
     if (!resetBtn) {
       const btn = document.createElement("input");
       btn.type = "reset";
       btn.className = "search-reset";
       btn.value = "Очистить";
-      btn.onclick = () => onClearAction(btn);
-      searchWrapper.appendChild(btn);
+      btn.addEventListener("click", () => onClearAction(btn), { once: true });
+      body.searchWrapper.appendChild(btn);
     } else {
-      resetBtn.onclick = () => onClearAction(resetBtn);
+      resetBtn.removeEventListener("click", resetBtn._handler);
+      const newHandler = () => onClearAction(resetBtn);
+      resetBtn.addEventListener("click", newHandler);
+      resetBtn._handler = newHandler;
     }
   } else if (resetBtn) {
     resetBtn.remove();
   }
-};
+}; // Рисует кнопку «Очистить», если в поле поиска есть текст, и удаляет, если поле пустое
 const clearAndUpdate = (btn) => {
-  searchInput.value = "";
-  setTimeout(() => searchInput.blur(), 0);
+  body.search.value = "";
   btn.remove();
+  body.search.blur();
   handleFilterUpdate();
-};
+}; // Очистка поиска и обновление фильтров
 const clearAndRefocus = (btn) => {
-  searchInput.value = "";
+  body.search.value = "";
   btn.remove();
-  searchInput.focus();
-};
-searchInput.addEventListener("input", () => updateResetButton(clearAndRefocus)); // "Очистить" поиск
-searchButton.addEventListener("click", handleSearchButtonClick);
-searchButton.addEventListener("touchstart", handleSearchButtonClick);
-function handleSearchButtonClick(e) {
+  body.search.focus();
+}; // Очистка поиска и фокус в поле поиска
+body.search.addEventListener("input", () => updateResetButton(clearAndRefocus)); // "Очистить" поиск
+body.searchButton.addEventListener("click", (e) => {
   e.preventDefault();
   handleFilterUpdate();
-}
-searchInput.addEventListener("focus", () =>
-  searchButton.classList.add("is-active"),
-);
-searchInput.addEventListener("blur", () =>
-  searchButton.classList.remove("is-active"),
-);
+}); // Обработчик нажатия на кнопку поиска (клик)
+body.searchButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  handleFilterUpdate();
+}); // Обработчик нажатия на кнопку поиска (касание)
+body.search.addEventListener("focus", () =>
+  body.searchButton.classList.add("is-active"),
+); // При фокусе добавляем класс, подсвечивающий кнопку
+body.search.addEventListener("blur", () =>
+  body.searchButton.classList.remove("is-active"),
+); // При потере фокуса убираем класс
 filters.forEach((filter) => {
   filter.addEventListener("change", () => {
     const dropdownList = filter.closest(".dropdown-list");
@@ -676,7 +646,7 @@ filters.forEach((filter) => {
     handleFilterUpdate();
   });
 }); // Фильтры
-sortSelect.addEventListener("change", (e) => {
+body.sorting.addEventListener("change", (e) => {
   currentSortType = e.target.value;
   handleFilterUpdate();
 }); // Сортировка
@@ -687,8 +657,8 @@ sortSelect.addEventListener("change", (e) => {
 //
 //
 const isInDefaultState = () => {
-  if (searchInput.value.trim()) return false;
-  if (sortSelect.value !== defaultSortType) return false;
+  if (body.search.value.trim()) return false;
+  if (body.sorting.value !== defaultSortType) return false;
   for (const filter of filters) {
     if (filter.value === "все" && !filter.checked) return false;
   }
@@ -696,19 +666,21 @@ const isInDefaultState = () => {
 }; // Все ли элементы в базовом состоянии?
 const updateButtonState = () => {
   const isDefault = isInDefaultState();
-  homepageButton.classList.toggle("disabled", isDefault);
+  body.homeButton.classList.toggle("disabled", isDefault);
 }; // Обновление состояния главной кнопки
 const resetFiltersAndSearch = (searchValue) => {
-  searchInput.value = searchValue;
-  sortSelect.value = defaultSortType;
+  body.search.value = searchValue;
+  body.sorting.value = defaultSortType;
   currentSortType = defaultSortType;
-  filters.forEach((f) => f.value === "все" && (f.checked = true));
+  filters.forEach((f) => {
+    f.checked = f.value === "все";
+  });
   handleFilterUpdate();
 }; // Сброс фильтров и поиска
-homepageButton.addEventListener("click", (e) => {
+body.homeButton.addEventListener("click", (e) => {
   e.preventDefault();
   resetFiltersAndSearch("");
-  requestAnimationFrame(() => window.scrollTo(0, 0));
+  window.scrollTo(0, 0);
 }); // Обработчик сброса по главной кнопке
 
 //
@@ -716,10 +688,9 @@ homepageButton.addEventListener("click", (e) => {
 // ФУНКЦИИ ОТКРЫТИЯ/ЗАКРЫТИЯ ПОПАПА
 //
 //
-const openPopups = []; // Стек открытых попапов
 function openPopup(popup) {
-  if (openPopups.includes(popup)) return;
-  openPopups.push(popup);
+  if (openPopups.has(popup)) return;
+  openPopups.add(popup);
 
   popup.classList.add("is-opened");
 
@@ -735,9 +706,8 @@ function openPopup(popup) {
   }
 } // Открыть попап
 function closePopup(popup) {
-  const index = openPopups.indexOf(popup);
-  if (index === -1) return;
-  openPopups.splice(index, 1);
+  if (!openPopups.has(popup)) return;
+  openPopups.delete(popup);
 
   popup.classList.remove("is-opened");
 
@@ -747,7 +717,7 @@ function closePopup(popup) {
     body.style.top = "";
     body.classList.remove("scroll-lock");
     window.scrollTo(0, scrollPosition);
-    popupContent.removeEventListener("scroll", updatePopupHeader);
+    moviePopup.removeEventListener("scroll", updatePopupHeader);
   }
 } // Закрыть попап
 
@@ -756,16 +726,14 @@ function closePopup(popup) {
 // ПОПАП ФИЛЬМА
 //
 //
-const moviePopup = document.querySelector(".movie-popup");
-const popupContent = moviePopup.querySelector(".popup-content");
 function clonedHeader() {
-  const cloned = mainHeader.cloneNode(true);
+  const cloned = body.header.cloneNode(true);
   const img = cloned.querySelector("img");
   const span = document.createElement("span");
   span.textContent = "Назад";
   img.insertAdjacentElement("afterend", span);
   popupContent.insertBefore(cloned, popupContent.firstChild);
-}
+} // Клонирование шапки сайта + «Назад» для попапа
 clonedHeader();
 const popupElements = {
   back: popupContent.querySelector("header"),
@@ -780,22 +748,19 @@ const popupElements = {
   figcaption: popupContent.querySelector("figcaption"),
   body: popupContent.querySelector(".article-body"),
 }; // Все элементы попапа с фильмом
-
 popupElements.back.addEventListener("click", (e) => {
   if (e.target.closest(".homepage")) {
     e.preventDefault();
     closePopup(moviePopup);
     return;
   }
-  if (moviePopup.scrollTop > 0) moviePopup.scrollTop = 0;
-}); // Добавление обработчика закрытия попапа и скролла наверх попапа
+}); // Добавление обработчика закрытия попапа
 const updatePopupHeader = () => {
   popupElements.back.classList.toggle(
     "sticky-header",
     moviePopup.scrollTop > 0,
   );
 }; // Border у шапки попапа
-
 const getScreenshotUrl = (movie, index) =>
   buildImageUrl({
     type: movie.format === "фильм" ? "movie" : "series",
@@ -803,8 +768,8 @@ const getScreenshotUrl = (movie, index) =>
     season: movie.season,
     screenshot: index,
     release: movie.release,
-  });
-window.currentSlideshow = null;
+  }); // URL для скриншота фильма
+window.currentSlideshow = null; // Текущий слайд‑шоу
 const openMoviePopup = (movie) => {
   popupElements.opinion.textContent = movie.liked;
   popupElements.title.innerHTML = movie.title;
@@ -952,7 +917,6 @@ const loadScreenshots = (movie) => {
 // ПОПАП С СЛАЙДЩОУ
 //
 //
-const slideshowPopup = document.querySelector(".slideshow-popup");
 const slideshowElements = {
   close: slideshowPopup.querySelector(".close-popup"),
   prev: slideshowPopup.querySelector(".previous-slide"),
@@ -1046,3 +1010,52 @@ function initSlideshow(popupSelector, totalCount, urlGetter) {
     close: closeSlideshow,
   };
 } // Открытие слайдшоу
+
+//
+//
+//
+//
+//
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark")
+    document.body.classList.add("dark-theme"); // Смена темы
+
+  updateHeader(); // Border у шапки
+  updateMoviesDisplay(); // Первоначальная фильтрация и рендер
+}); // Стартовая инциализация
+document.addEventListener("click", (e) => {
+  const target = e.target;
+
+  if (!target.closest(".dropdown-list")) {
+    document.querySelectorAll(".dropdown-list").forEach((list) => {
+      list.style.display = "none";
+    });
+  }
+}); // Закрытие видимых dropdown-list
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+
+  e.preventDefault();
+
+  if (openPopups.size > 0) {
+    const lastPopup = Array.from(openPopups).pop();
+    closePopup(lastPopup);
+    return;
+  } // Закрытие попапов по Esc
+
+  document.querySelectorAll(".dropdown-list").forEach((list) => {
+    if (getComputedStyle(list).display === "block") {
+      list.style.display = "none";
+    }
+  }); // Закрытие видимых dropdown-list
+}); // Обработчик на клавиши
+window.addEventListener("scroll", () => {
+  if (!isScrolling) {
+    window.requestAnimationFrame(() => {
+      updateHeader();
+      handleScroll();
+      isScrolling = false;
+    });
+    isScrolling = true;
+  }
+}); // Обработчик на скролл

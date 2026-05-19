@@ -86,8 +86,10 @@ header {
 }
 
 body > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 67px;
-  padding: 14px 0;
 }
 
 .sticky-header {
@@ -97,7 +99,6 @@ body > header {
 body > header.sticky-header {
   height: 49px;
   max-height: 49px;
-  padding: 11px 0;
 }
 
 .homepage {
@@ -107,17 +108,13 @@ body > header.sticky-header {
 }
 
 body > header .homepage {
-  position: absolute;
+  position: relative;
   height: 38px;
-  margin-inline: auto;
-  transition: transform 0.3s ease-in-out;
-  transform: scale(1) translateY(-50%) translateZ(0);
-  inset-inline: 0;
-  inset-block-start: 50%;
+  transform: scale(1) translateZ(0);
 }
 
 body > header.sticky-header .homepage {
-  transform: scale(0.7) translateY(-70%) translateZ(0px);
+  transform: scale(0.7) translateZ(0px);
 }
 
 .homepage.disabled {
@@ -1001,13 +998,11 @@ figcaption {
 @media screen and (max-width: 1024px) {
   body > header {
     height: 59px;
-    padding: 7px 0;
   }
 
   body > header.sticky-header {
     height: 44px;
     max-height: 44px;
-    padding: 6px 0;
   }
 
   body > header .homepage {
@@ -1041,18 +1036,16 @@ figcaption {
 
 @media screen and (max-width: 740px) {
   body > header {
-    display: flex;
-    align-items: center;
     height: 52px;
-    padding: 0;
   }
 
   body > header .homepage {
     height: 31px;
+    transform: none;
   }
 
   body > header.sticky-header .homepage {
-    transform: scale(1) translateY(-50%) translateZ(0px);
+    transform: none;
   }
 
   .movie-popup .homepage img {
