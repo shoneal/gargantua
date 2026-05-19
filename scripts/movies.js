@@ -3806,7 +3806,39 @@ export const movies = [
     screenshots: 13,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/4471789/",
   }, // линкольн для адвоката 1
-
+  {
+    title: "Прорваться в&nbsp;НБА",
+    original: ["Hustle"],
+    release: "2022-06-03",
+    publish: "2022-06-10T10:41:18",
+    directors: ["Джеремайя Сагар"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 20,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1437989/",
+  }, // прорваться в нба
+  {
+    title: "Чрезвычайная ситуация",
+    original: ["Emergency"],
+    release: "2022-01-20",
+    publish: "2022-06-08T17:36:20",
+    directors: ["Кэри Уильямс"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 13,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4483903/",
+  }, // чрезвычайная ситуация
+  {
+    title: "Убийственная внешность",
+    original: ["Looks That Kill"],
+    release: "2020-06-19",
+    publish: "2022-05-27T12:42:09",
+    directors: ["Келлен Мур"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1141950/",
+  }, // убийственная внешность
   {
     title: "Атланта",
     original: ["Atlanta"],
@@ -3819,6 +3851,30 @@ export const movies = [
     screenshots: 105,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
   }, // атланта 3
+  {
+    title: "Любовь. Смерть. Роботы",
+    original: ["Love, Death & Robots"],
+    release: "2022-05-20",
+    publish: "2022-05-25T14:42:26",
+    creators: ["Тим Миллер"],
+    format: "сериал",
+    season: "3",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1228254/",
+  }, // любовь, смерть и роботы 3
+  {
+    title: "На&nbsp;счёт три",
+    original: ["On the Count of Three"],
+    release: "2021-01-29",
+    publish: "2022-05-24T18:55:36",
+    directors: ["Джеррод Кармайкл"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 16,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1320812/",
+  }, // на счёт три
+
   {
     title: "Атланта",
     original: ["Atlanta"],
