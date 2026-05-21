@@ -3998,7 +3998,7 @@ export const movies = [
     format: "сериал",
     season: "1",
     liked: "like",
-    screenshots: 0,
+    screenshots: 24,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1421587/",
   }, // миротворец 1
   {
@@ -4060,18 +4060,7 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
   }, // атланта 1
 
-  {
-    title: "Разделение",
-    original: ["Severance"],
-    release: "2022-02-18",
-    publish: "2022-04-27T21:06:25",
-    creators: ["Бен Стиллер", "Дэн Эриксон"],
-    format: "сериал",
-    season: "1",
-    liked: "like",
-    screenshots: 45,
-    kinopoiskUrl: "https://www.kinopoisk.ru/series/1343318/",
-  }, // разделение 1
+
   {
     title: "Непобедимый",
     original: ["Invincible"],
