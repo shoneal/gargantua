@@ -4034,6 +4034,107 @@ export const movies = [
     screenshots: 15,
     kinopoiskUrl: "https://www.kinopoisk.ru/film/39577/",
   }, // брюс всемогущий
+  {
+    title: "Бесстыжие",
+    original: ["Shameless"],
+    release: "2013-01-13",
+    publish: "2022-04-03T06:56:36",
+    format: "сериал",
+    season: "1-3",
+    releaseDates: ["2011-09-01", "2012-08-01"],
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/571335/",
+  }, // бесстыжие 1-3
+  {
+    title: "Парни со&nbsp;стволами",
+    original: ["War Dogs"],
+    release: "2016-08-03",
+    publish: "2022-03-30T07:21:48",
+    directors: ["Тодд Филлипс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 42,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/602749/",
+  }, // парни со стволами
+  {
+    title: "Секса не&nbsp;будет!!!",
+    original: ["Blockers"],
+    release: "2018-03-10",
+    publish: "2022-03-28T23:23:05",
+    directors: ["Кэй Кэннон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/719155/",
+  }, // секса не будет
+  {
+    title: "Рука бога",
+    original: ["The Hand of God", "È stata la mano di Dio"],
+    release: "2021-09-02",
+    publish: "2022-03-28T19:30:27",
+    directors: ["Паоло Соррентино"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1395871/",
+  }, // рука бога
+  {
+    title: "Власть пса",
+    original: ["The Power of the Dog"],
+    release: "2021-09-02",
+    publish: "2022-03-27T13:28:22",
+    directors: ["Джейн Кэмпион"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1262931/",
+  }, // власть пса
+  {
+    title: "Вестсайдская история",
+    original: ["West Side Story"],
+    release: "2021-11-29",
+    publish: "2022-03-27T10:10:01",
+    directors: ["Стивен Спилберг"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/839653/",
+  }, // вестсайдская история
+  {
+    title: "Охотник на&nbsp;лис",
+    original: ["Foxcatcher"],
+    release: "2014-05-19",
+    publish: "2022-03-26T10:20:50",
+    directors: ["Беннетт Миллер"],
+    operator: "Грег Фрейзер",
+    format: "фильм",
+    liked: "like",
+    screenshots: 51,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/638053/",
+  }, // охотник на лис
+  {
+    title: "Сезон ураганов",
+    original: ["Hurricane Season"],
+    release: "2009-12-08",
+    publish: "2022-03-24T00:41:05",
+    directors: ["Тим Стори"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 15,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/403431/",
+  }, // сезон ураганов
+  {
+    title: "Квин и&nbsp;Слим",
+    original: ["Queen & Slim"],
+    release: "2019-11-14",
+    publish: "2022-03-24T23:44:32",
+    directors: ["Мелина Матсукас"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 36,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1186158/",
+  }, // квин и слим
 
   {
     title: "Атланта",
@@ -4060,7 +4161,6 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/882408/",
   }, // атланта 1
 
-
   {
     title: "Непобедимый",
     original: ["Invincible"],
@@ -4074,6 +4174,174 @@ export const movies = [
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1171895/",
   }, // непобедимый 1
 
+  {
+    title: "История о&nbsp;супружестве",
+    original: ["Marriage Story", "Брачная история"],
+    release: "2019-08-29",
+    publish: "2020-02-25T18:38:39",
+    directors: ["Ноа Баумбак"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1115486/",
+  }, // история о супружестве
+  {
+    title: "Дождливый день в&nbsp;Нью-Йорке",
+    original: ["A Rainy Day in New York"],
+    release: "2019-07-26",
+    publish: "2020-02-23T10:56:09",
+    directors: ["Вуди Аллен"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1047626/",
+  }, // дождливый день в нью-йорке
+  {
+    title: "Достать ножи",
+    original: ["Knives Out"],
+    release: "2019-09-07",
+    publish: "2020-02-21T00:33:07",
+    directors: ["Райан Джонсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 23,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1188529/",
+  }, // достать ножи (1)
+  {
+    title: "Конь БоДжек",
+    original: ["BoJack Horseman"],
+    release: "2014-08-22",
+    publish: "2020-02-20T07:13:37",
+    creators: ["Рафаэль Боб-Ваксберг"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/818185/",
+  }, // конь боджек 1
+  {
+    title: "Большой куш",
+    original: ["Snatch", "Спиздили"],
+    release: "2000-08-23",
+    publish: "2020-02-19T01:44:04",
+    directors: ["Гай Ричи"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/526/",
+  }, // большой куш
+  {
+    title: "Рок-н-рольщик",
+    original: ["RocknRolla"],
+    release: "2008-09-04",
+    publish: "2020-02-15T07:35:03",
+    directors: ["Гай Ричи"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 24,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/378140/",
+  }, // рок-н-рольщик
+  {
+    title: "Неогранённые алмазы",
+    original: ["Uncut Gems", "Неогранённые драгоценности"],
+    release: "2019-08-30",
+    publish: "2020-02-10T17:01:09",
+    directors: ["Бенни Сэфди", "Джош Сэфди"],
+    operator: "Дариус Хонджи",
+    format: "фильм",
+    liked: "like",
+    screenshots: 22,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1076152/",
+  }, // неогранённые алмазы
+  {
+    title: "Гранд тур",
+    original: ["The Grand Tour"],
+    release: "2019-01-18",
+    publish: "2020-02-02T14:14:00",
+    format: "сериал",
+    season: "3",
+    liked: "like",
+    screenshots: 20,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/982730/",
+  }, // гранд тур 3
+  {
+    title: "Небраска",
+    original: ["Nebraska"],
+    release: "2013-05-23",
+    publish: "2020-02-01T14:23:59",
+    directors: ["Александр Пэйн"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/582391/",
+  }, // небраска
+  {
+    title: "В&nbsp;погоне за&nbsp;счастьем",
+    original: ["The Pursuit of Happyness"],
+    release: "2006-12-15",
+    publish: "2020-01-27T17:45:40",
+    directors: ["Габриэле Муччино"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 16,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/104938/",
+  }, // в погоне за счастьем
+  {
+    title: "Плохие парни&nbsp;2",
+    original: ["Bad Boys II"],
+    release: "2003-07-09",
+    publish: "2020-01-23T21:58:18",
+    directors: ["Майкл Бэй"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 12,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/2928/",
+  }, // плохие парни 2
+  {
+    title: "Ты",
+    original: ["You"],
+    release: "2018-09-09",
+    publish: "2020-01-20T19:52:54",
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 14,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1115630/",
+  }, // ты 1
+  {
+    title: "Клаус",
+    original: ["Klaus"],
+    release: "2019-11-08",
+    publish: "2019-12-29T23:39:50",
+    directors: ["Серхио Паблос", "Карлос Мартинес Лопес"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 17,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/957887/",
+  }, // клаус
+  {
+    title: "К&nbsp;звёздам",
+    original: ["Ad Astra"],
+    release: "2019-08-29",
+    publish: "2019-12-08T16:31:28",
+    directors: ["Джеймс Грэй"],
+    operator: "Хойте Ван Хойтема",
+    format: "фильм",
+    liked: "like",
+    screenshots: 18,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/768561/",
+  }, // к звёздам
+  {
+    title: "Последний черный в&nbsp;Сан-Франциско",
+    original: ["The Last Black Man in San Francisco"],
+    release: "2019-01-26",
+    publish: "2019-11-24T13:46:26",
+    directors: ["Джо Талбот"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 20,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1115907/",
+  }, // последний черный в сан-франциско
   {
     title: "Во&nbsp;все тяжкие",
     original: ["Breaking Bad"],
