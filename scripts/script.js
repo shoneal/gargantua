@@ -1023,7 +1023,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark-theme"); // Смена темы
 
   updateHeader(); // Border у шапки
-  updateMoviesDisplay(); // Первоначальная фильтрация и рендер
+  handleFilterUpdate(); // Первоначальная фильтрация и рендер
 }); // Стартовая инциализация
 document.addEventListener("click", (e) => {
   const target = e.target;
