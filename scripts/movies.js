@@ -1,5 +1,28 @@
 export const movies = [
   {
+    title: "Миротворец",
+    original: ["Peacemaker"],
+    release: "2025-08-21",
+    publish: "2025-11-19T22:40:10",
+    creators: ["Джеймс Ганн"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1421587/",
+  }, // миротворец 2
+  {
+    title: "Пойман с поличным",
+    original: ["Caught Stealing"],
+    release: "2025-08-27",
+    publish: "2025-10-11T12:40:04",
+    directors: ["Даррен Аронофски"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/707166/",
+  }, // пойман с поличным
+  {
     title: "Медведь",
     original: ["The Bear"],
     release: "2025-06-25",
