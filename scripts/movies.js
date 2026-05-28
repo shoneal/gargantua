@@ -1,5 +1,16 @@
 export const movies = [
   {
+    title: "Король гольфа",
+    original: ["Stick"],
+    release: "2025-06-04",
+    publish: "2026-01-27T21:44:54",
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 27,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/5511685/",
+  }, // король гольфа 1
+  {
     title: "Миротворец",
     original: ["Peacemaker"],
     release: "2025-08-21",
