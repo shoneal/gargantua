@@ -1,5 +1,38 @@
 export const movies = [
   {
+    title: "Вечность",
+    original: ["Eternity"],
+    release: "2025-09-07",
+    publish: "2025-12-28T13:54:37",
+    directors: ["Дэвид Фрейн"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 48,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/8599087/",
+  }, // вечность
+  {
+    title: "Боб Тревино поставил лайк",
+    original: ["Bob Trevino Likes It"],
+    release: "2024-03-09",
+    publish: "2025-11-30T21:07:01",
+    directors: ["Трейси Леймон"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 21,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/7144323/",
+  }, // боб тревино поставил лайк
+  {
+    title: "Битва за&nbsp;битвой",
+    original: ["One Battle After Another"],
+    release: "2025-09-08",
+    publish: "2025-11-30T11:26:29",
+    directors: ["Пол Томас Андерсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 84,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5437094/",
+  }, // битва за битвой
+  {
     title: "Король гольфа",
     original: ["Stick"],
     release: "2025-06-04",
