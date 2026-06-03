@@ -127,9 +127,8 @@ function getRandomItems(arr, count) {
   return result;
 } // Случайное количество элементов
 const randomMovies = getRandomItems(movies, 25); // 25 случайных элементов
-function createImageBlock(image, title) {
+function createImageBlock(image) {
   const block = document.createElement("div");
-  block.title = replaceSpace(title);
   const img = document.createElement("img");
   img.style.opacity = "0";
   img.src = image;
@@ -164,9 +163,7 @@ randomMovies.forEach((movie) => {
     release: movie.release,
   });
 
-  body.figures.forEach((figure) =>
-    figure.appendChild(createImageBlock(image, movie.title)),
-  );
+  body.figures.forEach((figure) => figure.appendChild(createImageBlock(image)));
 }); // Создание анимационного блока с изображениями в верхнюю часть сайта
 body.figures.forEach(handleFigureLoad); // После полной загрузки все изображения плавно появляются
 

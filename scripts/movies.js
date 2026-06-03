@@ -1,5 +1,49 @@
 export const movies = [
   {
+    title: "Финикийская схема",
+    original: ["The Phoenician Scheme"],
+    release: "2025-05-18",
+    publish: "2026-01-07T20:49:19",
+    directors: ["Уэс Андерсон"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 99,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5460719/",
+  }, // финикийская схема
+  {
+    title: "Бугония",
+    original: ["Bugonia"],
+    release: "2025-08-28",
+    publish: "2026-01-07T16:07:02",
+    directors: ["Йоргос Лантимос"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 54,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1378893/",
+  }, // бугония
+  {
+    title: "Везунчики",
+    original: ["Good Fortune"],
+    release: "2025-09-06",
+    publish: "2025-12-29T22:27:06",
+    directors: ["Азиз Ансари"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 42,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5515508/",
+  }, // везунчики
+  {
+    title: "Сны поездов",
+    original: ["Train Dreams"],
+    release: "2025-01-26",
+    publish: "2025-12-28T18:43:31",
+    directors: ["Клинт Бентли"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 90,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/6408658/",
+  }, // сны поездов
+  {
     title: "Вечность",
     original: ["Eternity"],
     release: "2025-09-07",
