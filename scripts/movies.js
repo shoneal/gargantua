@@ -1,5 +1,107 @@
 export const movies = [
   {
+    title: "Первобытный",
+    original: ["Primal"],
+    release: "2022-07-22",
+    publish: "2026-04-05T21:36:49",
+    creators: ["Генндий Тартаковский"],
+    format: "сериал",
+    season: "2",
+    liked: "like",
+    screenshots: 33,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/1263399/",
+  }, // первобытный 2
+  {
+    title: "Лис и&nbsp;пёс",
+    original: ["The Fox and the Hound"],
+    release: "1981-07-10",
+    publish: "2026-03-19T20:38:33",
+    directors: ["Тед Берман", "Ричард Рич", "Арт Стивенс"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 30,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/16117/",
+  }, // лис и пёс
+  {
+    title: "Семья в&nbsp;аренду",
+    original: ["Rental Family"],
+    release: "2025-09-06",
+    publish: "2026-01-31T12:05:42",
+    directors: ["Хикари"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 51,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/8673636/",
+  }, // семья в аренду
+  {
+    title: "Я&nbsp;люблю Лос-Анджелес",
+    original: ["I Love LA", "Элэй"],
+    release: "2025-11-02",
+    publish: "2026-01-23T20:42:47",
+    creators: ["Рэйчел Сеннотт"],
+    format: "сериал",
+    season: "1",
+    liked: "like",
+    screenshots: 39,
+    kinopoiskUrl: "https://www.kinopoisk.ru/series/9994431/",
+  }, // я люблю лос-анджелес 1
+  {
+    title: "Химера",
+    original: ["La Chimera", "La chimera"],
+    release: "2023-05-26",
+    publish: "2026-01-17T13:58:27",
+    directors: ["Аличе Рорвахер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 45,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/4860047/",
+  }, // химера
+  {
+    title: "Джей Келли",
+    original: ["Jay Kelly"],
+    release: "2025-12-05",
+    publish: "2026-01-15T21:51:27",
+    directors: ["Ноа Баумбак"],
+    operator: "Линус Сандгрен",
+    format: "фильм",
+    liked: "like",
+    screenshots: 45,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5458629/",
+  }, // джей келли
+  {
+    title: "Хищник: Планета смерти",
+    original: ["Predator: Badlands"],
+    release: "2025-11-05",
+    publish: "2026-01-11T17:39:53",
+    directors: ["Дэн Трахтенберг"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 19,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/5463792/",
+  }, // хищник: планета смерти
+  {
+    title: "Фантастическая четвёрка: Первые шаги",
+    original: ["The Fantastic Four: First Steps"],
+    release: "2025-07-22",
+    publish: "2026-01-11T12:34:40",
+    directors: ["Мэтт Шекман"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 35,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/1287545/",
+  }, // фантастическая четвёрка: первые шаги
+  {
+    title: "Сентиментальная ценность",
+    original: ["Sentimental Value", "Affeksjonsverdi"],
+    release: "2025-05-21",
+    publish: "2026-01-09T10:26:08",
+    directors: ["Йоаким Триер"],
+    format: "фильм",
+    liked: "like",
+    screenshots: 54,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/6555640/",
+  }, // сентиментальная ценность
+  {
     title: "Финикийская схема",
     original: ["The Phoenician Scheme"],
     release: "2025-05-18",
