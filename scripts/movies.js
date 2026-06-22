@@ -5345,7 +5345,7 @@ export const movies = [
     season: "1-2",
     releaseDates: ["2019-04-19"],
     liked: "like",
-    screenshots: 0,
+    screenshots: 17,
     kinopoiskUrl: "https://www.kinopoisk.ru/series/1108755/",
   }, // рами 1-2
   {
