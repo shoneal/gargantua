@@ -1,5 +1,16 @@
 export const movies = [
   {
+    title: "Суперначо",
+    original: ["Nacho Libre", "Супер Начо"],
+    release: "2006-06-16",
+    publish: "2026-07-06T12:35:58",
+    directors: ["Джаред Хесс"],
+    format: "фильм",
+    liked: "dislike",
+    screenshots: 32,
+    kinopoiskUrl: "https://www.kinopoisk.ru/film/160911/",
+  }, // суперначо
+  {
     title: "Первобытный",
     original: ["Primal"],
     release: "2022-07-22",
